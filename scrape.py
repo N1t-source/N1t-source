@@ -14,6 +14,7 @@ import random
 import re
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any
 from urllib.parse import quote_plus
 
@@ -21,6 +22,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
+COUNTRY_LIST_URL = "https://www.numbeo.com/cost-of-living/"
 CATEGORIES = {
     "cost-of-living": "https://www.numbeo.com/cost-of-living/",
     "crime": "https://www.numbeo.com/crime/",
@@ -123,6 +125,11 @@ def normalized_cell(value: str) -> Any:
     if cleaned.endswith("%"):
         return {"value": number, "unit": "%", "display": cleaned}
     return number
+
+
+def slugify(value: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+    return slug or "item"
 
 
 class TableExtractor:
@@ -413,7 +420,7 @@ class NumbeoScraper:
         return BeautifulSoup(response.content, "html.parser")
 
     def _get_page(self, url: str) -> requests.Response:
-        backoff = self.delay
+        backoff = max(self.delay, 1.0)
         last_error: Exception | None = None
 
         for attempt in range(1, self.retries + 1):
@@ -459,6 +466,35 @@ class NumbeoScraper:
         )
 
 
+def get_available_countries(timeout: int = 20) -> list[str]:
+    response = requests.get(
+        COUNTRY_LIST_URL,
+        headers={
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/120.0.0.0 Safari/537.36"
+            ),
+            "Accept-Language": "en-US,en;q=0.9",
+        },
+        timeout=timeout,
+    )
+    response.raise_for_status()
+
+    page = BeautifulSoup(response.content, "html.parser")
+    country_form = page.find("form", action=re.compile(r"country_result\.jsp"))
+    if not country_form:
+        raise NumbeoScrapeError("Could not find Numbeo country selector.")
+
+    countries: list[str] = []
+    for option in country_form.find_all("option"):
+        value = option.get("value")
+        if value and value.strip():
+            countries.append(value.strip())
+
+    return sorted(dict.fromkeys(countries))
+
+
 class Extract_table(TableExtractor):
     """Backward-compatible name used by the original project."""
 
@@ -495,10 +531,128 @@ class API:
 
 
 def write_json(path: str, payload: dict[str, Any]) -> None:
-    with open(path, "w", encoding="utf-8") as output:
+    output_path = Path(path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8") as output:
         json.dump(payload, output, indent=2, ensure_ascii=False)
         output.write("\n")
     print(f"\n[Done] Data saved to {path}")
+
+
+def split_output_root(output: str) -> Path:
+    path = Path(output)
+    return path.with_suffix("") if path.suffix else path
+
+
+def country_payload(country: str, category: str, payload: dict[str, Any], city_limit: int) -> dict[str, Any]:
+    return {
+        "metadata": {
+            "schema_version": "2.0",
+            "category": category,
+            "country": country,
+            "scraped_at": datetime.now(timezone.utc).isoformat(),
+            "city_limit": city_limit,
+        },
+        "country": country,
+        "category": category,
+        **payload,
+    }
+
+
+def error_payload(exc: Exception) -> dict[str, Any]:
+    return {
+        "error": str(exc),
+        "indices": [],
+        "metrics": [],
+        "data": {},
+        "tables": [],
+        "city_rankings": [],
+        "cities": {},
+    }
+
+
+def split_manifest(args: argparse.Namespace, countries: list[str]) -> tuple[Path, dict[str, Any]]:
+    root = split_output_root(args.output)
+    root.mkdir(parents=True, exist_ok=True)
+    (root / ".root").touch()
+    (root / "countries").mkdir(parents=True, exist_ok=True)
+
+    metadata: dict[str, Any] = {
+        "schema_version": "2.0",
+        "category": args.category,
+        "scraped_at": datetime.now(timezone.utc).isoformat(),
+        "city_limit": max(args.city_limit, 0),
+        "all_countries": bool(args.all_countries),
+        "country_count": len(countries),
+    }
+    if args.category == ALL_CATEGORY_CHOICE:
+        metadata["categories"] = sorted(CATEGORIES)
+
+    return root, {"metadata": metadata, "files": []}
+
+
+def write_split_country_category(
+    root: Path,
+    manifest: dict[str, Any],
+    country: str,
+    category: str,
+    payload: dict[str, Any],
+    city_limit: int,
+) -> None:
+    target = root / "countries" / slugify(country) / f"{slugify(category)}.json"
+    write_json(str(target), country_payload(country, category, payload, city_limit))
+    manifest["files"].append(
+        {
+            "country": country,
+            "category": category,
+            "path": target.relative_to(root).as_posix(),
+        }
+    )
+    write_json(str(root / "manifest.json"), manifest)
+
+
+def write_split_outputs(output: str, results: dict[str, Any]) -> None:
+    root = split_output_root(output)
+    root.mkdir(parents=True, exist_ok=True)
+    manifest: dict[str, Any] = {
+        "metadata": dict(results.get("metadata", {})),
+        "files": [],
+    }
+    city_limit = int(results.get("metadata", {}).get("city_limit", 0))
+    root_marker = root / ".root"
+    root_marker.touch()
+
+    countries_root = root / "countries"
+    countries_root.mkdir(parents=True, exist_ok=True)
+
+    for country, country_data in results.get("countries", {}).items():
+        country_dir = countries_root / slugify(country)
+        country_dir.mkdir(parents=True, exist_ok=True)
+
+        if "categories" in country_data:
+            for category, payload in country_data["categories"].items():
+                target = country_dir / f"{slugify(category)}.json"
+                write_json(str(target), country_payload(country, category, payload, city_limit))
+                manifest["files"].append(
+                    {
+                        "country": country,
+                        "category": category,
+                        "path": target.relative_to(root).as_posix(),
+                    }
+                )
+        else:
+            category = results.get("metadata", {}).get("category", "unknown")
+            target = country_dir / f"{slugify(category)}.json"
+            write_json(str(target), country_payload(country, category, country_data, city_limit))
+            manifest["files"].append(
+                {
+                    "country": country,
+                    "category": category,
+                    "path": target.relative_to(root).as_posix(),
+                }
+            )
+
+    write_json(str(root / "manifest.json"), manifest)
 
 
 def parse_args() -> argparse.Namespace:
@@ -515,6 +669,17 @@ def parse_args() -> argparse.Namespace:
         help="Country names to scrape, for example: Malaysia Singapore Australia",
     )
     parser.add_argument(
+        "--all-countries",
+        action="store_true",
+        help="Scrape every country currently listed by Numbeo.",
+    )
+    parser.add_argument(
+        "--country-limit",
+        type=int,
+        default=0,
+        help="Limit number of countries after discovery. Useful for testing --all-countries.",
+    )
+    parser.add_argument(
         "--city-limit",
         type=int,
         default=0,
@@ -523,7 +688,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         default="results.json",
-        help="JSON file to write.",
+        help="JSON file to write, or output folder base when --split-output is used.",
+    )
+    parser.add_argument(
+        "--split-output",
+        action="store_true",
+        help="Write one JSON file per country/category plus a manifest instead of one combined file.",
     )
     parser.add_argument(
         "--delay",
@@ -547,6 +717,8 @@ def scrape_single_category(args: argparse.Namespace, countries: list[str]) -> di
             "category": args.category,
             "scraped_at": datetime.now(timezone.utc).isoformat(),
             "city_limit": max(args.city_limit, 0),
+            "all_countries": bool(args.all_countries),
+            "country_count": len(countries),
         },
         "countries": {},
     }
@@ -556,17 +728,36 @@ def scrape_single_category(args: argparse.Namespace, countries: list[str]) -> di
         try:
             results["countries"][country] = scraper.scrape_country(country)
         except NumbeoScrapeError as exc:
-            results["countries"][country] = {
-                "error": str(exc),
-                "indices": [],
-                "metrics": [],
-                "data": {},
-                "tables": [],
-                "city_rankings": [],
-                "cities": {},
-            }
+            results["countries"][country] = error_payload(exc)
 
     return results
+
+
+def scrape_single_category_split(args: argparse.Namespace, countries: list[str]) -> dict[str, Any]:
+    root, manifest = split_manifest(args, countries)
+    scraper = NumbeoScraper(
+        args.category,
+        city_limit=max(args.city_limit, 0),
+        delay=max(args.delay, 0),
+    )
+
+    for country in countries:
+        print(f"Processing {country}...")
+        try:
+            payload = scraper.scrape_country(country)
+        except NumbeoScrapeError as exc:
+            payload = error_payload(exc)
+
+        write_split_country_category(
+            root,
+            manifest,
+            country,
+            args.category,
+            payload,
+            max(args.city_limit, 0),
+        )
+
+    return manifest
 
 
 def scrape_all_categories(args: argparse.Namespace, countries: list[str]) -> dict[str, Any]:
@@ -578,6 +769,8 @@ def scrape_all_categories(args: argparse.Namespace, countries: list[str]) -> dic
             "categories": category_names,
             "scraped_at": datetime.now(timezone.utc).isoformat(),
             "city_limit": max(args.city_limit, 0),
+            "all_countries": bool(args.all_countries),
+            "country_count": len(countries),
         },
         "countries": {},
     }
@@ -596,33 +789,66 @@ def scrape_all_categories(args: argparse.Namespace, countries: list[str]) -> dic
             try:
                 results["countries"][country]["categories"][category] = scraper.scrape_country(country)
             except NumbeoScrapeError as exc:
-                results["countries"][country]["categories"][category] = {
-                    "error": str(exc),
-                    "indices": [],
-                    "metrics": [],
-                    "data": {},
-                    "tables": [],
-                    "city_rankings": [],
-                    "cities": {},
-                }
+                results["countries"][country]["categories"][category] = error_payload(exc)
 
     return results
+
+
+def scrape_all_categories_split(args: argparse.Namespace, countries: list[str]) -> dict[str, Any]:
+    root, manifest = split_manifest(args, countries)
+    category_names = sorted(CATEGORIES)
+
+    for country in countries:
+        print(f"Processing {country}...")
+
+        for category in category_names:
+            print(f"  > {category}")
+            scraper = NumbeoScraper(
+                category,
+                city_limit=max(args.city_limit, 0),
+                delay=max(args.delay, 0),
+            )
+            try:
+                payload = scraper.scrape_country(country)
+            except NumbeoScrapeError as exc:
+                payload = error_payload(exc)
+
+            write_split_country_category(
+                root,
+                manifest,
+                country,
+                category,
+                payload,
+                max(args.city_limit, 0),
+            )
+
+    return manifest
 
 
 def main() -> None:
     args = parse_args()
     countries = args.countries
 
-    if not countries:
+    if args.all_countries:
+        print("Discovering countries from Numbeo...")
+        countries = get_available_countries()
+        if args.country_limit > 0:
+            countries = countries[: args.country_limit]
+        print(f"Discovered {len(countries)} countries.")
+    elif not countries:
         raw_countries = input("Enter countries separated by commas: ")
         countries = [country.strip() for country in raw_countries.split(",") if country.strip()]
 
-    if args.category == ALL_CATEGORY_CHOICE:
+    if args.split_output and args.category == ALL_CATEGORY_CHOICE:
+        scrape_all_categories_split(args, countries)
+    elif args.split_output:
+        scrape_single_category_split(args, countries)
+    elif args.category == ALL_CATEGORY_CHOICE:
         results = scrape_all_categories(args, countries)
+        write_json(args.output, results)
     else:
         results = scrape_single_category(args, countries)
-
-    write_json(args.output, results)
+        write_json(args.output, results)
 
 
 if __name__ == "__main__":

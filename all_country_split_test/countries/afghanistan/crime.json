@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "crime",
+    "country": "Afghanistan",
+    "scraped_at": "2026-04-30T01:56:10.179779+00:00",
+    "city_limit": 0
+  },
+  "country": "Afghanistan",
+  "category": "crime",
+  "error": "Could not fetch https://www.numbeo.com/crime/country_result.jsp?country=Afghanistan",
+  "indices": [],
+  "metrics": [],
+  "data": {},
+  "tables": [],
+  "city_rankings": [],
+  "cities": {}
+}

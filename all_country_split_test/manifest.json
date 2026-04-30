@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "crime",
+    "scraped_at": "2026-04-30T01:56:02.135730+00:00",
+    "city_limit": 0,
+    "all_countries": true,
+    "country_count": 2
+  },
+  "files": [
+    {
+      "country": "Afghanistan",
+      "category": "crime",
+      "path": "countries/afghanistan/crime.json"
+    },
+    {
+      "country": "Aland Islands",
+      "category": "crime",
+      "path": "countries/aland-islands/crime.json"
+    }
+  ]
+}

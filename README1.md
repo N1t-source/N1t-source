@@ -28,6 +28,42 @@ Use `--category all` to scrape every supported section into one file.
 python scrape.py --category all --countries Malaysia France Japan --output numbeo_all.json
 ```
 
+Use `--split-output` to store each country/category in its own JSON file.
+
+```bash
+python scrape.py --category all --countries Malaysia France Japan --output numbeo_data --split-output
+```
+
+Use `--all-countries` to discover every country currently listed by Numbeo.
+
+```bash
+python scrape.py --category all --all-countries --output numbeo_data --split-output
+```
+
+For full all-country runs, split output writes each country/category file as soon as that page is scraped. This is safer for long Colab runs because completed files remain on disk if the runtime disconnects.
+
+For a quick test before a long run:
+
+```bash
+python scrape.py --category all --all-countries --country-limit 2 --output numbeo_data_test --split-output
+```
+
+That creates a folder like:
+
+```text
+numbeo_data/
+  manifest.json
+  countries/
+    malaysia/
+      cost-of-living.json
+      crime.json
+      health-care.json
+      pollution.json
+      property-prices.json
+      quality-of-life.json
+      traffic.json
+```
+
 Supported sections:
 
 - `cost-of-living`
