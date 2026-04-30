@@ -1,0 +1,19 @@
+{
+  "schema_version": "3.1",
+  "country": "Afghanistan",
+  "category": "property-prices",
+  "source_url": "https://www.numbeo.com/property-investment/country_result.jsp?country=Afghanistan",
+  "error": null,
+  "counts": {
+    "indices": 10,
+    "metrics": 0,
+    "tables": 1,
+    "data_rows": 8,
+    "city_rankings": 0,
+    "cities": 0
+  },
+  "files": {
+    "country": "countries/afghanistan/property-prices/country.json",
+    "cities": []
+  }
+}

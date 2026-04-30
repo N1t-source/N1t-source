@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "quality-of-life",
+    "country": "Afghanistan",
+    "scraped_at": "2026-04-30T22:47:31.710527+00:00",
+    "city_limit": 0
+  },
+  "country": "Afghanistan",
+  "category": "quality-of-life",
+  "source_url": "https://www.numbeo.com/quality-of-life/country_result.jsp?country=Afghanistan",
+  "indices": [
+    {
+      "name": "Quality of Life Index",
+      "value_display": "?",
+      "group": "Index"
+    }
+  ],
+  "metrics": [
+    {
+      "name": "Purchasing Power Index",
+      "value_display": "41.46",
+      "value": 41.46,
+      "rating": "Low",
+      "group": "Quality of Life in Afghanistan"
+    },
+    {
+      "name": "Safety Index",
+      "value_display": "25.53",
+      "value": 25.53,
+      "rating": "Low",
+      "group": "Quality of Life in Afghanistan"
+    },
+    {
+      "name": "Health Care Index",
+      "value_display": "24.77",
+      "value": 24.77,
+      "rating": "Low",
+      "group": "Quality of Life in Afghanistan"
+    },
+    {
+      "name": "Climate Index",
+      "value_display": "?",
+      "group": "Quality of Life in Afghanistan"
+    },
+    {
+      "name": "Cost of Living Index",
+      "value_display": "22.11",
+      "value": 22.11,
+      "rating": "Very Low",
+      "group": "Quality of Life in Afghanistan"
+    },
+    {
+      "name": "Property Price to Income Ratio",
+      "value_display": "9.40",
+      "value": 9.4,
+      "rating": "Moderate",
+      "group": "Quality of Life in Afghanistan"
+    },
+    {
+      "name": "Traffic Commute Time Index",
+      "value_display": "56.17",
+      "value": 56.17,
+      "rating": "Very High",
+      "group": "Quality of Life in Afghanistan"
+    },
+    {
+      "name": "Pollution Index",
+      "value_display": "84.44",
+      "value": 84.44,
+      "rating": "Very High",
+      "group": "Quality of Life in Afghanistan"
+    },
+    {
+      "name": "ƒ Quality of Life Index",
+      "value_display": "?",
+      "group": "Quality of Life in Afghanistan"
+    }
+  ],
+  "metric_tables": [
+    {
+      "title": "Quality of Life in Afghanistan",
+      "metrics": [
+        {
+          "name": "Purchasing Power Index",
+          "value_display": "41.46",
+          "value": 41.46,
+          "rating": "Low"
+        },
+        {
+          "name": "Safety Index",
+          "value_display": "25.53",
+          "value": 25.53,
+          "rating": "Low"
+        },
+        {
+          "name": "Health Care Index",
+          "value_display": "24.77",
+          "value": 24.77,
+          "rating": "Low"
+        },
+        {
+          "name": "Climate Index",
+          "value_display": "?"
+        },
+        {
+          "name": "Cost of Living Index",
+          "value_display": "22.11",
+          "value": 22.11,
+          "rating": "Very Low"
+        },
+        {
+          "name": "Property Price to Income Ratio",
+          "value_display": "9.40",
+          "value": 9.4,
+          "rating": "Moderate"
+        },
+        {
+          "name": "Traffic Commute Time Index",
+          "value_display": "56.17",
+          "value": 56.17,
+          "rating": "Very High"
+        },
+        {
+          "name": "Pollution Index",
+          "value_display": "84.44",
+          "value": 84.44,
+          "rating": "Very High"
+        },
+        {
+          "name": "ƒ Quality of Life Index",
+          "value_display": "?"
+        }
+      ]
+    }
+  ],
+  "data": {},
+  "tables": [],
+  "city_rankings": [],
+  "cities": {}
+}

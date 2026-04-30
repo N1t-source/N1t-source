@@ -1,0 +1,19 @@
+{
+  "schema_version": "3.1",
+  "country": "Afghanistan",
+  "category": "traffic",
+  "source_url": "https://www.numbeo.com/traffic/country_result.jsp?country=Afghanistan",
+  "error": null,
+  "counts": {
+    "indices": 5,
+    "metrics": 20,
+    "tables": 0,
+    "data_rows": 0,
+    "city_rankings": 0,
+    "cities": 0
+  },
+  "files": {
+    "country": "countries/afghanistan/traffic/country.json",
+    "cities": []
+  }
+}

@@ -132,6 +132,18 @@ def slugify(value: str) -> str:
     return slug or "item"
 
 
+def unique_non_empty(items: list[str]) -> list[str]:
+    seen: set[str] = set()
+    unique_items: list[str] = []
+    for item in items:
+        cleaned = item.strip()
+        if not cleaned or cleaned in seen:
+            continue
+        seen.add(cleaned)
+        unique_items.append(cleaned)
+    return unique_items
+
+
 class TableExtractor:
     """Extract a Numbeo data table into JSON-friendly sections."""
 
@@ -445,16 +457,24 @@ class NumbeoScraper:
         raise NumbeoScrapeError(f"Could not fetch {url}") from last_error
 
     def _extract_cities(self, page: BeautifulSoup) -> list[str]:
-        form = page.find("form", {"class": "standard_margin"})
-        if not form:
-            return []
+        for select in page.find_all("select"):
+            options = select.find_all("option")
+            values = [clean_text(option.get_text(" ")) for option in options]
+            if not values:
+                continue
 
-        cities: list[str] = []
-        for option in form.find_all("option"):
-            value = option.get("value")
-            if value and value.strip():
-                cities.append(value.strip())
-        return cities
+            placeholder = values[0].lower()
+            if "select city" not in placeholder:
+                continue
+
+            cities = [
+                option.get("value", "").strip()
+                for option in options[1:]
+                if option.get("value", "").strip()
+            ]
+            return unique_non_empty(cities)
+
+        return []
 
     def _country_url(self, country: str) -> str:
         return f"{self.base_url}country_result.jsp?country={quote_plus(country)}"
@@ -725,7 +745,7 @@ def existing_payload_from_output(
 
 
 def resolve_requested_countries(args: argparse.Namespace) -> list[str]:
-    countries = list(args.countries or [])
+    countries = unique_non_empty(list(args.countries or []))
 
     if args.all_countries:
         print("Discovering countries from Numbeo...")
@@ -746,7 +766,17 @@ def resolve_requested_countries(args: argparse.Namespace) -> list[str]:
         return countries
 
     raw_countries = input("Enter countries separated by commas: ")
-    return [country.strip() for country in raw_countries.split(",") if country.strip()]
+    return unique_non_empty(raw_countries.split(","))
+
+
+def country_selection_mode(args: argparse.Namespace, countries: list[str]) -> str:
+    if args.all_countries:
+        return "all"
+    if args.country_count > 0 and not args.countries:
+        return "count"
+    if countries:
+        return "named"
+    return "prompt"
 
 
 def parse_args() -> argparse.Namespace:
@@ -819,6 +849,7 @@ def scrape_single_category(args: argparse.Namespace, countries: list[str]) -> di
             "city_limit": max(args.city_limit, 0),
             "all_countries": bool(args.all_countries),
             "country_count": len(countries),
+            "country_selection_mode": country_selection_mode(args, countries),
         },
         "countries": {},
     }
@@ -890,6 +921,7 @@ def scrape_all_categories(args: argparse.Namespace, countries: list[str]) -> dic
             "city_limit": max(args.city_limit, 0),
             "all_countries": bool(args.all_countries),
             "country_count": len(countries),
+            "country_selection_mode": country_selection_mode(args, countries),
         },
         "countries": {},
     }

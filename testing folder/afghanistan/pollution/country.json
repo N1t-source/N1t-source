@@ -1,0 +1,500 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "pollution",
+    "country": "Afghanistan",
+    "scraped_at": "2026-04-30T22:47:28.807724+00:00",
+    "city_limit": 0
+  },
+  "country": "Afghanistan",
+  "category": "pollution",
+  "source_url": "https://www.numbeo.com/pollution/country_result.jsp?country=Afghanistan",
+  "indices": [
+    {
+      "name": "Pollution Index",
+      "value_display": "84.44",
+      "value": 84.44,
+      "group": "Index"
+    },
+    {
+      "name": "Pollution Exp Scale",
+      "value_display": "150.47",
+      "value": 150.47,
+      "group": "Index"
+    }
+  ],
+  "metrics": [],
+  "metric_tables": [],
+  "data": {
+    "Pollution in Afghanistan": [
+      {
+        "raw": {
+          "cells": [
+            "Air Pollution",
+            "77.23 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Air Pollution",
+        "value_display": "77.23 High",
+        "value": 77.23,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Drinking Water Pollution and Inaccessibility",
+            "61.96 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Drinking Water Pollution and Inaccessibility",
+        "value_display": "61.96 High",
+        "value": 61.96,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Dissatisfaction with Garbage Disposal",
+            "73.84 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Dissatisfaction with Garbage Disposal",
+        "value_display": "73.84 High",
+        "value": 73.84,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Dirty and Untidy",
+            "68.18 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Dirty and Untidy",
+        "value_display": "68.18 High",
+        "value": 68.18,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Noise and Light Pollution",
+            "56.52 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Noise and Light Pollution",
+        "value_display": "56.52 Moderate",
+        "value": 56.52,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Water Pollution",
+            "73.81 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Water Pollution",
+        "value_display": "73.81 High",
+        "value": 73.81,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Dissatisfaction with Spending Time in the City",
+            "75.00 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Dissatisfaction with Spending Time in the City",
+        "value_display": "75.00 High",
+        "value": 75.0,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Dissatisfaction with Green and Parks in the City",
+            "63.69 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Dissatisfaction with Green and Parks in the City",
+        "value_display": "63.69 High",
+        "value": 63.69,
+        "rating": "High"
+      }
+    ],
+    "Purity and Cleanliness in Afghanistan": [
+      {
+        "raw": {
+          "cells": [
+            "Air quality",
+            "22.77 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Air quality",
+        "value_display": "22.77 Low",
+        "value": 22.77,
+        "rating": "Low"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Drinking Water Quality and Accessibility",
+            "38.04 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Drinking Water Quality and Accessibility",
+        "value_display": "38.04 Low",
+        "value": 38.04,
+        "rating": "Low"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Garbage Disposal Satisfaction",
+            "26.16 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Garbage Disposal Satisfaction",
+        "value_display": "26.16 Low",
+        "value": 26.16,
+        "rating": "Low"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Clean and Tidy",
+            "31.82 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Clean and Tidy",
+        "value_display": "31.82 Low",
+        "value": 31.82,
+        "rating": "Low"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Quiet and No Problem with Night Lights",
+            "43.48 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Quiet and No Problem with Night Lights",
+        "value_display": "43.48 Moderate",
+        "value": 43.48,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Water Quality",
+            "26.19 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Water Quality",
+        "value_display": "26.19 Low",
+        "value": 26.19,
+        "rating": "Low"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Comfortable to Spend Time in the City",
+            "25.00 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Comfortable to Spend Time in the City",
+        "value_display": "25.00 Low",
+        "value": 25.0,
+        "rating": "Low"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Quality of Green and Parks",
+            "36.31 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Quality of Green and Parks",
+        "value_display": "36.31 Low",
+        "value": 36.31,
+        "rating": "Low"
+      }
+    ]
+  },
+  "tables": [
+    {
+      "title": "Pollution in Afghanistan",
+      "sections": {
+        "Pollution in Afghanistan": [
+          {
+            "raw": {
+              "cells": [
+                "Air Pollution",
+                "77.23 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Air Pollution",
+            "value_display": "77.23 High",
+            "value": 77.23,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Drinking Water Pollution and Inaccessibility",
+                "61.96 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Drinking Water Pollution and Inaccessibility",
+            "value_display": "61.96 High",
+            "value": 61.96,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Dissatisfaction with Garbage Disposal",
+                "73.84 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Dissatisfaction with Garbage Disposal",
+            "value_display": "73.84 High",
+            "value": 73.84,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Dirty and Untidy",
+                "68.18 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Dirty and Untidy",
+            "value_display": "68.18 High",
+            "value": 68.18,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Noise and Light Pollution",
+                "56.52 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Noise and Light Pollution",
+            "value_display": "56.52 Moderate",
+            "value": 56.52,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Water Pollution",
+                "73.81 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Water Pollution",
+            "value_display": "73.81 High",
+            "value": 73.81,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Dissatisfaction with Spending Time in the City",
+                "75.00 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Dissatisfaction with Spending Time in the City",
+            "value_display": "75.00 High",
+            "value": 75.0,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Dissatisfaction with Green and Parks in the City",
+                "63.69 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Dissatisfaction with Green and Parks in the City",
+            "value_display": "63.69 High",
+            "value": 63.69,
+            "rating": "High"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Purity and Cleanliness in Afghanistan",
+      "sections": {
+        "Purity and Cleanliness in Afghanistan": [
+          {
+            "raw": {
+              "cells": [
+                "Air quality",
+                "22.77 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Air quality",
+            "value_display": "22.77 Low",
+            "value": 22.77,
+            "rating": "Low"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Drinking Water Quality and Accessibility",
+                "38.04 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Drinking Water Quality and Accessibility",
+            "value_display": "38.04 Low",
+            "value": 38.04,
+            "rating": "Low"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Garbage Disposal Satisfaction",
+                "26.16 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Garbage Disposal Satisfaction",
+            "value_display": "26.16 Low",
+            "value": 26.16,
+            "rating": "Low"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Clean and Tidy",
+                "31.82 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Clean and Tidy",
+            "value_display": "31.82 Low",
+            "value": 31.82,
+            "rating": "Low"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Quiet and No Problem with Night Lights",
+                "43.48 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Quiet and No Problem with Night Lights",
+            "value_display": "43.48 Moderate",
+            "value": 43.48,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Water Quality",
+                "26.19 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Water Quality",
+            "value_display": "26.19 Low",
+            "value": 26.19,
+            "rating": "Low"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Comfortable to Spend Time in the City",
+                "25.00 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Comfortable to Spend Time in the City",
+            "value_display": "25.00 Low",
+            "value": 25.0,
+            "rating": "Low"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Quality of Green and Parks",
+                "36.31 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Quality of Green and Parks",
+            "value_display": "36.31 Low",
+            "value": 36.31,
+            "rating": "Low"
+          }
+        ]
+      }
+    }
+  ],
+  "city_rankings": [],
+  "cities": {}
+}

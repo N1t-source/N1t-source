@@ -1,0 +1,528 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "crime",
+    "country": "Afghanistan",
+    "scraped_at": "2026-04-30T22:47:28.865462+00:00",
+    "city_limit": 0
+  },
+  "country": "Afghanistan",
+  "category": "crime",
+  "source_url": "https://www.numbeo.com/crime/country_result.jsp?country=Afghanistan",
+  "indices": [
+    {
+      "name": "Crime Index",
+      "value_display": "74.47",
+      "value": 74.47,
+      "group": "Index"
+    },
+    {
+      "name": "Safety Index",
+      "value_display": "25.53",
+      "value": 25.53,
+      "group": "Index"
+    }
+  ],
+  "metrics": [],
+  "metric_tables": [],
+  "data": {
+    "Crime rates in Afghanistan": [
+      {
+        "raw": {
+          "cells": [
+            "Level of crime",
+            "78.82 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Level of crime",
+        "value_display": "78.82 High",
+        "value": 78.82,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Crime increasing in the past 5 years",
+            "76.25 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Crime increasing in the past 5 years",
+        "value_display": "76.25 High",
+        "value": 76.25,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries home broken and things stolen",
+            "73.63 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Worries home broken and things stolen",
+        "value_display": "73.63 High",
+        "value": 73.63,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries being mugged or robbed",
+            "73.44 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Worries being mugged or robbed",
+        "value_display": "73.44 High",
+        "value": 73.44,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries car stolen",
+            "74.75 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Worries car stolen",
+        "value_display": "74.75 High",
+        "value": 74.75,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries things from car stolen",
+            "73.63 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Worries things from car stolen",
+        "value_display": "73.63 High",
+        "value": 73.63,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries attacked",
+            "75.13 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Worries attacked",
+        "value_display": "75.13 High",
+        "value": 75.13,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries being insulted",
+            "71.12 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Worries being insulted",
+        "value_display": "71.12 High",
+        "value": 71.12,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+            "66.86 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+        "value_display": "66.86 High",
+        "value": 66.86,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Problem people using or dealing drugs",
+            "74.22 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Problem people using or dealing drugs",
+        "value_display": "74.22 High",
+        "value": 74.22,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Problem property crimes such as vandalism and theft",
+            "74.75 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Problem property crimes such as vandalism and theft",
+        "value_display": "74.75 High",
+        "value": 74.75,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Problem violent crimes such as assault and armed robbery",
+            "75.33 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Problem violent crimes such as assault and armed robbery",
+        "value_display": "75.33 High",
+        "value": 75.33,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Problem corruption and bribery",
+            "79.65 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Problem corruption and bribery",
+        "value_display": "79.65 High",
+        "value": 79.65,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Safety walking alone during daylight",
+            "34.91 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Safety walking alone during daylight",
+        "value_display": "34.91 Low",
+        "value": 34.91,
+        "rating": "Low"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Safety walking alone during night",
+            "24.37 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Safety walking alone during night",
+        "value_display": "24.37 Low",
+        "value": 24.37,
+        "rating": "Low"
+      }
+    ],
+    "Safety in Afghanistan": [
+      {
+        "raw": {
+          "cells": [
+            "Safety walking alone during daylight",
+            "34.91 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Safety walking alone during daylight",
+        "value_display": "34.91 Low",
+        "value": 34.91,
+        "rating": "Low"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Safety walking alone during night",
+            "24.37 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Safety walking alone during night",
+        "value_display": "24.37 Low",
+        "value": 24.37,
+        "rating": "Low"
+      }
+    ]
+  },
+  "tables": [
+    {
+      "title": "Crime rates in Afghanistan",
+      "sections": {
+        "Crime rates in Afghanistan": [
+          {
+            "raw": {
+              "cells": [
+                "Level of crime",
+                "78.82 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Level of crime",
+            "value_display": "78.82 High",
+            "value": 78.82,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Crime increasing in the past 5 years",
+                "76.25 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Crime increasing in the past 5 years",
+            "value_display": "76.25 High",
+            "value": 76.25,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries home broken and things stolen",
+                "73.63 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Worries home broken and things stolen",
+            "value_display": "73.63 High",
+            "value": 73.63,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries being mugged or robbed",
+                "73.44 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Worries being mugged or robbed",
+            "value_display": "73.44 High",
+            "value": 73.44,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries car stolen",
+                "74.75 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Worries car stolen",
+            "value_display": "74.75 High",
+            "value": 74.75,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries things from car stolen",
+                "73.63 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Worries things from car stolen",
+            "value_display": "73.63 High",
+            "value": 73.63,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries attacked",
+                "75.13 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Worries attacked",
+            "value_display": "75.13 High",
+            "value": 75.13,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries being insulted",
+                "71.12 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Worries being insulted",
+            "value_display": "71.12 High",
+            "value": 71.12,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+                "66.86 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+            "value_display": "66.86 High",
+            "value": 66.86,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Problem people using or dealing drugs",
+                "74.22 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Problem people using or dealing drugs",
+            "value_display": "74.22 High",
+            "value": 74.22,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Problem property crimes such as vandalism and theft",
+                "74.75 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Problem property crimes such as vandalism and theft",
+            "value_display": "74.75 High",
+            "value": 74.75,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Problem violent crimes such as assault and armed robbery",
+                "75.33 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Problem violent crimes such as assault and armed robbery",
+            "value_display": "75.33 High",
+            "value": 75.33,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Problem corruption and bribery",
+                "79.65 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Problem corruption and bribery",
+            "value_display": "79.65 High",
+            "value": 79.65,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Safety walking alone during daylight",
+                "34.91 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Safety walking alone during daylight",
+            "value_display": "34.91 Low",
+            "value": 34.91,
+            "rating": "Low"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Safety walking alone during night",
+                "24.37 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Safety walking alone during night",
+            "value_display": "24.37 Low",
+            "value": 24.37,
+            "rating": "Low"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Safety in Afghanistan",
+      "sections": {
+        "Safety in Afghanistan": [
+          {
+            "raw": {
+              "cells": [
+                "Safety walking alone during daylight",
+                "34.91 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Safety walking alone during daylight",
+            "value_display": "34.91 Low",
+            "value": 34.91,
+            "rating": "Low"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Safety walking alone during night",
+                "24.37 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Safety walking alone during night",
+            "value_display": "24.37 Low",
+            "value": 24.37,
+            "rating": "Low"
+          }
+        ]
+      }
+    }
+  ],
+  "city_rankings": [],
+  "cities": {}
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "3.1",
+  "country": "Afghanistan",
+  "category": "crime",
+  "source_url": "https://www.numbeo.com/crime/country_result.jsp?country=Afghanistan",
+  "error": null,
+  "counts": {
+    "indices": 2,
+    "metrics": 0,
+    "tables": 2,
+    "data_rows": 17,
+    "city_rankings": 0,
+    "cities": 0
+  },
+  "files": {
+    "country": "countries/afghanistan/crime/country.json",
+    "cities": []
+  }
+}

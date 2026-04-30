@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "traffic",
+    "country": "Afghanistan",
+    "scraped_at": "2026-04-30T22:47:31.072454+00:00",
+    "city_limit": 0
+  },
+  "country": "Afghanistan",
+  "category": "traffic",
+  "source_url": "https://www.numbeo.com/traffic/country_result.jsp?country=Afghanistan",
+  "indices": [
+    {
+      "name": "Traffic Index",
+      "value_display": "275.71",
+      "value": 275.71,
+      "group": "Index"
+    },
+    {
+      "name": "Time Index (in minutes)",
+      "value_display": "56.17",
+      "value": 56.17,
+      "group": "Index"
+    },
+    {
+      "name": "Time Exp. Index",
+      "value_display": "11,544.88",
+      "value": 11544.88,
+      "group": "Index"
+    },
+    {
+      "name": "Inefficiency Index",
+      "value_display": "278.88",
+      "value": 278.88,
+      "group": "Index"
+    },
+    {
+      "name": "Emission Index",
+      "value_display": "9,100.00",
+      "value": 9100.0,
+      "group": "Index"
+    }
+  ],
+  "metrics": [
+    {
+      "name": "Working from Home",
+      "value_display": "25.00%",
+      "unit": "%",
+      "value": 25.0,
+      "group": "Main Means of Transportation to Work or School"
+    },
+    {
+      "name": "Walking",
+      "value_display": "25.00%",
+      "unit": "%",
+      "value": 25.0,
+      "group": "Main Means of Transportation to Work or School"
+    },
+    {
+      "name": "Car",
+      "value_display": "37.50%",
+      "unit": "%",
+      "value": 37.5,
+      "group": "Main Means of Transportation to Work or School"
+    },
+    {
+      "name": "Bicycle",
+      "value_display": "0.00%",
+      "unit": "%",
+      "value": 0.0,
+      "group": "Main Means of Transportation to Work or School"
+    },
+    {
+      "name": "Motorcycle",
+      "value_display": "0.00%",
+      "unit": "%",
+      "value": 0.0,
+      "group": "Main Means of Transportation to Work or School"
+    },
+    {
+      "name": "Bus/Trolleybus",
+      "value_display": "12.50%",
+      "unit": "%",
+      "value": 12.5,
+      "group": "Main Means of Transportation to Work or School"
+    },
+    {
+      "name": "Tram/Streetcar",
+      "value_display": "0.00%",
+      "unit": "%",
+      "value": 0.0,
+      "group": "Main Means of Transportation to Work or School"
+    },
+    {
+      "name": "Train/Metro",
+      "value_display": "0.00%",
+      "unit": "%",
+      "value": 0.0,
+      "group": "Main Means of Transportation to Work or School"
+    },
+    {
+      "name": "Average Distance",
+      "value_display": "14.01 km",
+      "value": 14.01,
+      "unit": "km",
+      "group": "Overall Average One-Way Commute Time and Distance to Work or School"
+    },
+    {
+      "name": "Average Travel Time",
+      "value_display": "56.17 min",
+      "value": 56.17,
+      "unit": "min",
+      "group": "Overall Average One-Way Commute Time and Distance to Work or School"
+    },
+    {
+      "name": "Distance",
+      "value_display": "5.02 km",
+      "value": 5.02,
+      "unit": "km",
+      "group": "Average when primarily using Walking"
+    },
+    {
+      "name": "Walking",
+      "value_display": "45.00 min",
+      "value": 45.0,
+      "unit": "min",
+      "group": "Average when primarily using Walking"
+    },
+    {
+      "name": "Overall",
+      "value_display": "45.00 min",
+      "value": 45.0,
+      "unit": "min",
+      "group": "Average when primarily using Walking"
+    },
+    {
+      "name": "Distance",
+      "value_display": "19.67 km",
+      "value": 19.67,
+      "unit": "km",
+      "group": "Average when primarily using Car"
+    },
+    {
+      "name": "Walking",
+      "value_display": "3.33 min",
+      "value": 3.33,
+      "unit": "min",
+      "group": "Average when primarily using Car"
+    },
+    {
+      "name": "Driving Car",
+      "value_display": "66.67 min",
+      "value": 66.67,
+      "unit": "min",
+      "group": "Average when primarily using Car"
+    },
+    {
+      "name": "Overall",
+      "value_display": "70.00 min",
+      "value": 70.0,
+      "unit": "min",
+      "group": "Average when primarily using Car"
+    },
+    {
+      "name": "Distance",
+      "value_display": "15.00 km",
+      "value": 15.0,
+      "unit": "km",
+      "group": "Average when primarily using Bus/Trolleybus"
+    },
+    {
+      "name": "Bus/Trolleybus Ride",
+      "value_display": "33.00 min",
+      "value": 33.0,
+      "unit": "min",
+      "group": "Average when primarily using Bus/Trolleybus"
+    },
+    {
+      "name": "Overall",
+      "value_display": "37.00 min",
+      "value": 37.0,
+      "unit": "min",
+      "group": "Average when primarily using Bus/Trolleybus"
+    }
+  ],
+  "metric_tables": [
+    {
+      "title": "Main Means of Transportation to Work or School",
+      "metrics": [
+        {
+          "name": "Working from Home",
+          "value_display": "25.00%",
+          "unit": "%",
+          "value": 25.0
+        },
+        {
+          "name": "Walking",
+          "value_display": "25.00%",
+          "unit": "%",
+          "value": 25.0
+        },
+        {
+          "name": "Car",
+          "value_display": "37.50%",
+          "unit": "%",
+          "value": 37.5
+        },
+        {
+          "name": "Bicycle",
+          "value_display": "0.00%",
+          "unit": "%",
+          "value": 0.0
+        },
+        {
+          "name": "Motorcycle",
+          "value_display": "0.00%",
+          "unit": "%",
+          "value": 0.0
+        },
+        {
+          "name": "Bus/Trolleybus",
+          "value_display": "12.50%",
+          "unit": "%",
+          "value": 12.5
+        },
+        {
+          "name": "Tram/Streetcar",
+          "value_display": "0.00%",
+          "unit": "%",
+          "value": 0.0
+        },
+        {
+          "name": "Train/Metro",
+          "value_display": "0.00%",
+          "unit": "%",
+          "value": 0.0
+        }
+      ]
+    },
+    {
+      "title": "Overall Average One-Way Commute Time and Distance to Work or School",
+      "metrics": [
+        {
+          "name": "Average Distance",
+          "value_display": "14.01 km",
+          "value": 14.01,
+          "unit": "km"
+        },
+        {
+          "name": "Average Travel Time",
+          "value_display": "56.17 min",
+          "value": 56.17,
+          "unit": "min"
+        }
+      ]
+    },
+    {
+      "title": "Average when primarily using Walking",
+      "metrics": [
+        {
+          "name": "Distance",
+          "value_display": "5.02 km",
+          "value": 5.02,
+          "unit": "km"
+        },
+        {
+          "name": "Walking",
+          "value_display": "45.00 min",
+          "value": 45.0,
+          "unit": "min"
+        },
+        {
+          "name": "Overall",
+          "value_display": "45.00 min",
+          "value": 45.0,
+          "unit": "min"
+        }
+      ]
+    },
+    {
+      "title": "Average when primarily using Car",
+      "metrics": [
+        {
+          "name": "Distance",
+          "value_display": "19.67 km",
+          "value": 19.67,
+          "unit": "km"
+        },
+        {
+          "name": "Walking",
+          "value_display": "3.33 min",
+          "value": 3.33,
+          "unit": "min"
+        },
+        {
+          "name": "Driving Car",
+          "value_display": "66.67 min",
+          "value": 66.67,
+          "unit": "min"
+        },
+        {
+          "name": "Overall",
+          "value_display": "70.00 min",
+          "value": 70.0,
+          "unit": "min"
+        }
+      ]
+    },
+    {
+      "title": "Average when primarily using Bus/Trolleybus",
+      "metrics": [
+        {
+          "name": "Distance",
+          "value_display": "15.00 km",
+          "value": 15.0,
+          "unit": "km"
+        },
+        {
+          "name": "Bus/Trolleybus Ride",
+          "value_display": "33.00 min",
+          "value": 33.0,
+          "unit": "min"
+        },
+        {
+          "name": "Overall",
+          "value_display": "37.00 min",
+          "value": 37.0,
+          "unit": "min"
+        }
+      ]
+    }
+  ],
+  "data": {},
+  "tables": [],
+  "city_rankings": [],
+  "cities": {}
+}
