@@ -539,6 +539,22 @@ def write_json(path: str, payload: dict[str, Any]) -> None:
     print(f"\n[Done] Data saved to {path}")
 
 
+def read_json_if_exists(path: str | Path) -> dict[str, Any] | None:
+    file_path = Path(path)
+    if not file_path.exists() or not file_path.is_file():
+        return None
+
+    try:
+        with file_path.open("r", encoding="utf-8") as input_file:
+            payload = json.load(input_file)
+        if isinstance(payload, dict):
+            return payload
+    except (OSError, json.JSONDecodeError):
+        return None
+
+    return None
+
+
 def split_output_root(output: str) -> Path:
     path = Path(output)
     return path.with_suffix("") if path.suffix else path
@@ -601,13 +617,17 @@ def write_split_country_category(
 ) -> None:
     target = root / "countries" / slugify(country) / f"{slugify(category)}.json"
     write_json(str(target), country_payload(country, category, payload, city_limit))
-    manifest["files"].append(
-        {
-            "country": country,
-            "category": category,
-            "path": target.relative_to(root).as_posix(),
-        }
-    )
+    entry = {
+        "country": country,
+        "category": category,
+        "path": target.relative_to(root).as_posix(),
+    }
+    manifest["files"] = [
+        file_entry
+        for file_entry in manifest["files"]
+        if not (file_entry.get("country") == country and file_entry.get("category") == category)
+    ]
+    manifest["files"].append(entry)
     write_json(str(root / "manifest.json"), manifest)
 
 
@@ -655,6 +675,80 @@ def write_split_outputs(output: str, results: dict[str, Any]) -> None:
     write_json(str(root / "manifest.json"), manifest)
 
 
+def has_payload_data(payload: dict[str, Any] | None) -> bool:
+    if not payload:
+        return False
+
+    return any(
+        payload.get(key)
+        for key in ("indices", "metrics", "data", "tables", "city_rankings", "cities")
+    )
+
+
+def split_output_target(output: str, country: str, category: str) -> Path:
+    root = split_output_root(output)
+    return root / "countries" / slugify(country) / f"{slugify(category)}.json"
+
+
+def existing_payload_from_output(
+    args: argparse.Namespace, country: str, category: str
+) -> dict[str, Any] | None:
+    if args.split_output:
+        for candidate in (
+            split_output_target(args.output, country, category),
+            split_output_root(args.output) / slugify(country) / f"{slugify(category)}.json",
+        ):
+            split_payload = read_json_if_exists(candidate)
+            if split_payload and has_payload_data(split_payload):
+                return split_payload
+        return None
+
+    combined_payload = read_json_if_exists(args.output)
+    if not combined_payload:
+        return None
+
+    countries = combined_payload.get("countries", {})
+    country_payload = countries.get(country)
+    if not isinstance(country_payload, dict):
+        return None
+
+    if combined_payload.get("metadata", {}).get("category") == ALL_CATEGORY_CHOICE:
+        category_payload = country_payload.get("categories", {}).get(category)
+        if isinstance(category_payload, dict) and has_payload_data(category_payload):
+            return category_payload
+        return None
+
+    if combined_payload.get("metadata", {}).get("category") == category and has_payload_data(country_payload):
+        return country_payload
+
+    return None
+
+
+def resolve_requested_countries(args: argparse.Namespace) -> list[str]:
+    countries = list(args.countries or [])
+
+    if args.all_countries:
+        print("Discovering countries from Numbeo...")
+        countries = get_available_countries()
+        if args.country_limit > 0:
+            countries = countries[: args.country_limit]
+        print(f"Discovered {len(countries)} countries.")
+        return countries
+
+    if countries:
+        return countries
+
+    if args.country_count > 0:
+        print("Discovering countries from Numbeo for count-based selection...")
+        countries = get_available_countries()
+        countries = countries[: args.country_count]
+        print(f"Selected first {len(countries)} countries from Numbeo.")
+        return countries
+
+    raw_countries = input("Enter countries separated by commas: ")
+    return [country.strip() for country in raw_countries.split(",") if country.strip()]
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Scrape Numbeo tables into JSON.")
     parser.add_argument(
@@ -678,6 +772,12 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=0,
         help="Limit number of countries after discovery. Useful for testing --all-countries.",
+    )
+    parser.add_argument(
+        "--country-count",
+        type=int,
+        default=0,
+        help="When --all-countries is not used and --countries is omitted, discover and scrape the first N countries.",
     )
     parser.add_argument(
         "--city-limit",
@@ -724,6 +824,12 @@ def scrape_single_category(args: argparse.Namespace, countries: list[str]) -> di
     }
 
     for country in countries:
+        existing_payload = existing_payload_from_output(args, country, args.category)
+        if existing_payload:
+            print(f"Skipping {country}; found existing {args.category} data.")
+            results["countries"][country] = existing_payload
+            continue
+
         print(f"Processing {country}...")
         try:
             results["countries"][country] = scraper.scrape_country(country)
@@ -742,6 +848,19 @@ def scrape_single_category_split(args: argparse.Namespace, countries: list[str])
     )
 
     for country in countries:
+        existing_payload = existing_payload_from_output(args, country, args.category)
+        if existing_payload:
+            print(f"Skipping {country}; found existing {args.category} data.")
+            write_split_country_category(
+                root,
+                manifest,
+                country,
+                args.category,
+                existing_payload,
+                max(args.city_limit, 0),
+            )
+            continue
+
         print(f"Processing {country}...")
         try:
             payload = scraper.scrape_country(country)
@@ -780,6 +899,12 @@ def scrape_all_categories(args: argparse.Namespace, countries: list[str]) -> dic
         results["countries"][country] = {"categories": {}}
 
         for category in category_names:
+            existing_payload = existing_payload_from_output(args, country, category)
+            if existing_payload:
+                print(f"  > {category} (skipped; already exists)")
+                results["countries"][country]["categories"][category] = existing_payload
+                continue
+
             print(f"  > {category}")
             scraper = NumbeoScraper(
                 category,
@@ -802,6 +927,19 @@ def scrape_all_categories_split(args: argparse.Namespace, countries: list[str]) 
         print(f"Processing {country}...")
 
         for category in category_names:
+            existing_payload = existing_payload_from_output(args, country, category)
+            if existing_payload:
+                print(f"  > {category} (skipped; already exists)")
+                write_split_country_category(
+                    root,
+                    manifest,
+                    country,
+                    category,
+                    existing_payload,
+                    max(args.city_limit, 0),
+                )
+                continue
+
             print(f"  > {category}")
             scraper = NumbeoScraper(
                 category,
@@ -827,17 +965,7 @@ def scrape_all_categories_split(args: argparse.Namespace, countries: list[str]) 
 
 def main() -> None:
     args = parse_args()
-    countries = args.countries
-
-    if args.all_countries:
-        print("Discovering countries from Numbeo...")
-        countries = get_available_countries()
-        if args.country_limit > 0:
-            countries = countries[: args.country_limit]
-        print(f"Discovered {len(countries)} countries.")
-    elif not countries:
-        raw_countries = input("Enter countries separated by commas: ")
-        countries = [country.strip() for country in raw_countries.split(",") if country.strip()]
+    countries = resolve_requested_countries(args)
 
     if args.split_output and args.category == ALL_CATEGORY_CHOICE:
         scrape_all_categories_split(args, countries)

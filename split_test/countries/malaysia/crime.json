@@ -1,0 +1,564 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "crime",
+    "country": "Malaysia",
+    "scraped_at": "2026-04-30T11:21:12.823312+00:00",
+    "city_limit": 0
+  },
+  "country": "Malaysia",
+  "category": "crime",
+  "source_url": "https://www.numbeo.com/crime/country_result.jsp?country=Malaysia",
+  "indices": [
+    {
+      "name": "Crime Index",
+      "value_display": "48.12",
+      "value": 48.12,
+      "group": "Index"
+    },
+    {
+      "name": "Safety Index",
+      "value_display": "51.88",
+      "value": 51.88,
+      "group": "Index"
+    }
+  ],
+  "metrics": [],
+  "metric_tables": [],
+  "data": {
+    "Crime rates in Malaysia": [
+      {
+        "raw": {
+          "cells": [
+            "Level of crime",
+            "49.34 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Level of crime",
+        "value_display": "49.34 Moderate",
+        "value": 49.34,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Crime increasing in the past 5 years",
+            "55.99 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Crime increasing in the past 5 years",
+        "value_display": "55.99 Moderate",
+        "value": 55.99,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries home broken and things stolen",
+            "50.05 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Worries home broken and things stolen",
+        "value_display": "50.05 Moderate",
+        "value": 50.05,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries being mugged or robbed",
+            "51.60 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Worries being mugged or robbed",
+        "value_display": "51.60 Moderate",
+        "value": 51.6,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries car stolen",
+            "46.81 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Worries car stolen",
+        "value_display": "46.81 Moderate",
+        "value": 46.81,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries things from car stolen",
+            "51.41 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Worries things from car stolen",
+        "value_display": "51.41 Moderate",
+        "value": 51.41,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries attacked",
+            "43.61 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Worries attacked",
+        "value_display": "43.61 Moderate",
+        "value": 43.61,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries being insulted",
+            "36.28 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Worries being insulted",
+        "value_display": "36.28 Low",
+        "value": 36.28,
+        "rating": "Low"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+            "31.87 Low",
+            "Low"
+          ],
+          "range_display": "Low"
+        },
+        "item": "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+        "value_display": "31.87 Low",
+        "value": 31.87,
+        "rating": "Low"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Problem people using or dealing drugs",
+            "44.54 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Problem people using or dealing drugs",
+        "value_display": "44.54 Moderate",
+        "value": 44.54,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Problem property crimes such as vandalism and theft",
+            "53.03 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Problem property crimes such as vandalism and theft",
+        "value_display": "53.03 Moderate",
+        "value": 53.03,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Problem violent crimes such as assault and armed robbery",
+            "47.51 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Problem violent crimes such as assault and armed robbery",
+        "value_display": "47.51 Moderate",
+        "value": 47.51,
+        "rating": "Moderate"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Problem corruption and bribery",
+            "65.40 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Problem corruption and bribery",
+        "value_display": "65.40 High",
+        "value": 65.4,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Safety walking alone during daylight",
+            "65.53 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Safety walking alone during daylight",
+        "value_display": "65.53 High",
+        "value": 65.53,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Safety walking alone during night",
+            "42.64 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Safety walking alone during night",
+        "value_display": "42.64 Moderate",
+        "value": 42.64,
+        "rating": "Moderate"
+      }
+    ],
+    "Safety in Malaysia": [
+      {
+        "raw": {
+          "cells": [
+            "Safety walking alone during daylight",
+            "65.53 High",
+            "High"
+          ],
+          "range_display": "High"
+        },
+        "item": "Safety walking alone during daylight",
+        "value_display": "65.53 High",
+        "value": 65.53,
+        "rating": "High"
+      },
+      {
+        "raw": {
+          "cells": [
+            "Safety walking alone during night",
+            "42.64 Moderate",
+            "Moderate"
+          ],
+          "range_display": "Moderate"
+        },
+        "item": "Safety walking alone during night",
+        "value_display": "42.64 Moderate",
+        "value": 42.64,
+        "rating": "Moderate"
+      }
+    ]
+  },
+  "tables": [
+    {
+      "title": "Crime rates in Malaysia",
+      "sections": {
+        "Crime rates in Malaysia": [
+          {
+            "raw": {
+              "cells": [
+                "Level of crime",
+                "49.34 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Level of crime",
+            "value_display": "49.34 Moderate",
+            "value": 49.34,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Crime increasing in the past 5 years",
+                "55.99 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Crime increasing in the past 5 years",
+            "value_display": "55.99 Moderate",
+            "value": 55.99,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries home broken and things stolen",
+                "50.05 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Worries home broken and things stolen",
+            "value_display": "50.05 Moderate",
+            "value": 50.05,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries being mugged or robbed",
+                "51.60 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Worries being mugged or robbed",
+            "value_display": "51.60 Moderate",
+            "value": 51.6,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries car stolen",
+                "46.81 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Worries car stolen",
+            "value_display": "46.81 Moderate",
+            "value": 46.81,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries things from car stolen",
+                "51.41 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Worries things from car stolen",
+            "value_display": "51.41 Moderate",
+            "value": 51.41,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries attacked",
+                "43.61 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Worries attacked",
+            "value_display": "43.61 Moderate",
+            "value": 43.61,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries being insulted",
+                "36.28 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Worries being insulted",
+            "value_display": "36.28 Low",
+            "value": 36.28,
+            "rating": "Low"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+                "31.87 Low",
+                "Low"
+              ],
+              "range_display": "Low"
+            },
+            "item": "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+            "value_display": "31.87 Low",
+            "value": 31.87,
+            "rating": "Low"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Problem people using or dealing drugs",
+                "44.54 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Problem people using or dealing drugs",
+            "value_display": "44.54 Moderate",
+            "value": 44.54,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Problem property crimes such as vandalism and theft",
+                "53.03 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Problem property crimes such as vandalism and theft",
+            "value_display": "53.03 Moderate",
+            "value": 53.03,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Problem violent crimes such as assault and armed robbery",
+                "47.51 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Problem violent crimes such as assault and armed robbery",
+            "value_display": "47.51 Moderate",
+            "value": 47.51,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Problem corruption and bribery",
+                "65.40 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Problem corruption and bribery",
+            "value_display": "65.40 High",
+            "value": 65.4,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Safety walking alone during daylight",
+                "65.53 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Safety walking alone during daylight",
+            "value_display": "65.53 High",
+            "value": 65.53,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Safety walking alone during night",
+                "42.64 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Safety walking alone during night",
+            "value_display": "42.64 Moderate",
+            "value": 42.64,
+            "rating": "Moderate"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Safety in Malaysia",
+      "sections": {
+        "Safety in Malaysia": [
+          {
+            "raw": {
+              "cells": [
+                "Safety walking alone during daylight",
+                "65.53 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Safety walking alone during daylight",
+            "value_display": "65.53 High",
+            "value": 65.53,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Safety walking alone during night",
+                "42.64 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Safety walking alone during night",
+            "value_display": "42.64 Moderate",
+            "value": 42.64,
+            "rating": "Moderate"
+          }
+        ]
+      }
+    }
+  ],
+  "city_rankings": [
+    {
+      "title": "By City",
+      "columns": [
+        "Rank",
+        "City",
+        "Crime Index",
+        "Safety Index"
+      ],
+      "rows": [
+        {
+          "Rank": "",
+          "City": "Kuala Lumpur",
+          "Crime Index": 59.2,
+          "Safety Index": 40.8
+        },
+        {
+          "Rank": "",
+          "City": "Klang",
+          "Crime Index": 56.0,
+          "Safety Index": 44.0
+        },
+        {
+          "Rank": "",
+          "City": "Johor Bahru",
+          "Crime Index": 49.0,
+          "Safety Index": 51.0
+        },
+        {
+          "Rank": "",
+          "City": "Penang",
+          "Crime Index": 29.1,
+          "Safety Index": 70.9
+        }
+      ]
+    }
+  ],
+  "cities": {}
+}

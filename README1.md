@@ -64,6 +64,8 @@ numbeo_data/
       traffic.json
 ```
 
+If those files already exist, the scraper skips them on the next run so we can resume without repeating finished pages.
+
 Supported sections:
 
 - `cost-of-living`

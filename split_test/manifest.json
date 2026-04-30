@@ -2,14 +2,16 @@
   "metadata": {
     "schema_version": "2.0",
     "category": "crime",
-    "scraped_at": "2026-04-30T01:49:11.723337+00:00",
-    "city_limit": 0
+    "scraped_at": "2026-04-30T11:22:06.150266+00:00",
+    "city_limit": 0,
+    "all_countries": false,
+    "country_count": 1
   },
   "files": [
     {
       "country": "Malaysia",
       "category": "crime",
-      "path": "malaysia/crime.json"
+      "path": "countries/malaysia/crime.json"
     }
   ]
 }
