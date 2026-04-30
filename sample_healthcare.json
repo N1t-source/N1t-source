@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "health-care",
+    "scraped_at": "2026-04-30T01:09:59.736950+00:00",
+    "city_limit": 0
+  },
+  "countries": {
+    "Malaysia": {
+      "source_url": "https://www.numbeo.com/health-care/country_result.jsp?country=Malaysia",
+      "data": {
+        "Component of health care surveyed": [
+          {
+            "raw": {
+              "cells": [
+                "Skill and competency of medical staff",
+                "73.18 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Skill and competency of medical staff",
+            "value_display": "73.18 High",
+            "value": 73.18,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Speed in completing examinations and reports",
+                "68.27 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Speed in completing examinations and reports",
+            "value_display": "68.27 High",
+            "value": 68.27,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Equipment for modern diagnosis and treatment",
+                "80.74 Very High",
+                "Very High"
+              ],
+              "range_display": "Very High"
+            },
+            "item": "Equipment for modern diagnosis and treatment",
+            "value_display": "80.74 Very High",
+            "value": 80.74,
+            "rating": "Very High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Accuracy and completeness in filling out reports",
+                "73.81 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Accuracy and completeness in filling out reports",
+            "value_display": "73.81 High",
+            "value": 73.81,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Friendliness and courtesy of the staff",
+                "71.51 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Friendliness and courtesy of the staff",
+            "value_display": "71.51 High",
+            "value": 71.51,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Satisfaction with responsiveness (waitings) in medical institutions",
+                "57.65 Moderate",
+                "Moderate"
+              ],
+              "range_display": "Moderate"
+            },
+            "item": "Satisfaction with responsiveness (waitings) in medical institutions",
+            "value_display": "57.65 Moderate",
+            "value": 57.65,
+            "rating": "Moderate"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Satisfaction with cost to you",
+                "66.32 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Satisfaction with cost to you",
+            "value_display": "66.32 High",
+            "value": 66.32,
+            "rating": "High"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Convenience of location for you",
+                "78.58 High",
+                "High"
+              ],
+              "range_display": "High"
+            },
+            "item": "Convenience of location for you",
+            "value_display": "78.58 High",
+            "value": 78.58,
+            "rating": "High"
+          }
+        ]
+      },
+      "cities": {}
+    }
+  }
+}

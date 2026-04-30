@@ -1,0 +1,5445 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "all",
+    "categories": [
+      "cost-of-living",
+      "crime",
+      "health-care",
+      "pollution",
+      "property-prices",
+      "quality-of-life",
+      "traffic"
+    ],
+    "scraped_at": "2026-04-30T01:39:03.607387+00:00",
+    "city_limit": 0
+  },
+  "countries": {
+    "Malaysia": {
+      "categories": {
+        "cost-of-living": {
+          "source_url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Malaysia",
+          "indices": [],
+          "metrics": [],
+          "metric_tables": [],
+          "data": {
+            "Restaurants": [
+              {
+                "raw": {
+                  "cells": [
+                    "Meal at an Inexpensive Restaurant",
+                    "15.00 RM",
+                    "10.00 - 23.00"
+                  ],
+                  "range_display": "10.00 - 23.00"
+                },
+                "item": "Meal at an Inexpensive Restaurant",
+                "value_display": "15.00 RM",
+                "value": 15.0,
+                "unit": "RM",
+                "range": {
+                  "display": "10.00 - 23.00",
+                  "min": 10.0,
+                  "max": 23.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)",
+                    "80.00 RM",
+                    "60.00 - 200.00"
+                  ],
+                  "range_display": "60.00 - 200.00"
+                },
+                "item": "Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)",
+                "value_display": "80.00 RM",
+                "value": 80.0,
+                "unit": "RM",
+                "range": {
+                  "display": "60.00 - 200.00",
+                  "min": 60.0,
+                  "max": 200.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Combo Meal at McDonald's (or Equivalent Fast-Food Meal)",
+                    "20.00 RM",
+                    "16.00 - 20.00"
+                  ],
+                  "range_display": "16.00 - 20.00"
+                },
+                "item": "Combo Meal at McDonald's (or Equivalent Fast-Food Meal)",
+                "value_display": "20.00 RM",
+                "value": 20.0,
+                "unit": "RM",
+                "range": {
+                  "display": "16.00 - 20.00",
+                  "min": 16.0,
+                  "max": 20.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Domestic Draft Beer (1 Pint)",
+                    "15.00 RM",
+                    "8.00 - 28.00"
+                  ],
+                  "range_display": "8.00 - 28.00"
+                },
+                "item": "Domestic Draft Beer (1 Pint)",
+                "value_display": "15.00 RM",
+                "value": 15.0,
+                "unit": "RM",
+                "range": {
+                  "display": "8.00 - 28.00",
+                  "min": 8.0,
+                  "max": 28.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Imported Beer (12 oz Small Bottle)",
+                    "20.00 RM",
+                    "14.00 - 32.00"
+                  ],
+                  "range_display": "14.00 - 32.00"
+                },
+                "item": "Imported Beer (12 oz Small Bottle)",
+                "value_display": "20.00 RM",
+                "value": 20.0,
+                "unit": "RM",
+                "range": {
+                  "display": "14.00 - 32.00",
+                  "min": 14.0,
+                  "max": 32.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Cappuccino (Regular Size)",
+                    "11.64 RM",
+                    "5.00 - 16.00"
+                  ],
+                  "range_display": "5.00 - 16.00"
+                },
+                "item": "Cappuccino (Regular Size)",
+                "value_display": "11.64 RM",
+                "value": 11.64,
+                "unit": "RM",
+                "range": {
+                  "display": "5.00 - 16.00",
+                  "min": 5.0,
+                  "max": 16.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Soft Drink (Coca-Cola or Pepsi, 12 oz Small Bottle)",
+                    "3.17 RM",
+                    "2.40 - 5.00"
+                  ],
+                  "range_display": "2.40 - 5.00"
+                },
+                "item": "Soft Drink (Coca-Cola or Pepsi, 12 oz Small Bottle)",
+                "value_display": "3.17 RM",
+                "value": 3.17,
+                "unit": "RM",
+                "range": {
+                  "display": "2.40 - 5.00",
+                  "min": 2.4,
+                  "max": 5.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Bottled Water (12 oz)",
+                    "1.64 RM",
+                    "1.00 - 3.00"
+                  ],
+                  "range_display": "1.00 - 3.00"
+                },
+                "item": "Bottled Water (12 oz)",
+                "value_display": "1.64 RM",
+                "value": 1.64,
+                "unit": "RM",
+                "range": {
+                  "display": "1.00 - 3.00",
+                  "min": 1.0,
+                  "max": 3.0,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Markets": [
+              {
+                "raw": {
+                  "cells": [
+                    "Milk (Regular, 1 Liter)",
+                    "7.64 RM",
+                    "6.00 - 10.00"
+                  ],
+                  "range_display": "6.00 - 10.00"
+                },
+                "item": "Milk (Regular, 1 Liter)",
+                "value_display": "7.64 RM",
+                "value": 7.64,
+                "unit": "RM",
+                "range": {
+                  "display": "6.00 - 10.00",
+                  "min": 6.0,
+                  "max": 10.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Fresh White Bread (1 lb Loaf)",
+                    "3.85 RM",
+                    "2.72 - 6.35"
+                  ],
+                  "range_display": "2.72 - 6.35"
+                },
+                "item": "Fresh White Bread (1 lb Loaf)",
+                "value_display": "3.85 RM",
+                "value": 3.85,
+                "unit": "RM",
+                "range": {
+                  "display": "2.72 - 6.35",
+                  "min": 2.72,
+                  "max": 6.35,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "White Rice (1 lb)",
+                    "2.69 RM",
+                    "1.27 - 4.54"
+                  ],
+                  "range_display": "1.27 - 4.54"
+                },
+                "item": "White Rice (1 lb)",
+                "value_display": "2.69 RM",
+                "value": 2.69,
+                "unit": "RM",
+                "range": {
+                  "display": "1.27 - 4.54",
+                  "min": 1.27,
+                  "max": 4.54,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Eggs (12, Large Size)",
+                    "8.49 RM",
+                    "4.80 - 12.00"
+                  ],
+                  "range_display": "4.80 - 12.00"
+                },
+                "item": "Eggs (12, Large Size)",
+                "value_display": "8.49 RM",
+                "value": 8.49,
+                "unit": "RM",
+                "range": {
+                  "display": "4.80 - 12.00",
+                  "min": 4.8,
+                  "max": 12.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Local Cheese (1 lb)",
+                    "24.71 RM",
+                    "11.34 - 54.43"
+                  ],
+                  "range_display": "11.34 - 54.43"
+                },
+                "item": "Local Cheese (1 lb)",
+                "value_display": "24.71 RM",
+                "value": 24.71,
+                "unit": "RM",
+                "range": {
+                  "display": "11.34 - 54.43",
+                  "min": 11.34,
+                  "max": 54.43,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Chicken Fillets (1 lb)",
+                    "7.86 RM",
+                    "4.04 - 12.70"
+                  ],
+                  "range_display": "4.04 - 12.70"
+                },
+                "item": "Chicken Fillets (1 lb)",
+                "value_display": "7.86 RM",
+                "value": 7.86,
+                "unit": "RM",
+                "range": {
+                  "display": "4.04 - 12.70",
+                  "min": 4.04,
+                  "max": 12.7,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Beef Round or Equivalent Back Leg Red Meat (1 lb)",
+                    "16.21 RM",
+                    "8.16 - 27.22"
+                  ],
+                  "range_display": "8.16 - 27.22"
+                },
+                "item": "Beef Round or Equivalent Back Leg Red Meat (1 lb)",
+                "value_display": "16.21 RM",
+                "value": 16.21,
+                "unit": "RM",
+                "range": {
+                  "display": "8.16 - 27.22",
+                  "min": 8.16,
+                  "max": 27.22,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Apples (1 lb)",
+                    "5.63 RM",
+                    "2.27 - 8.62"
+                  ],
+                  "range_display": "2.27 - 8.62"
+                },
+                "item": "Apples (1 lb)",
+                "value_display": "5.63 RM",
+                "value": 5.63,
+                "unit": "RM",
+                "range": {
+                  "display": "2.27 - 8.62",
+                  "min": 2.27,
+                  "max": 8.62,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Bananas (1 lb)",
+                    "2.99 RM",
+                    "1.81 - 4.99"
+                  ],
+                  "range_display": "1.81 - 4.99"
+                },
+                "item": "Bananas (1 lb)",
+                "value_display": "2.99 RM",
+                "value": 2.99,
+                "unit": "RM",
+                "range": {
+                  "display": "1.81 - 4.99",
+                  "min": 1.81,
+                  "max": 4.99,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Oranges (1 lb)",
+                    "5.06 RM",
+                    "2.27 - 9.07"
+                  ],
+                  "range_display": "2.27 - 9.07"
+                },
+                "item": "Oranges (1 lb)",
+                "value_display": "5.06 RM",
+                "value": 5.06,
+                "unit": "RM",
+                "range": {
+                  "display": "2.27 - 9.07",
+                  "min": 2.27,
+                  "max": 9.07,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Tomatoes (1 lb)",
+                    "2.97 RM",
+                    "1.36 - 4.54"
+                  ],
+                  "range_display": "1.36 - 4.54"
+                },
+                "item": "Tomatoes (1 lb)",
+                "value_display": "2.97 RM",
+                "value": 2.97,
+                "unit": "RM",
+                "range": {
+                  "display": "1.36 - 4.54",
+                  "min": 1.36,
+                  "max": 4.54,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Potatoes (1 lb)",
+                    "2.28 RM",
+                    "0.91 - 4.54"
+                  ],
+                  "range_display": "0.91 - 4.54"
+                },
+                "item": "Potatoes (1 lb)",
+                "value_display": "2.28 RM",
+                "value": 2.28,
+                "unit": "RM",
+                "range": {
+                  "display": "0.91 - 4.54",
+                  "min": 0.91,
+                  "max": 4.54,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Onions (1 lb)",
+                    "2.50 RM",
+                    "1.22 - 4.08"
+                  ],
+                  "range_display": "1.22 - 4.08"
+                },
+                "item": "Onions (1 lb)",
+                "value_display": "2.50 RM",
+                "value": 2.5,
+                "unit": "RM",
+                "range": {
+                  "display": "1.22 - 4.08",
+                  "min": 1.22,
+                  "max": 4.08,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Lettuce (1 Head)",
+                    "4.73 RM",
+                    "2.99 - 8.00"
+                  ],
+                  "range_display": "2.99 - 8.00"
+                },
+                "item": "Lettuce (1 Head)",
+                "value_display": "4.73 RM",
+                "value": 4.73,
+                "unit": "RM",
+                "range": {
+                  "display": "2.99 - 8.00",
+                  "min": 2.99,
+                  "max": 8.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Bottled Water (50 oz)",
+                    "2.38 RM",
+                    "1.50 - 3.50"
+                  ],
+                  "range_display": "1.50 - 3.50"
+                },
+                "item": "Bottled Water (50 oz)",
+                "value_display": "2.38 RM",
+                "value": 2.38,
+                "unit": "RM",
+                "range": {
+                  "display": "1.50 - 3.50",
+                  "min": 1.5,
+                  "max": 3.5,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Bottle of Wine (Mid-Range)",
+                    "78.00 RM",
+                    "35.00 - 120.00"
+                  ],
+                  "range_display": "35.00 - 120.00"
+                },
+                "item": "Bottle of Wine (Mid-Range)",
+                "value_display": "78.00 RM",
+                "value": 78.0,
+                "unit": "RM",
+                "range": {
+                  "display": "35.00 - 120.00",
+                  "min": 35.0,
+                  "max": 120.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Domestic Beer (16.9 oz Bottle)",
+                    "11.99 RM",
+                    "6.00 - 17.14"
+                  ],
+                  "range_display": "6.00 - 17.14"
+                },
+                "item": "Domestic Beer (16.9 oz Bottle)",
+                "value_display": "11.99 RM",
+                "value": 11.99,
+                "unit": "RM",
+                "range": {
+                  "display": "6.00 - 17.14",
+                  "min": 6.0,
+                  "max": 17.14,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Imported Beer (12 oz Small Bottle)",
+                    "16.77 RM",
+                    "8.00 - 30.00"
+                  ],
+                  "range_display": "8.00 - 30.00"
+                },
+                "item": "Imported Beer (12 oz Small Bottle)",
+                "value_display": "16.77 RM",
+                "value": 16.77,
+                "unit": "RM",
+                "range": {
+                  "display": "8.00 - 30.00",
+                  "min": 8.0,
+                  "max": 30.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Cigarettes (Pack of 20, Marlboro)",
+                    "18.00 RM",
+                    "17.40 - 21.50"
+                  ],
+                  "range_display": "17.40 - 21.50"
+                },
+                "item": "Cigarettes (Pack of 20, Marlboro)",
+                "value_display": "18.00 RM",
+                "value": 18.0,
+                "unit": "RM",
+                "range": {
+                  "display": "17.40 - 21.50",
+                  "min": 17.4,
+                  "max": 21.5,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Transportation": [
+              {
+                "raw": {
+                  "cells": [
+                    "One-Way Ticket (Local Transport)",
+                    "3.00 RM",
+                    "2.00 - 5.00"
+                  ],
+                  "range_display": "2.00 - 5.00"
+                },
+                "item": "One-Way Ticket (Local Transport)",
+                "value_display": "3.00 RM",
+                "value": 3.0,
+                "unit": "RM",
+                "range": {
+                  "display": "2.00 - 5.00",
+                  "min": 2.0,
+                  "max": 5.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Monthly Public Transport Pass (Regular Price)",
+                    "50.00 RM",
+                    "50.00 - 100.00"
+                  ],
+                  "range_display": "50.00 - 100.00"
+                },
+                "item": "Monthly Public Transport Pass (Regular Price)",
+                "value_display": "50.00 RM",
+                "value": 50.0,
+                "unit": "RM",
+                "range": {
+                  "display": "50.00 - 100.00",
+                  "min": 50.0,
+                  "max": 100.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Taxi Start (Standard Tariff)",
+                    "5.00 RM",
+                    "3.00 - 7.00"
+                  ],
+                  "range_display": "3.00 - 7.00"
+                },
+                "item": "Taxi Start (Standard Tariff)",
+                "value_display": "5.00 RM",
+                "value": 5.0,
+                "unit": "RM",
+                "range": {
+                  "display": "3.00 - 7.00",
+                  "min": 3.0,
+                  "max": 7.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Taxi 1 mile (Standard Tariff)",
+                    "6.44 RM",
+                    "3.22 - 9.66"
+                  ],
+                  "range_display": "3.22 - 9.66"
+                },
+                "item": "Taxi 1 mile (Standard Tariff)",
+                "value_display": "6.44 RM",
+                "value": 6.44,
+                "unit": "RM",
+                "range": {
+                  "display": "3.22 - 9.66",
+                  "min": 3.22,
+                  "max": 9.66,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Taxi 1 Hour Waiting (Standard Tariff)",
+                    "25.00 RM",
+                    "15.00 - 36.92"
+                  ],
+                  "range_display": "15.00 - 36.92"
+                },
+                "item": "Taxi 1 Hour Waiting (Standard Tariff)",
+                "value_display": "25.00 RM",
+                "value": 25.0,
+                "unit": "RM",
+                "range": {
+                  "display": "15.00 - 36.92",
+                  "min": 15.0,
+                  "max": 36.92,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Gasoline (1 Liter)",
+                    "2.17 RM",
+                    "2.05 - 2.65"
+                  ],
+                  "range_display": "2.05 - 2.65"
+                },
+                "item": "Gasoline (1 Liter)",
+                "value_display": "2.17 RM",
+                "value": 2.17,
+                "unit": "RM",
+                "range": {
+                  "display": "2.05 - 2.65",
+                  "min": 2.05,
+                  "max": 2.65,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Volkswagen Golf 1.5 (or Equivalent New Compact Car)",
+                    "170,560.00 RM",
+                    "160,000.00 - 180,000.00"
+                  ],
+                  "range_display": "160,000.00 - 180,000.00"
+                },
+                "item": "Volkswagen Golf 1.5 (or Equivalent New Compact Car)",
+                "value_display": "170,560.00 RM",
+                "value": 170560.0,
+                "unit": "RM",
+                "range": {
+                  "display": "160,000.00 - 180,000.00",
+                  "min": 160000.0,
+                  "max": 180000.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car)",
+                    "139,514.56 RM",
+                    "130,000.00 - 145,192.00"
+                  ],
+                  "range_display": "130,000.00 - 145,192.00"
+                },
+                "item": "Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car)",
+                "value_display": "139,514.56 RM",
+                "value": 139514.56,
+                "unit": "RM",
+                "range": {
+                  "display": "130,000.00 - 145,192.00",
+                  "min": 130000.0,
+                  "max": 145192.0,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Utilities (Monthly)": [
+              {
+                "raw": {
+                  "cells": [
+                    "Basic Utilities for 915 Square Feet Apartment (Electricity, Heating, Cooling, Water, Garbage)",
+                    "218.33 RM",
+                    "120.00 - 350.00"
+                  ],
+                  "range_display": "120.00 - 350.00"
+                },
+                "item": "Basic Utilities for 915 Square Feet Apartment (Electricity, Heating, Cooling, Water, Garbage)",
+                "value_display": "218.33 RM",
+                "value": 218.33,
+                "unit": "RM",
+                "range": {
+                  "display": "120.00 - 350.00",
+                  "min": 120.0,
+                  "max": 350.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)",
+                    "40.73 RM",
+                    "22.00 - 60.00"
+                  ],
+                  "range_display": "22.00 - 60.00"
+                },
+                "item": "Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)",
+                "value_display": "40.73 RM",
+                "value": 40.73,
+                "unit": "RM",
+                "range": {
+                  "display": "22.00 - 60.00",
+                  "min": 22.0,
+                  "max": 60.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Broadband Internet (Unlimited Data, 60 Mbps or Higher)",
+                    "112.68 RM",
+                    "90.00 - 150.00"
+                  ],
+                  "range_display": "90.00 - 150.00"
+                },
+                "item": "Broadband Internet (Unlimited Data, 60 Mbps or Higher)",
+                "value_display": "112.68 RM",
+                "value": 112.68,
+                "unit": "RM",
+                "range": {
+                  "display": "90.00 - 150.00",
+                  "min": 90.0,
+                  "max": 150.0,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Sports And Leisure": [
+              {
+                "raw": {
+                  "cells": [
+                    "Monthly Fitness Club Membership",
+                    "158.58 RM",
+                    "64.00 - 240.00"
+                  ],
+                  "range_display": "64.00 - 240.00"
+                },
+                "item": "Monthly Fitness Club Membership",
+                "value_display": "158.58 RM",
+                "value": 158.58,
+                "unit": "RM",
+                "range": {
+                  "display": "64.00 - 240.00",
+                  "min": 64.0,
+                  "max": 240.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Tennis Court Rental (1 Hour, Weekend)",
+                    "27.09 RM",
+                    "10.00 - 45.00"
+                  ],
+                  "range_display": "10.00 - 45.00"
+                },
+                "item": "Tennis Court Rental (1 Hour, Weekend)",
+                "value_display": "27.09 RM",
+                "value": 27.09,
+                "unit": "RM",
+                "range": {
+                  "display": "10.00 - 45.00",
+                  "min": 10.0,
+                  "max": 45.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Cinema Ticket (International Release)",
+                    "20.00 RM",
+                    "16.00 - 30.00"
+                  ],
+                  "range_display": "16.00 - 30.00"
+                },
+                "item": "Cinema Ticket (International Release)",
+                "value_display": "20.00 RM",
+                "value": 20.0,
+                "unit": "RM",
+                "range": {
+                  "display": "16.00 - 30.00",
+                  "min": 16.0,
+                  "max": 30.0,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Childcare": [
+              {
+                "raw": {
+                  "cells": [
+                    "Private Full-Day Preschool or Kindergarten, Monthly Fee per Child",
+                    "832.50 RM",
+                    "500.00 - 1,536.25"
+                  ],
+                  "range_display": "500.00 - 1,536.25"
+                },
+                "item": "Private Full-Day Preschool or Kindergarten, Monthly Fee per Child",
+                "value_display": "832.50 RM",
+                "value": 832.5,
+                "unit": "RM",
+                "range": {
+                  "display": "500.00 - 1,536.25",
+                  "min": 500.0,
+                  "max": 1536.25,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "International Primary School, Annual Tuition per Child",
+                    "33,957.95 RM",
+                    "20,000.00 - 70,000.00"
+                  ],
+                  "range_display": "20,000.00 - 70,000.00"
+                },
+                "item": "International Primary School, Annual Tuition per Child",
+                "value_display": "33,957.95 RM",
+                "value": 33957.95,
+                "unit": "RM",
+                "range": {
+                  "display": "20,000.00 - 70,000.00",
+                  "min": 20000.0,
+                  "max": 70000.0,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Clothing And Shoes": [
+              {
+                "raw": {
+                  "cells": [
+                    "Jeans (Levi's 501 or Similar)",
+                    "259.78 RM",
+                    "105.00 - 400.00"
+                  ],
+                  "range_display": "105.00 - 400.00"
+                },
+                "item": "Jeans (Levi's 501 or Similar)",
+                "value_display": "259.78 RM",
+                "value": 259.78,
+                "unit": "RM",
+                "range": {
+                  "display": "105.00 - 400.00",
+                  "min": 105.0,
+                  "max": 400.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Summer Dress in a Chain Store (e.g. Zara or H&M)",
+                    "143.84 RM",
+                    "60.00 - 259.00"
+                  ],
+                  "range_display": "60.00 - 259.00"
+                },
+                "item": "Summer Dress in a Chain Store (e.g. Zara or H&M)",
+                "value_display": "143.84 RM",
+                "value": 143.84,
+                "unit": "RM",
+                "range": {
+                  "display": "60.00 - 259.00",
+                  "min": 60.0,
+                  "max": 259.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Nike Running Shoes (Mid-Range)",
+                    "329.07 RM",
+                    "200.00 - 450.00"
+                  ],
+                  "range_display": "200.00 - 450.00"
+                },
+                "item": "Nike Running Shoes (Mid-Range)",
+                "value_display": "329.07 RM",
+                "value": 329.07,
+                "unit": "RM",
+                "range": {
+                  "display": "200.00 - 450.00",
+                  "min": 200.0,
+                  "max": 450.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Men's Leather Business Shoes",
+                    "295.69 RM",
+                    "129.00 - 500.00"
+                  ],
+                  "range_display": "129.00 - 500.00"
+                },
+                "item": "Men's Leather Business Shoes",
+                "value_display": "295.69 RM",
+                "value": 295.69,
+                "unit": "RM",
+                "range": {
+                  "display": "129.00 - 500.00",
+                  "min": 129.0,
+                  "max": 500.0,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Rent Per Month": [
+              {
+                "raw": {
+                  "cells": [
+                    "1 Bedroom Apartment in City Centre",
+                    "1,616.27 RM",
+                    "900.00 - 3,000.00"
+                  ],
+                  "range_display": "900.00 - 3,000.00"
+                },
+                "item": "1 Bedroom Apartment in City Centre",
+                "value_display": "1,616.27 RM",
+                "value": 1616.27,
+                "unit": "RM",
+                "range": {
+                  "display": "900.00 - 3,000.00",
+                  "min": 900.0,
+                  "max": 3000.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "1 Bedroom Apartment Outside of City Centre",
+                    "1,108.19 RM",
+                    "600.00 - 1,800.00"
+                  ],
+                  "range_display": "600.00 - 1,800.00"
+                },
+                "item": "1 Bedroom Apartment Outside of City Centre",
+                "value_display": "1,108.19 RM",
+                "value": 1108.19,
+                "unit": "RM",
+                "range": {
+                  "display": "600.00 - 1,800.00",
+                  "min": 600.0,
+                  "max": 1800.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "3 Bedroom Apartment in City Centre",
+                    "2,873.11 RM",
+                    "1,500.00 - 5,234.35"
+                  ],
+                  "range_display": "1,500.00 - 5,234.35"
+                },
+                "item": "3 Bedroom Apartment in City Centre",
+                "value_display": "2,873.11 RM",
+                "value": 2873.11,
+                "unit": "RM",
+                "range": {
+                  "display": "1,500.00 - 5,234.35",
+                  "min": 1500.0,
+                  "max": 5234.35,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "3 Bedroom Apartment Outside of City Centre",
+                    "1,879.26 RM",
+                    "1,200.00 - 3,500.00"
+                  ],
+                  "range_display": "1,200.00 - 3,500.00"
+                },
+                "item": "3 Bedroom Apartment Outside of City Centre",
+                "value_display": "1,879.26 RM",
+                "value": 1879.26,
+                "unit": "RM",
+                "range": {
+                  "display": "1,200.00 - 3,500.00",
+                  "min": 1200.0,
+                  "max": 3500.0,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Buy Apartment Price": [
+              {
+                "raw": {
+                  "cells": [
+                    "Price per Square Feet to Buy Apartment in City Centre",
+                    "792.22 RM",
+                    "478.00 - 1,499.99"
+                  ],
+                  "range_display": "478.00 - 1,499.99"
+                },
+                "item": "Price per Square Feet to Buy Apartment in City Centre",
+                "value_display": "792.22 RM",
+                "value": 792.22,
+                "unit": "RM",
+                "range": {
+                  "display": "478.00 - 1,499.99",
+                  "min": 478.0,
+                  "max": 1499.99,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Price per Square Feet to Buy Apartment Outside of Centre",
+                    "441.06 RM",
+                    "278.71 - 603.86"
+                  ],
+                  "range_display": "278.71 - 603.86"
+                },
+                "item": "Price per Square Feet to Buy Apartment Outside of Centre",
+                "value_display": "441.06 RM",
+                "value": 441.06,
+                "unit": "RM",
+                "range": {
+                  "display": "278.71 - 603.86",
+                  "min": 278.71,
+                  "max": 603.86,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Salaries And Financing": [
+              {
+                "raw": {
+                  "cells": [
+                    "Average Monthly Net Salary (After Tax)",
+                    "3,690.62 RM"
+                  ]
+                },
+                "item": "Average Monthly Net Salary (After Tax)",
+                "value_display": "3,690.62 RM",
+                "value": 3690.62,
+                "unit": "RM"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Annual Mortgage Interest Rate (20-Year Fixed, in %)",
+                    "4.28",
+                    "3.30 - 5.00"
+                  ],
+                  "range_display": "3.30 - 5.00"
+                },
+                "item": "Annual Mortgage Interest Rate (20-Year Fixed, in %)",
+                "value_display": "4.28",
+                "value": 4.28,
+                "range": {
+                  "display": "3.30 - 5.00",
+                  "min": 3.3,
+                  "max": 5.0
+                }
+              }
+            ]
+          },
+          "tables": [
+            {
+              "title": "Cost of Living in Malaysia",
+              "sections": {
+                "Restaurants": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Meal at an Inexpensive Restaurant",
+                        "15.00 RM",
+                        "10.00 - 23.00"
+                      ],
+                      "range_display": "10.00 - 23.00"
+                    },
+                    "item": "Meal at an Inexpensive Restaurant",
+                    "value_display": "15.00 RM",
+                    "value": 15.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "10.00 - 23.00",
+                      "min": 10.0,
+                      "max": 23.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)",
+                        "80.00 RM",
+                        "60.00 - 200.00"
+                      ],
+                      "range_display": "60.00 - 200.00"
+                    },
+                    "item": "Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)",
+                    "value_display": "80.00 RM",
+                    "value": 80.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "60.00 - 200.00",
+                      "min": 60.0,
+                      "max": 200.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Combo Meal at McDonald's (or Equivalent Fast-Food Meal)",
+                        "20.00 RM",
+                        "16.00 - 20.00"
+                      ],
+                      "range_display": "16.00 - 20.00"
+                    },
+                    "item": "Combo Meal at McDonald's (or Equivalent Fast-Food Meal)",
+                    "value_display": "20.00 RM",
+                    "value": 20.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "16.00 - 20.00",
+                      "min": 16.0,
+                      "max": 20.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Domestic Draft Beer (1 Pint)",
+                        "15.00 RM",
+                        "8.00 - 28.00"
+                      ],
+                      "range_display": "8.00 - 28.00"
+                    },
+                    "item": "Domestic Draft Beer (1 Pint)",
+                    "value_display": "15.00 RM",
+                    "value": 15.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "8.00 - 28.00",
+                      "min": 8.0,
+                      "max": 28.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Imported Beer (12 oz Small Bottle)",
+                        "20.00 RM",
+                        "14.00 - 32.00"
+                      ],
+                      "range_display": "14.00 - 32.00"
+                    },
+                    "item": "Imported Beer (12 oz Small Bottle)",
+                    "value_display": "20.00 RM",
+                    "value": 20.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "14.00 - 32.00",
+                      "min": 14.0,
+                      "max": 32.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Cappuccino (Regular Size)",
+                        "11.64 RM",
+                        "5.00 - 16.00"
+                      ],
+                      "range_display": "5.00 - 16.00"
+                    },
+                    "item": "Cappuccino (Regular Size)",
+                    "value_display": "11.64 RM",
+                    "value": 11.64,
+                    "unit": "RM",
+                    "range": {
+                      "display": "5.00 - 16.00",
+                      "min": 5.0,
+                      "max": 16.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Soft Drink (Coca-Cola or Pepsi, 12 oz Small Bottle)",
+                        "3.17 RM",
+                        "2.40 - 5.00"
+                      ],
+                      "range_display": "2.40 - 5.00"
+                    },
+                    "item": "Soft Drink (Coca-Cola or Pepsi, 12 oz Small Bottle)",
+                    "value_display": "3.17 RM",
+                    "value": 3.17,
+                    "unit": "RM",
+                    "range": {
+                      "display": "2.40 - 5.00",
+                      "min": 2.4,
+                      "max": 5.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Bottled Water (12 oz)",
+                        "1.64 RM",
+                        "1.00 - 3.00"
+                      ],
+                      "range_display": "1.00 - 3.00"
+                    },
+                    "item": "Bottled Water (12 oz)",
+                    "value_display": "1.64 RM",
+                    "value": 1.64,
+                    "unit": "RM",
+                    "range": {
+                      "display": "1.00 - 3.00",
+                      "min": 1.0,
+                      "max": 3.0,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Markets": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Milk (Regular, 1 Liter)",
+                        "7.64 RM",
+                        "6.00 - 10.00"
+                      ],
+                      "range_display": "6.00 - 10.00"
+                    },
+                    "item": "Milk (Regular, 1 Liter)",
+                    "value_display": "7.64 RM",
+                    "value": 7.64,
+                    "unit": "RM",
+                    "range": {
+                      "display": "6.00 - 10.00",
+                      "min": 6.0,
+                      "max": 10.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Fresh White Bread (1 lb Loaf)",
+                        "3.85 RM",
+                        "2.72 - 6.35"
+                      ],
+                      "range_display": "2.72 - 6.35"
+                    },
+                    "item": "Fresh White Bread (1 lb Loaf)",
+                    "value_display": "3.85 RM",
+                    "value": 3.85,
+                    "unit": "RM",
+                    "range": {
+                      "display": "2.72 - 6.35",
+                      "min": 2.72,
+                      "max": 6.35,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "White Rice (1 lb)",
+                        "2.69 RM",
+                        "1.27 - 4.54"
+                      ],
+                      "range_display": "1.27 - 4.54"
+                    },
+                    "item": "White Rice (1 lb)",
+                    "value_display": "2.69 RM",
+                    "value": 2.69,
+                    "unit": "RM",
+                    "range": {
+                      "display": "1.27 - 4.54",
+                      "min": 1.27,
+                      "max": 4.54,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Eggs (12, Large Size)",
+                        "8.49 RM",
+                        "4.80 - 12.00"
+                      ],
+                      "range_display": "4.80 - 12.00"
+                    },
+                    "item": "Eggs (12, Large Size)",
+                    "value_display": "8.49 RM",
+                    "value": 8.49,
+                    "unit": "RM",
+                    "range": {
+                      "display": "4.80 - 12.00",
+                      "min": 4.8,
+                      "max": 12.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Local Cheese (1 lb)",
+                        "24.71 RM",
+                        "11.34 - 54.43"
+                      ],
+                      "range_display": "11.34 - 54.43"
+                    },
+                    "item": "Local Cheese (1 lb)",
+                    "value_display": "24.71 RM",
+                    "value": 24.71,
+                    "unit": "RM",
+                    "range": {
+                      "display": "11.34 - 54.43",
+                      "min": 11.34,
+                      "max": 54.43,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Chicken Fillets (1 lb)",
+                        "7.86 RM",
+                        "4.04 - 12.70"
+                      ],
+                      "range_display": "4.04 - 12.70"
+                    },
+                    "item": "Chicken Fillets (1 lb)",
+                    "value_display": "7.86 RM",
+                    "value": 7.86,
+                    "unit": "RM",
+                    "range": {
+                      "display": "4.04 - 12.70",
+                      "min": 4.04,
+                      "max": 12.7,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Beef Round or Equivalent Back Leg Red Meat (1 lb)",
+                        "16.21 RM",
+                        "8.16 - 27.22"
+                      ],
+                      "range_display": "8.16 - 27.22"
+                    },
+                    "item": "Beef Round or Equivalent Back Leg Red Meat (1 lb)",
+                    "value_display": "16.21 RM",
+                    "value": 16.21,
+                    "unit": "RM",
+                    "range": {
+                      "display": "8.16 - 27.22",
+                      "min": 8.16,
+                      "max": 27.22,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Apples (1 lb)",
+                        "5.63 RM",
+                        "2.27 - 8.62"
+                      ],
+                      "range_display": "2.27 - 8.62"
+                    },
+                    "item": "Apples (1 lb)",
+                    "value_display": "5.63 RM",
+                    "value": 5.63,
+                    "unit": "RM",
+                    "range": {
+                      "display": "2.27 - 8.62",
+                      "min": 2.27,
+                      "max": 8.62,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Bananas (1 lb)",
+                        "2.99 RM",
+                        "1.81 - 4.99"
+                      ],
+                      "range_display": "1.81 - 4.99"
+                    },
+                    "item": "Bananas (1 lb)",
+                    "value_display": "2.99 RM",
+                    "value": 2.99,
+                    "unit": "RM",
+                    "range": {
+                      "display": "1.81 - 4.99",
+                      "min": 1.81,
+                      "max": 4.99,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Oranges (1 lb)",
+                        "5.06 RM",
+                        "2.27 - 9.07"
+                      ],
+                      "range_display": "2.27 - 9.07"
+                    },
+                    "item": "Oranges (1 lb)",
+                    "value_display": "5.06 RM",
+                    "value": 5.06,
+                    "unit": "RM",
+                    "range": {
+                      "display": "2.27 - 9.07",
+                      "min": 2.27,
+                      "max": 9.07,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Tomatoes (1 lb)",
+                        "2.97 RM",
+                        "1.36 - 4.54"
+                      ],
+                      "range_display": "1.36 - 4.54"
+                    },
+                    "item": "Tomatoes (1 lb)",
+                    "value_display": "2.97 RM",
+                    "value": 2.97,
+                    "unit": "RM",
+                    "range": {
+                      "display": "1.36 - 4.54",
+                      "min": 1.36,
+                      "max": 4.54,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Potatoes (1 lb)",
+                        "2.28 RM",
+                        "0.91 - 4.54"
+                      ],
+                      "range_display": "0.91 - 4.54"
+                    },
+                    "item": "Potatoes (1 lb)",
+                    "value_display": "2.28 RM",
+                    "value": 2.28,
+                    "unit": "RM",
+                    "range": {
+                      "display": "0.91 - 4.54",
+                      "min": 0.91,
+                      "max": 4.54,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Onions (1 lb)",
+                        "2.50 RM",
+                        "1.22 - 4.08"
+                      ],
+                      "range_display": "1.22 - 4.08"
+                    },
+                    "item": "Onions (1 lb)",
+                    "value_display": "2.50 RM",
+                    "value": 2.5,
+                    "unit": "RM",
+                    "range": {
+                      "display": "1.22 - 4.08",
+                      "min": 1.22,
+                      "max": 4.08,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Lettuce (1 Head)",
+                        "4.73 RM",
+                        "2.99 - 8.00"
+                      ],
+                      "range_display": "2.99 - 8.00"
+                    },
+                    "item": "Lettuce (1 Head)",
+                    "value_display": "4.73 RM",
+                    "value": 4.73,
+                    "unit": "RM",
+                    "range": {
+                      "display": "2.99 - 8.00",
+                      "min": 2.99,
+                      "max": 8.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Bottled Water (50 oz)",
+                        "2.38 RM",
+                        "1.50 - 3.50"
+                      ],
+                      "range_display": "1.50 - 3.50"
+                    },
+                    "item": "Bottled Water (50 oz)",
+                    "value_display": "2.38 RM",
+                    "value": 2.38,
+                    "unit": "RM",
+                    "range": {
+                      "display": "1.50 - 3.50",
+                      "min": 1.5,
+                      "max": 3.5,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Bottle of Wine (Mid-Range)",
+                        "78.00 RM",
+                        "35.00 - 120.00"
+                      ],
+                      "range_display": "35.00 - 120.00"
+                    },
+                    "item": "Bottle of Wine (Mid-Range)",
+                    "value_display": "78.00 RM",
+                    "value": 78.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "35.00 - 120.00",
+                      "min": 35.0,
+                      "max": 120.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Domestic Beer (16.9 oz Bottle)",
+                        "11.99 RM",
+                        "6.00 - 17.14"
+                      ],
+                      "range_display": "6.00 - 17.14"
+                    },
+                    "item": "Domestic Beer (16.9 oz Bottle)",
+                    "value_display": "11.99 RM",
+                    "value": 11.99,
+                    "unit": "RM",
+                    "range": {
+                      "display": "6.00 - 17.14",
+                      "min": 6.0,
+                      "max": 17.14,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Imported Beer (12 oz Small Bottle)",
+                        "16.77 RM",
+                        "8.00 - 30.00"
+                      ],
+                      "range_display": "8.00 - 30.00"
+                    },
+                    "item": "Imported Beer (12 oz Small Bottle)",
+                    "value_display": "16.77 RM",
+                    "value": 16.77,
+                    "unit": "RM",
+                    "range": {
+                      "display": "8.00 - 30.00",
+                      "min": 8.0,
+                      "max": 30.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Cigarettes (Pack of 20, Marlboro)",
+                        "18.00 RM",
+                        "17.40 - 21.50"
+                      ],
+                      "range_display": "17.40 - 21.50"
+                    },
+                    "item": "Cigarettes (Pack of 20, Marlboro)",
+                    "value_display": "18.00 RM",
+                    "value": 18.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "17.40 - 21.50",
+                      "min": 17.4,
+                      "max": 21.5,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Transportation": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "One-Way Ticket (Local Transport)",
+                        "3.00 RM",
+                        "2.00 - 5.00"
+                      ],
+                      "range_display": "2.00 - 5.00"
+                    },
+                    "item": "One-Way Ticket (Local Transport)",
+                    "value_display": "3.00 RM",
+                    "value": 3.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "2.00 - 5.00",
+                      "min": 2.0,
+                      "max": 5.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Monthly Public Transport Pass (Regular Price)",
+                        "50.00 RM",
+                        "50.00 - 100.00"
+                      ],
+                      "range_display": "50.00 - 100.00"
+                    },
+                    "item": "Monthly Public Transport Pass (Regular Price)",
+                    "value_display": "50.00 RM",
+                    "value": 50.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "50.00 - 100.00",
+                      "min": 50.0,
+                      "max": 100.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Taxi Start (Standard Tariff)",
+                        "5.00 RM",
+                        "3.00 - 7.00"
+                      ],
+                      "range_display": "3.00 - 7.00"
+                    },
+                    "item": "Taxi Start (Standard Tariff)",
+                    "value_display": "5.00 RM",
+                    "value": 5.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "3.00 - 7.00",
+                      "min": 3.0,
+                      "max": 7.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Taxi 1 mile (Standard Tariff)",
+                        "6.44 RM",
+                        "3.22 - 9.66"
+                      ],
+                      "range_display": "3.22 - 9.66"
+                    },
+                    "item": "Taxi 1 mile (Standard Tariff)",
+                    "value_display": "6.44 RM",
+                    "value": 6.44,
+                    "unit": "RM",
+                    "range": {
+                      "display": "3.22 - 9.66",
+                      "min": 3.22,
+                      "max": 9.66,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Taxi 1 Hour Waiting (Standard Tariff)",
+                        "25.00 RM",
+                        "15.00 - 36.92"
+                      ],
+                      "range_display": "15.00 - 36.92"
+                    },
+                    "item": "Taxi 1 Hour Waiting (Standard Tariff)",
+                    "value_display": "25.00 RM",
+                    "value": 25.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "15.00 - 36.92",
+                      "min": 15.0,
+                      "max": 36.92,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Gasoline (1 Liter)",
+                        "2.17 RM",
+                        "2.05 - 2.65"
+                      ],
+                      "range_display": "2.05 - 2.65"
+                    },
+                    "item": "Gasoline (1 Liter)",
+                    "value_display": "2.17 RM",
+                    "value": 2.17,
+                    "unit": "RM",
+                    "range": {
+                      "display": "2.05 - 2.65",
+                      "min": 2.05,
+                      "max": 2.65,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Volkswagen Golf 1.5 (or Equivalent New Compact Car)",
+                        "170,560.00 RM",
+                        "160,000.00 - 180,000.00"
+                      ],
+                      "range_display": "160,000.00 - 180,000.00"
+                    },
+                    "item": "Volkswagen Golf 1.5 (or Equivalent New Compact Car)",
+                    "value_display": "170,560.00 RM",
+                    "value": 170560.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "160,000.00 - 180,000.00",
+                      "min": 160000.0,
+                      "max": 180000.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car)",
+                        "139,514.56 RM",
+                        "130,000.00 - 145,192.00"
+                      ],
+                      "range_display": "130,000.00 - 145,192.00"
+                    },
+                    "item": "Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car)",
+                    "value_display": "139,514.56 RM",
+                    "value": 139514.56,
+                    "unit": "RM",
+                    "range": {
+                      "display": "130,000.00 - 145,192.00",
+                      "min": 130000.0,
+                      "max": 145192.0,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Utilities (Monthly)": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Basic Utilities for 915 Square Feet Apartment (Electricity, Heating, Cooling, Water, Garbage)",
+                        "218.33 RM",
+                        "120.00 - 350.00"
+                      ],
+                      "range_display": "120.00 - 350.00"
+                    },
+                    "item": "Basic Utilities for 915 Square Feet Apartment (Electricity, Heating, Cooling, Water, Garbage)",
+                    "value_display": "218.33 RM",
+                    "value": 218.33,
+                    "unit": "RM",
+                    "range": {
+                      "display": "120.00 - 350.00",
+                      "min": 120.0,
+                      "max": 350.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)",
+                        "40.73 RM",
+                        "22.00 - 60.00"
+                      ],
+                      "range_display": "22.00 - 60.00"
+                    },
+                    "item": "Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)",
+                    "value_display": "40.73 RM",
+                    "value": 40.73,
+                    "unit": "RM",
+                    "range": {
+                      "display": "22.00 - 60.00",
+                      "min": 22.0,
+                      "max": 60.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Broadband Internet (Unlimited Data, 60 Mbps or Higher)",
+                        "112.68 RM",
+                        "90.00 - 150.00"
+                      ],
+                      "range_display": "90.00 - 150.00"
+                    },
+                    "item": "Broadband Internet (Unlimited Data, 60 Mbps or Higher)",
+                    "value_display": "112.68 RM",
+                    "value": 112.68,
+                    "unit": "RM",
+                    "range": {
+                      "display": "90.00 - 150.00",
+                      "min": 90.0,
+                      "max": 150.0,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Sports And Leisure": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Monthly Fitness Club Membership",
+                        "158.58 RM",
+                        "64.00 - 240.00"
+                      ],
+                      "range_display": "64.00 - 240.00"
+                    },
+                    "item": "Monthly Fitness Club Membership",
+                    "value_display": "158.58 RM",
+                    "value": 158.58,
+                    "unit": "RM",
+                    "range": {
+                      "display": "64.00 - 240.00",
+                      "min": 64.0,
+                      "max": 240.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Tennis Court Rental (1 Hour, Weekend)",
+                        "27.09 RM",
+                        "10.00 - 45.00"
+                      ],
+                      "range_display": "10.00 - 45.00"
+                    },
+                    "item": "Tennis Court Rental (1 Hour, Weekend)",
+                    "value_display": "27.09 RM",
+                    "value": 27.09,
+                    "unit": "RM",
+                    "range": {
+                      "display": "10.00 - 45.00",
+                      "min": 10.0,
+                      "max": 45.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Cinema Ticket (International Release)",
+                        "20.00 RM",
+                        "16.00 - 30.00"
+                      ],
+                      "range_display": "16.00 - 30.00"
+                    },
+                    "item": "Cinema Ticket (International Release)",
+                    "value_display": "20.00 RM",
+                    "value": 20.0,
+                    "unit": "RM",
+                    "range": {
+                      "display": "16.00 - 30.00",
+                      "min": 16.0,
+                      "max": 30.0,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Childcare": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Private Full-Day Preschool or Kindergarten, Monthly Fee per Child",
+                        "832.50 RM",
+                        "500.00 - 1,536.25"
+                      ],
+                      "range_display": "500.00 - 1,536.25"
+                    },
+                    "item": "Private Full-Day Preschool or Kindergarten, Monthly Fee per Child",
+                    "value_display": "832.50 RM",
+                    "value": 832.5,
+                    "unit": "RM",
+                    "range": {
+                      "display": "500.00 - 1,536.25",
+                      "min": 500.0,
+                      "max": 1536.25,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "International Primary School, Annual Tuition per Child",
+                        "33,957.95 RM",
+                        "20,000.00 - 70,000.00"
+                      ],
+                      "range_display": "20,000.00 - 70,000.00"
+                    },
+                    "item": "International Primary School, Annual Tuition per Child",
+                    "value_display": "33,957.95 RM",
+                    "value": 33957.95,
+                    "unit": "RM",
+                    "range": {
+                      "display": "20,000.00 - 70,000.00",
+                      "min": 20000.0,
+                      "max": 70000.0,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Clothing And Shoes": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Jeans (Levi's 501 or Similar)",
+                        "259.78 RM",
+                        "105.00 - 400.00"
+                      ],
+                      "range_display": "105.00 - 400.00"
+                    },
+                    "item": "Jeans (Levi's 501 or Similar)",
+                    "value_display": "259.78 RM",
+                    "value": 259.78,
+                    "unit": "RM",
+                    "range": {
+                      "display": "105.00 - 400.00",
+                      "min": 105.0,
+                      "max": 400.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Summer Dress in a Chain Store (e.g. Zara or H&M)",
+                        "143.84 RM",
+                        "60.00 - 259.00"
+                      ],
+                      "range_display": "60.00 - 259.00"
+                    },
+                    "item": "Summer Dress in a Chain Store (e.g. Zara or H&M)",
+                    "value_display": "143.84 RM",
+                    "value": 143.84,
+                    "unit": "RM",
+                    "range": {
+                      "display": "60.00 - 259.00",
+                      "min": 60.0,
+                      "max": 259.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Nike Running Shoes (Mid-Range)",
+                        "329.07 RM",
+                        "200.00 - 450.00"
+                      ],
+                      "range_display": "200.00 - 450.00"
+                    },
+                    "item": "Nike Running Shoes (Mid-Range)",
+                    "value_display": "329.07 RM",
+                    "value": 329.07,
+                    "unit": "RM",
+                    "range": {
+                      "display": "200.00 - 450.00",
+                      "min": 200.0,
+                      "max": 450.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Men's Leather Business Shoes",
+                        "295.69 RM",
+                        "129.00 - 500.00"
+                      ],
+                      "range_display": "129.00 - 500.00"
+                    },
+                    "item": "Men's Leather Business Shoes",
+                    "value_display": "295.69 RM",
+                    "value": 295.69,
+                    "unit": "RM",
+                    "range": {
+                      "display": "129.00 - 500.00",
+                      "min": 129.0,
+                      "max": 500.0,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Rent Per Month": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "1 Bedroom Apartment in City Centre",
+                        "1,616.27 RM",
+                        "900.00 - 3,000.00"
+                      ],
+                      "range_display": "900.00 - 3,000.00"
+                    },
+                    "item": "1 Bedroom Apartment in City Centre",
+                    "value_display": "1,616.27 RM",
+                    "value": 1616.27,
+                    "unit": "RM",
+                    "range": {
+                      "display": "900.00 - 3,000.00",
+                      "min": 900.0,
+                      "max": 3000.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "1 Bedroom Apartment Outside of City Centre",
+                        "1,108.19 RM",
+                        "600.00 - 1,800.00"
+                      ],
+                      "range_display": "600.00 - 1,800.00"
+                    },
+                    "item": "1 Bedroom Apartment Outside of City Centre",
+                    "value_display": "1,108.19 RM",
+                    "value": 1108.19,
+                    "unit": "RM",
+                    "range": {
+                      "display": "600.00 - 1,800.00",
+                      "min": 600.0,
+                      "max": 1800.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "3 Bedroom Apartment in City Centre",
+                        "2,873.11 RM",
+                        "1,500.00 - 5,234.35"
+                      ],
+                      "range_display": "1,500.00 - 5,234.35"
+                    },
+                    "item": "3 Bedroom Apartment in City Centre",
+                    "value_display": "2,873.11 RM",
+                    "value": 2873.11,
+                    "unit": "RM",
+                    "range": {
+                      "display": "1,500.00 - 5,234.35",
+                      "min": 1500.0,
+                      "max": 5234.35,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "3 Bedroom Apartment Outside of City Centre",
+                        "1,879.26 RM",
+                        "1,200.00 - 3,500.00"
+                      ],
+                      "range_display": "1,200.00 - 3,500.00"
+                    },
+                    "item": "3 Bedroom Apartment Outside of City Centre",
+                    "value_display": "1,879.26 RM",
+                    "value": 1879.26,
+                    "unit": "RM",
+                    "range": {
+                      "display": "1,200.00 - 3,500.00",
+                      "min": 1200.0,
+                      "max": 3500.0,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Buy Apartment Price": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Price per Square Feet to Buy Apartment in City Centre",
+                        "792.22 RM",
+                        "478.00 - 1,499.99"
+                      ],
+                      "range_display": "478.00 - 1,499.99"
+                    },
+                    "item": "Price per Square Feet to Buy Apartment in City Centre",
+                    "value_display": "792.22 RM",
+                    "value": 792.22,
+                    "unit": "RM",
+                    "range": {
+                      "display": "478.00 - 1,499.99",
+                      "min": 478.0,
+                      "max": 1499.99,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Price per Square Feet to Buy Apartment Outside of Centre",
+                        "441.06 RM",
+                        "278.71 - 603.86"
+                      ],
+                      "range_display": "278.71 - 603.86"
+                    },
+                    "item": "Price per Square Feet to Buy Apartment Outside of Centre",
+                    "value_display": "441.06 RM",
+                    "value": 441.06,
+                    "unit": "RM",
+                    "range": {
+                      "display": "278.71 - 603.86",
+                      "min": 278.71,
+                      "max": 603.86,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Salaries And Financing": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Average Monthly Net Salary (After Tax)",
+                        "3,690.62 RM"
+                      ]
+                    },
+                    "item": "Average Monthly Net Salary (After Tax)",
+                    "value_display": "3,690.62 RM",
+                    "value": 3690.62,
+                    "unit": "RM"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Annual Mortgage Interest Rate (20-Year Fixed, in %)",
+                        "4.28",
+                        "3.30 - 5.00"
+                      ],
+                      "range_display": "3.30 - 5.00"
+                    },
+                    "item": "Annual Mortgage Interest Rate (20-Year Fixed, in %)",
+                    "value_display": "4.28",
+                    "value": 4.28,
+                    "range": {
+                      "display": "3.30 - 5.00",
+                      "min": 3.3,
+                      "max": 5.0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "city_rankings": [
+            {
+              "title": "By City in Malaysia",
+              "columns": [
+                "Rank",
+                "City",
+                "Cost of Living Index",
+                "Rent Index",
+                "Cost of Living Plus Rent Index",
+                "Groceries Index",
+                "Restaurant Price Index",
+                "Local Purchasing Power Index"
+              ],
+              "rows": [
+                {
+                  "Rank": "",
+                  "City": "Kuala Lumpur",
+                  "Cost of Living Index": 38.6,
+                  "Rent Index": 14.1,
+                  "Cost of Living Plus Rent Index": 27.3,
+                  "Groceries Index": 47.0,
+                  "Restaurant Price Index": 30.1,
+                  "Local Purchasing Power Index": 117.2
+                },
+                {
+                  "Rank": "",
+                  "City": "Kuching",
+                  "Cost of Living Index": 35.5,
+                  "Rent Index": 7.7,
+                  "Cost of Living Plus Rent Index": 22.7,
+                  "Groceries Index": 44.7,
+                  "Restaurant Price Index": 26.4,
+                  "Local Purchasing Power Index": 49.6
+                },
+                {
+                  "Rank": "",
+                  "City": "Penang",
+                  "Cost of Living Index": 33.9,
+                  "Rent Index": 7.8,
+                  "Cost of Living Plus Rent Index": 21.8,
+                  "Groceries Index": 43.3,
+                  "Restaurant Price Index": 23.9,
+                  "Local Purchasing Power Index": 89.1
+                }
+              ]
+            }
+          ],
+          "cities": {}
+        },
+        "crime": {
+          "source_url": "https://www.numbeo.com/crime/country_result.jsp?country=Malaysia",
+          "indices": [
+            {
+              "name": "Crime Index",
+              "value_display": "48.12",
+              "value": 48.12,
+              "group": "Index"
+            },
+            {
+              "name": "Safety Index",
+              "value_display": "51.88",
+              "value": 51.88,
+              "group": "Index"
+            }
+          ],
+          "metrics": [],
+          "metric_tables": [],
+          "data": {
+            "Crime rates in Malaysia": [
+              {
+                "raw": {
+                  "cells": [
+                    "Level of crime",
+                    "49.34 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Level of crime",
+                "value_display": "49.34 Moderate",
+                "value": 49.34,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Crime increasing in the past 5 years",
+                    "55.99 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Crime increasing in the past 5 years",
+                "value_display": "55.99 Moderate",
+                "value": 55.99,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Worries home broken and things stolen",
+                    "50.05 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Worries home broken and things stolen",
+                "value_display": "50.05 Moderate",
+                "value": 50.05,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Worries being mugged or robbed",
+                    "51.60 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Worries being mugged or robbed",
+                "value_display": "51.60 Moderate",
+                "value": 51.6,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Worries car stolen",
+                    "46.81 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Worries car stolen",
+                "value_display": "46.81 Moderate",
+                "value": 46.81,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Worries things from car stolen",
+                    "51.41 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Worries things from car stolen",
+                "value_display": "51.41 Moderate",
+                "value": 51.41,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Worries attacked",
+                    "43.61 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Worries attacked",
+                "value_display": "43.61 Moderate",
+                "value": 43.61,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Worries being insulted",
+                    "36.28 Low",
+                    "Low"
+                  ],
+                  "range_display": "Low"
+                },
+                "item": "Worries being insulted",
+                "value_display": "36.28 Low",
+                "value": 36.28,
+                "rating": "Low"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+                    "31.87 Low",
+                    "Low"
+                  ],
+                  "range_display": "Low"
+                },
+                "item": "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+                "value_display": "31.87 Low",
+                "value": 31.87,
+                "rating": "Low"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Problem people using or dealing drugs",
+                    "44.54 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Problem people using or dealing drugs",
+                "value_display": "44.54 Moderate",
+                "value": 44.54,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Problem property crimes such as vandalism and theft",
+                    "53.03 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Problem property crimes such as vandalism and theft",
+                "value_display": "53.03 Moderate",
+                "value": 53.03,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Problem violent crimes such as assault and armed robbery",
+                    "47.51 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Problem violent crimes such as assault and armed robbery",
+                "value_display": "47.51 Moderate",
+                "value": 47.51,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Problem corruption and bribery",
+                    "65.40 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Problem corruption and bribery",
+                "value_display": "65.40 High",
+                "value": 65.4,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Safety walking alone during daylight",
+                    "65.53 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Safety walking alone during daylight",
+                "value_display": "65.53 High",
+                "value": 65.53,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Safety walking alone during night",
+                    "42.64 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Safety walking alone during night",
+                "value_display": "42.64 Moderate",
+                "value": 42.64,
+                "rating": "Moderate"
+              }
+            ],
+            "Safety in Malaysia": [
+              {
+                "raw": {
+                  "cells": [
+                    "Safety walking alone during daylight",
+                    "65.53 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Safety walking alone during daylight",
+                "value_display": "65.53 High",
+                "value": 65.53,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Safety walking alone during night",
+                    "42.64 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Safety walking alone during night",
+                "value_display": "42.64 Moderate",
+                "value": 42.64,
+                "rating": "Moderate"
+              }
+            ]
+          },
+          "tables": [
+            {
+              "title": "Crime rates in Malaysia",
+              "sections": {
+                "Crime rates in Malaysia": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Level of crime",
+                        "49.34 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Level of crime",
+                    "value_display": "49.34 Moderate",
+                    "value": 49.34,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Crime increasing in the past 5 years",
+                        "55.99 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Crime increasing in the past 5 years",
+                    "value_display": "55.99 Moderate",
+                    "value": 55.99,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Worries home broken and things stolen",
+                        "50.05 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Worries home broken and things stolen",
+                    "value_display": "50.05 Moderate",
+                    "value": 50.05,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Worries being mugged or robbed",
+                        "51.60 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Worries being mugged or robbed",
+                    "value_display": "51.60 Moderate",
+                    "value": 51.6,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Worries car stolen",
+                        "46.81 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Worries car stolen",
+                    "value_display": "46.81 Moderate",
+                    "value": 46.81,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Worries things from car stolen",
+                        "51.41 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Worries things from car stolen",
+                    "value_display": "51.41 Moderate",
+                    "value": 51.41,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Worries attacked",
+                        "43.61 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Worries attacked",
+                    "value_display": "43.61 Moderate",
+                    "value": 43.61,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Worries being insulted",
+                        "36.28 Low",
+                        "Low"
+                      ],
+                      "range_display": "Low"
+                    },
+                    "item": "Worries being insulted",
+                    "value_display": "36.28 Low",
+                    "value": 36.28,
+                    "rating": "Low"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+                        "31.87 Low",
+                        "Low"
+                      ],
+                      "range_display": "Low"
+                    },
+                    "item": "Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+                    "value_display": "31.87 Low",
+                    "value": 31.87,
+                    "rating": "Low"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Problem people using or dealing drugs",
+                        "44.54 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Problem people using or dealing drugs",
+                    "value_display": "44.54 Moderate",
+                    "value": 44.54,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Problem property crimes such as vandalism and theft",
+                        "53.03 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Problem property crimes such as vandalism and theft",
+                    "value_display": "53.03 Moderate",
+                    "value": 53.03,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Problem violent crimes such as assault and armed robbery",
+                        "47.51 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Problem violent crimes such as assault and armed robbery",
+                    "value_display": "47.51 Moderate",
+                    "value": 47.51,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Problem corruption and bribery",
+                        "65.40 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Problem corruption and bribery",
+                    "value_display": "65.40 High",
+                    "value": 65.4,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Safety walking alone during daylight",
+                        "65.53 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Safety walking alone during daylight",
+                    "value_display": "65.53 High",
+                    "value": 65.53,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Safety walking alone during night",
+                        "42.64 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Safety walking alone during night",
+                    "value_display": "42.64 Moderate",
+                    "value": 42.64,
+                    "rating": "Moderate"
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Safety in Malaysia",
+              "sections": {
+                "Safety in Malaysia": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Safety walking alone during daylight",
+                        "65.53 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Safety walking alone during daylight",
+                    "value_display": "65.53 High",
+                    "value": 65.53,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Safety walking alone during night",
+                        "42.64 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Safety walking alone during night",
+                    "value_display": "42.64 Moderate",
+                    "value": 42.64,
+                    "rating": "Moderate"
+                  }
+                ]
+              }
+            }
+          ],
+          "city_rankings": [
+            {
+              "title": "By City",
+              "columns": [
+                "Rank",
+                "City",
+                "Crime Index",
+                "Safety Index"
+              ],
+              "rows": [
+                {
+                  "Rank": "",
+                  "City": "Kuala Lumpur",
+                  "Crime Index": 59.2,
+                  "Safety Index": 40.8
+                },
+                {
+                  "Rank": "",
+                  "City": "Klang",
+                  "Crime Index": 56.0,
+                  "Safety Index": 44.0
+                },
+                {
+                  "Rank": "",
+                  "City": "Johor Bahru",
+                  "Crime Index": 49.0,
+                  "Safety Index": 51.0
+                },
+                {
+                  "Rank": "",
+                  "City": "Penang",
+                  "Crime Index": 29.1,
+                  "Safety Index": 70.9
+                }
+              ]
+            }
+          ],
+          "cities": {}
+        },
+        "health-care": {
+          "source_url": "https://www.numbeo.com/health-care/country_result.jsp?country=Malaysia",
+          "indices": [
+            {
+              "name": "Health Care System Index",
+              "value_display": "70.71",
+              "value": 70.71,
+              "group": "Index"
+            }
+          ],
+          "metrics": [],
+          "metric_tables": [],
+          "data": {
+            "Component of health care surveyed": [
+              {
+                "raw": {
+                  "cells": [
+                    "Skill and competency of medical staff",
+                    "73.18 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Skill and competency of medical staff",
+                "value_display": "73.18 High",
+                "value": 73.18,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Speed in completing examinations and reports",
+                    "68.27 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Speed in completing examinations and reports",
+                "value_display": "68.27 High",
+                "value": 68.27,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Equipment for modern diagnosis and treatment",
+                    "80.74 Very High",
+                    "Very High"
+                  ],
+                  "range_display": "Very High"
+                },
+                "item": "Equipment for modern diagnosis and treatment",
+                "value_display": "80.74 Very High",
+                "value": 80.74,
+                "rating": "Very High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Accuracy and completeness in filling out reports",
+                    "73.81 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Accuracy and completeness in filling out reports",
+                "value_display": "73.81 High",
+                "value": 73.81,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Friendliness and courtesy of the staff",
+                    "71.51 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Friendliness and courtesy of the staff",
+                "value_display": "71.51 High",
+                "value": 71.51,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Satisfaction with responsiveness (waitings) in medical institutions",
+                    "57.65 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Satisfaction with responsiveness (waitings) in medical institutions",
+                "value_display": "57.65 Moderate",
+                "value": 57.65,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Satisfaction with cost to you",
+                    "66.32 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Satisfaction with cost to you",
+                "value_display": "66.32 High",
+                "value": 66.32,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Convenience of location for you",
+                    "78.58 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Convenience of location for you",
+                "value_display": "78.58 High",
+                "value": 78.58,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Skill and competency of medical staff",
+                    "65.35 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Skill and competency of medical staff",
+                "value_display": "65.35 High",
+                "value": 65.35,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Speed in completing examinations and reports",
+                    "54.17 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Speed in completing examinations and reports",
+                "value_display": "54.17 Moderate",
+                "value": 54.17,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Equipment for modern diagnosis and treatment",
+                    "75.44 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Equipment for modern diagnosis and treatment",
+                "value_display": "75.44 High",
+                "value": 75.44,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Accuracy and completeness in filling out reports",
+                    "69.47 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Accuracy and completeness in filling out reports",
+                "value_display": "69.47 High",
+                "value": 69.47,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Friendliness and courtesy of the staff",
+                    "60.87 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Friendliness and courtesy of the staff",
+                "value_display": "60.87 High",
+                "value": 60.87,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Satisfaction with responsiveness (waitings) in medical institutions",
+                    "41.09 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Satisfaction with responsiveness (waitings) in medical institutions",
+                "value_display": "41.09 Moderate",
+                "value": 41.09,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Satisfaction with cost to you",
+                    "81.64 Very High",
+                    "Very High"
+                  ],
+                  "range_display": "Very High"
+                },
+                "item": "Satisfaction with cost to you",
+                "value_display": "81.64 Very High",
+                "value": 81.64,
+                "rating": "Very High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Convenience of location for you",
+                    "71.49 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Convenience of location for you",
+                "value_display": "71.49 High",
+                "value": 71.49,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Skill and competency of medical staff",
+                    "78.73 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Skill and competency of medical staff",
+                "value_display": "78.73 High",
+                "value": 78.73,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Speed in completing examinations and reports",
+                    "77.09 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Speed in completing examinations and reports",
+                "value_display": "77.09 High",
+                "value": 77.09,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Equipment for modern diagnosis and treatment",
+                    "84.78 Very High",
+                    "Very High"
+                  ],
+                  "range_display": "Very High"
+                },
+                "item": "Equipment for modern diagnosis and treatment",
+                "value_display": "84.78 Very High",
+                "value": 84.78,
+                "rating": "Very High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Accuracy and completeness in filling out reports",
+                    "77.67 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Accuracy and completeness in filling out reports",
+                "value_display": "77.67 High",
+                "value": 77.67,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Friendliness and courtesy of the staff",
+                    "78.75 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Friendliness and courtesy of the staff",
+                "value_display": "78.75 High",
+                "value": 78.75,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Satisfaction with responsiveness (waitings) in medical institutions",
+                    "66.94 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Satisfaction with responsiveness (waitings) in medical institutions",
+                "value_display": "66.94 High",
+                "value": 66.94,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Satisfaction with cost to you",
+                    "56.56 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Satisfaction with cost to you",
+                "value_display": "56.56 Moderate",
+                "value": 56.56,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Convenience of location for you",
+                    "83.52 Very High",
+                    "Very High"
+                  ],
+                  "range_display": "Very High"
+                },
+                "item": "Convenience of location for you",
+                "value_display": "83.52 Very High",
+                "value": 83.52,
+                "rating": "Very High"
+              }
+            ]
+          },
+          "tables": [
+            {
+              "title": "General Healthcare Overview",
+              "sections": {
+                "Component of health care surveyed": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Skill and competency of medical staff",
+                        "73.18 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Skill and competency of medical staff",
+                    "value_display": "73.18 High",
+                    "value": 73.18,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Speed in completing examinations and reports",
+                        "68.27 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Speed in completing examinations and reports",
+                    "value_display": "68.27 High",
+                    "value": 68.27,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Equipment for modern diagnosis and treatment",
+                        "80.74 Very High",
+                        "Very High"
+                      ],
+                      "range_display": "Very High"
+                    },
+                    "item": "Equipment for modern diagnosis and treatment",
+                    "value_display": "80.74 Very High",
+                    "value": 80.74,
+                    "rating": "Very High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Accuracy and completeness in filling out reports",
+                        "73.81 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Accuracy and completeness in filling out reports",
+                    "value_display": "73.81 High",
+                    "value": 73.81,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Friendliness and courtesy of the staff",
+                        "71.51 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Friendliness and courtesy of the staff",
+                    "value_display": "71.51 High",
+                    "value": 71.51,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Satisfaction with responsiveness (waitings) in medical institutions",
+                        "57.65 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Satisfaction with responsiveness (waitings) in medical institutions",
+                    "value_display": "57.65 Moderate",
+                    "value": 57.65,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Satisfaction with cost to you",
+                        "66.32 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Satisfaction with cost to you",
+                    "value_display": "66.32 High",
+                    "value": 66.32,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Convenience of location for you",
+                        "78.58 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Convenience of location for you",
+                    "value_display": "78.58 High",
+                    "value": 78.58,
+                    "rating": "High"
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Public Healthcare Services",
+              "sections": {
+                "Component of health care surveyed": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Skill and competency of medical staff",
+                        "65.35 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Skill and competency of medical staff",
+                    "value_display": "65.35 High",
+                    "value": 65.35,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Speed in completing examinations and reports",
+                        "54.17 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Speed in completing examinations and reports",
+                    "value_display": "54.17 Moderate",
+                    "value": 54.17,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Equipment for modern diagnosis and treatment",
+                        "75.44 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Equipment for modern diagnosis and treatment",
+                    "value_display": "75.44 High",
+                    "value": 75.44,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Accuracy and completeness in filling out reports",
+                        "69.47 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Accuracy and completeness in filling out reports",
+                    "value_display": "69.47 High",
+                    "value": 69.47,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Friendliness and courtesy of the staff",
+                        "60.87 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Friendliness and courtesy of the staff",
+                    "value_display": "60.87 High",
+                    "value": 60.87,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Satisfaction with responsiveness (waitings) in medical institutions",
+                        "41.09 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Satisfaction with responsiveness (waitings) in medical institutions",
+                    "value_display": "41.09 Moderate",
+                    "value": 41.09,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Satisfaction with cost to you",
+                        "81.64 Very High",
+                        "Very High"
+                      ],
+                      "range_display": "Very High"
+                    },
+                    "item": "Satisfaction with cost to you",
+                    "value_display": "81.64 Very High",
+                    "value": 81.64,
+                    "rating": "Very High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Convenience of location for you",
+                        "71.49 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Convenience of location for you",
+                    "value_display": "71.49 High",
+                    "value": 71.49,
+                    "rating": "High"
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Private Healthcare Services",
+              "sections": {
+                "Component of health care surveyed": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Skill and competency of medical staff",
+                        "78.73 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Skill and competency of medical staff",
+                    "value_display": "78.73 High",
+                    "value": 78.73,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Speed in completing examinations and reports",
+                        "77.09 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Speed in completing examinations and reports",
+                    "value_display": "77.09 High",
+                    "value": 77.09,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Equipment for modern diagnosis and treatment",
+                        "84.78 Very High",
+                        "Very High"
+                      ],
+                      "range_display": "Very High"
+                    },
+                    "item": "Equipment for modern diagnosis and treatment",
+                    "value_display": "84.78 Very High",
+                    "value": 84.78,
+                    "rating": "Very High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Accuracy and completeness in filling out reports",
+                        "77.67 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Accuracy and completeness in filling out reports",
+                    "value_display": "77.67 High",
+                    "value": 77.67,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Friendliness and courtesy of the staff",
+                        "78.75 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Friendliness and courtesy of the staff",
+                    "value_display": "78.75 High",
+                    "value": 78.75,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Satisfaction with responsiveness (waitings) in medical institutions",
+                        "66.94 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Satisfaction with responsiveness (waitings) in medical institutions",
+                    "value_display": "66.94 High",
+                    "value": 66.94,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Satisfaction with cost to you",
+                        "56.56 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Satisfaction with cost to you",
+                    "value_display": "56.56 Moderate",
+                    "value": 56.56,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Convenience of location for you",
+                        "83.52 Very High",
+                        "Very High"
+                      ],
+                      "range_display": "Very High"
+                    },
+                    "item": "Convenience of location for you",
+                    "value_display": "83.52 Very High",
+                    "value": 83.52,
+                    "rating": "Very High"
+                  }
+                ]
+              }
+            }
+          ],
+          "city_rankings": [],
+          "cities": {}
+        },
+        "pollution": {
+          "source_url": "https://www.numbeo.com/pollution/country_result.jsp?country=Malaysia",
+          "indices": [
+            {
+              "name": "Pollution Index",
+              "value_display": "60.58",
+              "value": 60.58,
+              "group": "Index"
+            },
+            {
+              "name": "Pollution Exp Scale",
+              "value_display": "103.11",
+              "value": 103.11,
+              "group": "Index"
+            }
+          ],
+          "metrics": [],
+          "metric_tables": [],
+          "data": {
+            "Pollution in Malaysia": [
+              {
+                "raw": {
+                  "cells": [
+                    "Air Pollution",
+                    "52.36 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Air Pollution",
+                "value_display": "52.36 Moderate",
+                "value": 52.36,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Drinking Water Pollution and Inaccessibility",
+                    "43.63 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Drinking Water Pollution and Inaccessibility",
+                "value_display": "43.63 Moderate",
+                "value": 43.63,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Dissatisfaction with Garbage Disposal",
+                    "53.11 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Dissatisfaction with Garbage Disposal",
+                "value_display": "53.11 Moderate",
+                "value": 53.11,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Dirty and Untidy",
+                    "52.55 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Dirty and Untidy",
+                "value_display": "52.55 Moderate",
+                "value": 52.55,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Noise and Light Pollution",
+                    "49.26 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Noise and Light Pollution",
+                "value_display": "49.26 Moderate",
+                "value": 49.26,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Water Pollution",
+                    "60.84 High",
+                    "High"
+                  ],
+                  "range_display": "High"
+                },
+                "item": "Water Pollution",
+                "value_display": "60.84 High",
+                "value": 60.84,
+                "rating": "High"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Dissatisfaction with Spending Time in the City",
+                    "51.11 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Dissatisfaction with Spending Time in the City",
+                "value_display": "51.11 Moderate",
+                "value": 51.11,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Dissatisfaction with Green and Parks in the City",
+                    "45.80 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Dissatisfaction with Green and Parks in the City",
+                "value_display": "45.80 Moderate",
+                "value": 45.8,
+                "rating": "Moderate"
+              }
+            ],
+            "Purity and Cleanliness in Malaysia": [
+              {
+                "raw": {
+                  "cells": [
+                    "Air quality",
+                    "47.64 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Air quality",
+                "value_display": "47.64 Moderate",
+                "value": 47.64,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Drinking Water Quality and Accessibility",
+                    "56.37 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Drinking Water Quality and Accessibility",
+                "value_display": "56.37 Moderate",
+                "value": 56.37,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Garbage Disposal Satisfaction",
+                    "46.89 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Garbage Disposal Satisfaction",
+                "value_display": "46.89 Moderate",
+                "value": 46.89,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Clean and Tidy",
+                    "47.45 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Clean and Tidy",
+                "value_display": "47.45 Moderate",
+                "value": 47.45,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Quiet and No Problem with Night Lights",
+                    "50.74 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Quiet and No Problem with Night Lights",
+                "value_display": "50.74 Moderate",
+                "value": 50.74,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Water Quality",
+                    "39.16 Low",
+                    "Low"
+                  ],
+                  "range_display": "Low"
+                },
+                "item": "Water Quality",
+                "value_display": "39.16 Low",
+                "value": 39.16,
+                "rating": "Low"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Comfortable to Spend Time in the City",
+                    "48.89 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Comfortable to Spend Time in the City",
+                "value_display": "48.89 Moderate",
+                "value": 48.89,
+                "rating": "Moderate"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Quality of Green and Parks",
+                    "54.20 Moderate",
+                    "Moderate"
+                  ],
+                  "range_display": "Moderate"
+                },
+                "item": "Quality of Green and Parks",
+                "value_display": "54.20 Moderate",
+                "value": 54.2,
+                "rating": "Moderate"
+              }
+            ]
+          },
+          "tables": [
+            {
+              "title": "Pollution in Malaysia",
+              "sections": {
+                "Pollution in Malaysia": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Air Pollution",
+                        "52.36 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Air Pollution",
+                    "value_display": "52.36 Moderate",
+                    "value": 52.36,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Drinking Water Pollution and Inaccessibility",
+                        "43.63 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Drinking Water Pollution and Inaccessibility",
+                    "value_display": "43.63 Moderate",
+                    "value": 43.63,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Dissatisfaction with Garbage Disposal",
+                        "53.11 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Dissatisfaction with Garbage Disposal",
+                    "value_display": "53.11 Moderate",
+                    "value": 53.11,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Dirty and Untidy",
+                        "52.55 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Dirty and Untidy",
+                    "value_display": "52.55 Moderate",
+                    "value": 52.55,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Noise and Light Pollution",
+                        "49.26 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Noise and Light Pollution",
+                    "value_display": "49.26 Moderate",
+                    "value": 49.26,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Water Pollution",
+                        "60.84 High",
+                        "High"
+                      ],
+                      "range_display": "High"
+                    },
+                    "item": "Water Pollution",
+                    "value_display": "60.84 High",
+                    "value": 60.84,
+                    "rating": "High"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Dissatisfaction with Spending Time in the City",
+                        "51.11 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Dissatisfaction with Spending Time in the City",
+                    "value_display": "51.11 Moderate",
+                    "value": 51.11,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Dissatisfaction with Green and Parks in the City",
+                        "45.80 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Dissatisfaction with Green and Parks in the City",
+                    "value_display": "45.80 Moderate",
+                    "value": 45.8,
+                    "rating": "Moderate"
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Purity and Cleanliness in Malaysia",
+              "sections": {
+                "Purity and Cleanliness in Malaysia": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Air quality",
+                        "47.64 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Air quality",
+                    "value_display": "47.64 Moderate",
+                    "value": 47.64,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Drinking Water Quality and Accessibility",
+                        "56.37 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Drinking Water Quality and Accessibility",
+                    "value_display": "56.37 Moderate",
+                    "value": 56.37,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Garbage Disposal Satisfaction",
+                        "46.89 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Garbage Disposal Satisfaction",
+                    "value_display": "46.89 Moderate",
+                    "value": 46.89,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Clean and Tidy",
+                        "47.45 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Clean and Tidy",
+                    "value_display": "47.45 Moderate",
+                    "value": 47.45,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Quiet and No Problem with Night Lights",
+                        "50.74 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Quiet and No Problem with Night Lights",
+                    "value_display": "50.74 Moderate",
+                    "value": 50.74,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Water Quality",
+                        "39.16 Low",
+                        "Low"
+                      ],
+                      "range_display": "Low"
+                    },
+                    "item": "Water Quality",
+                    "value_display": "39.16 Low",
+                    "value": 39.16,
+                    "rating": "Low"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Comfortable to Spend Time in the City",
+                        "48.89 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Comfortable to Spend Time in the City",
+                    "value_display": "48.89 Moderate",
+                    "value": 48.89,
+                    "rating": "Moderate"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Quality of Green and Parks",
+                        "54.20 Moderate",
+                        "Moderate"
+                      ],
+                      "range_display": "Moderate"
+                    },
+                    "item": "Quality of Green and Parks",
+                    "value_display": "54.20 Moderate",
+                    "value": 54.2,
+                    "rating": "Moderate"
+                  }
+                ]
+              }
+            }
+          ],
+          "city_rankings": [],
+          "cities": {}
+        },
+        "property-prices": {
+          "source_url": "https://www.numbeo.com/property-investment/country_result.jsp?country=Malaysia",
+          "indices": [
+            {
+              "name": "Price to Income Ratio",
+              "value_display": "8.99",
+              "value": 8.99,
+              "group": "Index"
+            },
+            {
+              "name": "Mortgage as Percentage of Income",
+              "value_display": "67.01%",
+              "unit": "%",
+              "value": 67.01,
+              "group": "Index"
+            },
+            {
+              "name": "Loan Affordability Index",
+              "value_display": "1.49",
+              "value": 1.49,
+              "group": "Index"
+            },
+            {
+              "name": "Price to Rent Ratio - City Centre",
+              "value_display": "24.32",
+              "value": 24.32,
+              "group": "Index"
+            },
+            {
+              "name": "Price to Rent Ratio - Outside of Centre",
+              "value_display": "20.16",
+              "value": 20.16,
+              "group": "Index"
+            },
+            {
+              "name": "Gross Rental Yield (City Centre)",
+              "value_display": "4.11%",
+              "unit": "%",
+              "value": 4.11,
+              "group": "Index"
+            },
+            {
+              "name": "Gross Rental Yield (Outside of Centre)",
+              "value_display": "4.96%",
+              "unit": "%",
+              "value": 4.96,
+              "group": "Index"
+            },
+            {
+              "name": "GDP Per Capita ($) ",
+              "value_display": "32,800.00",
+              "value": 32800.0,
+              "group": "country data"
+            },
+            {
+              "name": "GDP Growth Rate",
+              "value_display": "3.56%",
+              "unit": "%",
+              "value": 3.56,
+              "group": "country data"
+            },
+            {
+              "name": "Population Growth Rate",
+              "value_display": "0.99%",
+              "unit": "%",
+              "value": 0.99,
+              "group": "country data"
+            }
+          ],
+          "metrics": [],
+          "metric_tables": [],
+          "data": {
+            "Rent Per Month": [
+              {
+                "raw": {
+                  "cells": [
+                    "1 Bedroom Apartment in City Centre",
+                    "1,616.27 RM",
+                    "900.00 - 3,000.00"
+                  ],
+                  "range_display": "900.00 - 3,000.00"
+                },
+                "item": "1 Bedroom Apartment in City Centre",
+                "value_display": "1,616.27 RM",
+                "value": 1616.27,
+                "unit": "RM",
+                "range": {
+                  "display": "900.00 - 3,000.00",
+                  "min": 900.0,
+                  "max": 3000.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "1 Bedroom Apartment Outside of City Centre",
+                    "1,108.19 RM",
+                    "600.00 - 1,800.00"
+                  ],
+                  "range_display": "600.00 - 1,800.00"
+                },
+                "item": "1 Bedroom Apartment Outside of City Centre",
+                "value_display": "1,108.19 RM",
+                "value": 1108.19,
+                "unit": "RM",
+                "range": {
+                  "display": "600.00 - 1,800.00",
+                  "min": 600.0,
+                  "max": 1800.0,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "3 Bedroom Apartment in City Centre",
+                    "2,873.11 RM",
+                    "1,500.00 - 5,234.35"
+                  ],
+                  "range_display": "1,500.00 - 5,234.35"
+                },
+                "item": "3 Bedroom Apartment in City Centre",
+                "value_display": "2,873.11 RM",
+                "value": 2873.11,
+                "unit": "RM",
+                "range": {
+                  "display": "1,500.00 - 5,234.35",
+                  "min": 1500.0,
+                  "max": 5234.35,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "3 Bedroom Apartment Outside of City Centre",
+                    "1,879.26 RM",
+                    "1,200.00 - 3,500.00"
+                  ],
+                  "range_display": "1,200.00 - 3,500.00"
+                },
+                "item": "3 Bedroom Apartment Outside of City Centre",
+                "value_display": "1,879.26 RM",
+                "value": 1879.26,
+                "unit": "RM",
+                "range": {
+                  "display": "1,200.00 - 3,500.00",
+                  "min": 1200.0,
+                  "max": 3500.0,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Buy Apartment Price": [
+              {
+                "raw": {
+                  "cells": [
+                    "Price per Square Feet to Buy Apartment in City Centre",
+                    "792.22 RM",
+                    "478.00 - 1,499.99"
+                  ],
+                  "range_display": "478.00 - 1,499.99"
+                },
+                "item": "Price per Square Feet to Buy Apartment in City Centre",
+                "value_display": "792.22 RM",
+                "value": 792.22,
+                "unit": "RM",
+                "range": {
+                  "display": "478.00 - 1,499.99",
+                  "min": 478.0,
+                  "max": 1499.99,
+                  "unit": "RM"
+                }
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Price per Square Feet to Buy Apartment Outside of Centre",
+                    "441.06 RM",
+                    "278.71 - 603.86"
+                  ],
+                  "range_display": "278.71 - 603.86"
+                },
+                "item": "Price per Square Feet to Buy Apartment Outside of Centre",
+                "value_display": "441.06 RM",
+                "value": 441.06,
+                "unit": "RM",
+                "range": {
+                  "display": "278.71 - 603.86",
+                  "min": 278.71,
+                  "max": 603.86,
+                  "unit": "RM"
+                }
+              }
+            ],
+            "Salaries And Financing": [
+              {
+                "raw": {
+                  "cells": [
+                    "Average Monthly Net Salary (After Tax)",
+                    "3,690.62 RM"
+                  ]
+                },
+                "item": "Average Monthly Net Salary (After Tax)",
+                "value_display": "3,690.62 RM",
+                "value": 3690.62,
+                "unit": "RM"
+              },
+              {
+                "raw": {
+                  "cells": [
+                    "Annual Mortgage Interest Rate (20-Year Fixed, in %)",
+                    "4.28",
+                    "3.30 - 5.00"
+                  ],
+                  "range_display": "3.30 - 5.00"
+                },
+                "item": "Annual Mortgage Interest Rate (20-Year Fixed, in %)",
+                "value_display": "4.28",
+                "value": 4.28,
+                "range": {
+                  "display": "3.30 - 5.00",
+                  "min": 3.3,
+                  "max": 5.0
+                }
+              }
+            ]
+          },
+          "tables": [
+            {
+              "title": "Property Prices in Malaysia",
+              "sections": {
+                "Rent Per Month": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "1 Bedroom Apartment in City Centre",
+                        "1,616.27 RM",
+                        "900.00 - 3,000.00"
+                      ],
+                      "range_display": "900.00 - 3,000.00"
+                    },
+                    "item": "1 Bedroom Apartment in City Centre",
+                    "value_display": "1,616.27 RM",
+                    "value": 1616.27,
+                    "unit": "RM",
+                    "range": {
+                      "display": "900.00 - 3,000.00",
+                      "min": 900.0,
+                      "max": 3000.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "1 Bedroom Apartment Outside of City Centre",
+                        "1,108.19 RM",
+                        "600.00 - 1,800.00"
+                      ],
+                      "range_display": "600.00 - 1,800.00"
+                    },
+                    "item": "1 Bedroom Apartment Outside of City Centre",
+                    "value_display": "1,108.19 RM",
+                    "value": 1108.19,
+                    "unit": "RM",
+                    "range": {
+                      "display": "600.00 - 1,800.00",
+                      "min": 600.0,
+                      "max": 1800.0,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "3 Bedroom Apartment in City Centre",
+                        "2,873.11 RM",
+                        "1,500.00 - 5,234.35"
+                      ],
+                      "range_display": "1,500.00 - 5,234.35"
+                    },
+                    "item": "3 Bedroom Apartment in City Centre",
+                    "value_display": "2,873.11 RM",
+                    "value": 2873.11,
+                    "unit": "RM",
+                    "range": {
+                      "display": "1,500.00 - 5,234.35",
+                      "min": 1500.0,
+                      "max": 5234.35,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "3 Bedroom Apartment Outside of City Centre",
+                        "1,879.26 RM",
+                        "1,200.00 - 3,500.00"
+                      ],
+                      "range_display": "1,200.00 - 3,500.00"
+                    },
+                    "item": "3 Bedroom Apartment Outside of City Centre",
+                    "value_display": "1,879.26 RM",
+                    "value": 1879.26,
+                    "unit": "RM",
+                    "range": {
+                      "display": "1,200.00 - 3,500.00",
+                      "min": 1200.0,
+                      "max": 3500.0,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Buy Apartment Price": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Price per Square Feet to Buy Apartment in City Centre",
+                        "792.22 RM",
+                        "478.00 - 1,499.99"
+                      ],
+                      "range_display": "478.00 - 1,499.99"
+                    },
+                    "item": "Price per Square Feet to Buy Apartment in City Centre",
+                    "value_display": "792.22 RM",
+                    "value": 792.22,
+                    "unit": "RM",
+                    "range": {
+                      "display": "478.00 - 1,499.99",
+                      "min": 478.0,
+                      "max": 1499.99,
+                      "unit": "RM"
+                    }
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Price per Square Feet to Buy Apartment Outside of Centre",
+                        "441.06 RM",
+                        "278.71 - 603.86"
+                      ],
+                      "range_display": "278.71 - 603.86"
+                    },
+                    "item": "Price per Square Feet to Buy Apartment Outside of Centre",
+                    "value_display": "441.06 RM",
+                    "value": 441.06,
+                    "unit": "RM",
+                    "range": {
+                      "display": "278.71 - 603.86",
+                      "min": 278.71,
+                      "max": 603.86,
+                      "unit": "RM"
+                    }
+                  }
+                ],
+                "Salaries And Financing": [
+                  {
+                    "raw": {
+                      "cells": [
+                        "Average Monthly Net Salary (After Tax)",
+                        "3,690.62 RM"
+                      ]
+                    },
+                    "item": "Average Monthly Net Salary (After Tax)",
+                    "value_display": "3,690.62 RM",
+                    "value": 3690.62,
+                    "unit": "RM"
+                  },
+                  {
+                    "raw": {
+                      "cells": [
+                        "Annual Mortgage Interest Rate (20-Year Fixed, in %)",
+                        "4.28",
+                        "3.30 - 5.00"
+                      ],
+                      "range_display": "3.30 - 5.00"
+                    },
+                    "item": "Annual Mortgage Interest Rate (20-Year Fixed, in %)",
+                    "value_display": "4.28",
+                    "value": 4.28,
+                    "range": {
+                      "display": "3.30 - 5.00",
+                      "min": 3.3,
+                      "max": 5.0
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "city_rankings": [
+            {
+              "title": "By City in Malaysia",
+              "columns": [
+                "Rank",
+                "City",
+                "Price To Income Ratio",
+                "Gross Rental Yield City Centre",
+                "Gross Rental Yield Outside of Centre",
+                "Price To Rent Ratio City Centre",
+                "Price To Rent Ratio Outside Of City Centre",
+                "Mortgage As A Percentage Of Income",
+                "Affordability Index"
+              ],
+              "rows": [
+                {
+                  "Rank": "",
+                  "City": "Johor Bahru",
+                  "Price To Income Ratio": 7.1,
+                  "Gross Rental Yield City Centre": 5.3,
+                  "Gross Rental Yield Outside of Centre": 6.8,
+                  "Price To Rent Ratio City Centre": 18.8,
+                  "Price To Rent Ratio Outside Of City Centre": 14.7,
+                  "Mortgage As A Percentage Of Income": 52.0,
+                  "Affordability Index": 1.9
+                },
+                {
+                  "Rank": "",
+                  "City": "Kota Kinabalu",
+                  "Price To Income Ratio": 12.4,
+                  "Gross Rental Yield City Centre": 4.9,
+                  "Gross Rental Yield Outside of Centre": 4.0,
+                  "Price To Rent Ratio City Centre": 20.6,
+                  "Price To Rent Ratio Outside Of City Centre": 25.1,
+                  "Mortgage As A Percentage Of Income": 89.3,
+                  "Affordability Index": 1.1
+                },
+                {
+                  "Rank": "",
+                  "City": "Kuala Lumpur",
+                  "Price To Income Ratio": 8.7,
+                  "Gross Rental Yield City Centre": 3.9,
+                  "Gross Rental Yield Outside of Centre": 5.4,
+                  "Price To Rent Ratio City Centre": 25.7,
+                  "Price To Rent Ratio Outside Of City Centre": 18.4,
+                  "Mortgage As A Percentage Of Income": 65.9,
+                  "Affordability Index": 1.5
+                },
+                {
+                  "Rank": "",
+                  "City": "Kuching",
+                  "Price To Income Ratio": 16.7,
+                  "Gross Rental Yield City Centre": 3.7,
+                  "Gross Rental Yield Outside of Centre": 3.5,
+                  "Price To Rent Ratio City Centre": 27.3,
+                  "Price To Rent Ratio Outside Of City Centre": 28.8,
+                  "Mortgage As A Percentage Of Income": 126.3,
+                  "Affordability Index": 0.8
+                },
+                {
+                  "Rank": "",
+                  "City": "Penang",
+                  "Price To Income Ratio": 9.2,
+                  "Gross Rental Yield City Centre": 3.5,
+                  "Gross Rental Yield Outside of Centre": 4.6,
+                  "Price To Rent Ratio City Centre": 28.4,
+                  "Price To Rent Ratio Outside Of City Centre": 21.8,
+                  "Mortgage As A Percentage Of Income": 69.5,
+                  "Affordability Index": 1.4
+                },
+                {
+                  "Rank": "",
+                  "City": "Petaling Jaya",
+                  "Price To Income Ratio": 4.9,
+                  "Gross Rental Yield City Centre": 3.5,
+                  "Gross Rental Yield Outside of Centre": 35.4,
+                  "Price To Rent Ratio City Centre": 28.9,
+                  "Price To Rent Ratio Outside Of City Centre": 2.8,
+                  "Mortgage As A Percentage Of Income": 36.9,
+                  "Affordability Index": 2.7
+                },
+                {
+                  "Rank": "",
+                  "City": "Selangor",
+                  "Price To Income Ratio": 5.7,
+                  "Gross Rental Yield City Centre": 7.0,
+                  "Gross Rental Yield Outside of Centre": 9.6,
+                  "Price To Rent Ratio City Centre": 14.3,
+                  "Price To Rent Ratio Outside Of City Centre": 10.4,
+                  "Mortgage As A Percentage Of Income": 41.6,
+                  "Affordability Index": 2.4
+                },
+                {
+                  "Rank": "",
+                  "City": "Shah Alam",
+                  "Price To Income Ratio": 5.4,
+                  "Gross Rental Yield City Centre": 4.8,
+                  "Gross Rental Yield Outside of Centre": 5.7,
+                  "Price To Rent Ratio City Centre": 20.9,
+                  "Price To Rent Ratio Outside Of City Centre": 17.6,
+                  "Mortgage As A Percentage Of Income": 39.9,
+                  "Affordability Index": 2.5
+                }
+              ]
+            }
+          ],
+          "cities": {}
+        },
+        "quality-of-life": {
+          "source_url": "https://www.numbeo.com/quality-of-life/country_result.jsp?country=Malaysia",
+          "indices": [
+            {
+              "name": "Quality of Life Index",
+              "value_display": "136.59",
+              "value": 136.59,
+              "group": "Index"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "Purchasing Power Index",
+              "value_display": "85.87",
+              "value": 85.87,
+              "rating": "High",
+              "group": "Quality of Life in Malaysia"
+            },
+            {
+              "name": "Safety Index",
+              "value_display": "51.88",
+              "value": 51.88,
+              "rating": "Moderate",
+              "group": "Quality of Life in Malaysia"
+            },
+            {
+              "name": "Health Care Index",
+              "value_display": "70.71",
+              "value": 70.71,
+              "rating": "High",
+              "group": "Quality of Life in Malaysia"
+            },
+            {
+              "name": "Climate Index",
+              "value_display": "58.12",
+              "value": 58.12,
+              "rating": "Moderate",
+              "group": "Quality of Life in Malaysia"
+            },
+            {
+              "name": "Cost of Living Index",
+              "value_display": "34.51",
+              "value": 34.51,
+              "rating": "Very Low",
+              "group": "Quality of Life in Malaysia"
+            },
+            {
+              "name": "Property Price to Income Ratio",
+              "value_display": "8.99",
+              "value": 8.99,
+              "rating": "Moderate",
+              "group": "Quality of Life in Malaysia"
+            },
+            {
+              "name": "Traffic Commute Time Index",
+              "value_display": "37.05",
+              "value": 37.05,
+              "rating": "Moderate",
+              "group": "Quality of Life in Malaysia"
+            },
+            {
+              "name": "Pollution Index",
+              "value_display": "60.58",
+              "value": 60.58,
+              "rating": "High",
+              "group": "Quality of Life in Malaysia"
+            },
+            {
+              "name": "ƒ Quality of Life Index",
+              "value_display": "136.59",
+              "value": 136.59,
+              "rating": "Moderate",
+              "group": "Quality of Life in Malaysia"
+            }
+          ],
+          "metric_tables": [
+            {
+              "title": "Quality of Life in Malaysia",
+              "metrics": [
+                {
+                  "name": "Purchasing Power Index",
+                  "value_display": "85.87",
+                  "value": 85.87,
+                  "rating": "High"
+                },
+                {
+                  "name": "Safety Index",
+                  "value_display": "51.88",
+                  "value": 51.88,
+                  "rating": "Moderate"
+                },
+                {
+                  "name": "Health Care Index",
+                  "value_display": "70.71",
+                  "value": 70.71,
+                  "rating": "High"
+                },
+                {
+                  "name": "Climate Index",
+                  "value_display": "58.12",
+                  "value": 58.12,
+                  "rating": "Moderate"
+                },
+                {
+                  "name": "Cost of Living Index",
+                  "value_display": "34.51",
+                  "value": 34.51,
+                  "rating": "Very Low"
+                },
+                {
+                  "name": "Property Price to Income Ratio",
+                  "value_display": "8.99",
+                  "value": 8.99,
+                  "rating": "Moderate"
+                },
+                {
+                  "name": "Traffic Commute Time Index",
+                  "value_display": "37.05",
+                  "value": 37.05,
+                  "rating": "Moderate"
+                },
+                {
+                  "name": "Pollution Index",
+                  "value_display": "60.58",
+                  "value": 60.58,
+                  "rating": "High"
+                },
+                {
+                  "name": "ƒ Quality of Life Index",
+                  "value_display": "136.59",
+                  "value": 136.59,
+                  "rating": "Moderate"
+                }
+              ]
+            }
+          ],
+          "data": {},
+          "tables": [],
+          "city_rankings": [],
+          "cities": {}
+        },
+        "traffic": {
+          "source_url": "https://www.numbeo.com/traffic/country_result.jsp?country=Malaysia",
+          "indices": [
+            {
+              "name": "Traffic Index",
+              "value_display": "168.46",
+              "value": 168.46,
+              "group": "Index"
+            },
+            {
+              "name": "Time Index (in minutes)",
+              "value_display": "37.05",
+              "value": 37.05,
+              "group": "Index"
+            },
+            {
+              "name": "Time Exp. Index",
+              "value_display": "905.03",
+              "value": 905.03,
+              "group": "Index"
+            },
+            {
+              "name": "Inefficiency Index",
+              "value_display": "185.77",
+              "value": 185.77,
+              "group": "Index"
+            },
+            {
+              "name": "Emission Index",
+              "value_display": "7,690.66",
+              "value": 7690.66,
+              "group": "Index"
+            }
+          ],
+          "metrics": [
+            {
+              "name": "Working from Home",
+              "value_display": "6.69%",
+              "unit": "%",
+              "value": 6.69,
+              "group": "Main Means of Transportation to Work or School"
+            },
+            {
+              "name": "Walking",
+              "value_display": "6.69%",
+              "unit": "%",
+              "value": 6.69,
+              "group": "Main Means of Transportation to Work or School"
+            },
+            {
+              "name": "Car",
+              "value_display": "72.93%",
+              "unit": "%",
+              "value": 72.93,
+              "group": "Main Means of Transportation to Work or School"
+            },
+            {
+              "name": "Bicycle",
+              "value_display": "1.91%",
+              "unit": "%",
+              "value": 1.91,
+              "group": "Main Means of Transportation to Work or School"
+            },
+            {
+              "name": "Motorcycle",
+              "value_display": "3.50%",
+              "unit": "%",
+              "value": 3.5,
+              "group": "Main Means of Transportation to Work or School"
+            },
+            {
+              "name": "Bus/Trolleybus",
+              "value_display": "3.82%",
+              "unit": "%",
+              "value": 3.82,
+              "group": "Main Means of Transportation to Work or School"
+            },
+            {
+              "name": "Tram/Streetcar",
+              "value_display": "0.32%",
+              "unit": "%",
+              "value": 0.32,
+              "group": "Main Means of Transportation to Work or School"
+            },
+            {
+              "name": "Train/Metro",
+              "value_display": "4.14%",
+              "unit": "%",
+              "value": 4.14,
+              "group": "Main Means of Transportation to Work or School"
+            },
+            {
+              "name": "Average Distance",
+              "value_display": "18.80 km",
+              "value": 18.8,
+              "unit": "km",
+              "group": "Overall Average One-Way Commute Time and Distance to Work or School"
+            },
+            {
+              "name": "Average Travel Time",
+              "value_display": "37.05 min",
+              "value": 37.05,
+              "unit": "min",
+              "group": "Overall Average One-Way Commute Time and Distance to Work or School"
+            },
+            {
+              "name": "Distance",
+              "value_display": "3.69 km",
+              "value": 3.69,
+              "unit": "km",
+              "group": "Average when primarily using Walking"
+            },
+            {
+              "name": "Walking",
+              "value_display": "17.48 min",
+              "value": 17.48,
+              "unit": "min",
+              "group": "Average when primarily using Walking"
+            },
+            {
+              "name": "Waiting",
+              "value_display": "0.38 min",
+              "value": 0.38,
+              "unit": "min",
+              "group": "Average when primarily using Walking"
+            },
+            {
+              "name": "Driving Car",
+              "value_display": "4.64 min",
+              "value": 4.64,
+              "unit": "min",
+              "group": "Average when primarily using Walking"
+            },
+            {
+              "name": "Bus/Trolleybus Ride",
+              "value_display": "0.05 min",
+              "value": 0.05,
+              "unit": "min",
+              "group": "Average when primarily using Walking"
+            },
+            {
+              "name": "Train/Metro Ride",
+              "value_display": "0.95 min",
+              "value": 0.95,
+              "unit": "min",
+              "group": "Average when primarily using Walking"
+            },
+            {
+              "name": "Overall",
+              "value_display": "23.50 min",
+              "value": 23.5,
+              "unit": "min",
+              "group": "Average when primarily using Walking"
+            },
+            {
+              "name": "Distance",
+              "value_display": "20.29 km",
+              "value": 20.29,
+              "unit": "km",
+              "group": "Average when primarily using Car"
+            },
+            {
+              "name": "Walking",
+              "value_display": "1.06 min",
+              "value": 1.06,
+              "unit": "min",
+              "group": "Average when primarily using Car"
+            },
+            {
+              "name": "Waiting",
+              "value_display": "0.02 min",
+              "value": 0.02,
+              "unit": "min",
+              "group": "Average when primarily using Car"
+            },
+            {
+              "name": "Driving Car",
+              "value_display": "35.72 min",
+              "value": 35.72,
+              "unit": "min",
+              "group": "Average when primarily using Car"
+            },
+            {
+              "name": "Motorcycle",
+              "value_display": "0.03 min",
+              "value": 0.03,
+              "unit": "min",
+              "group": "Average when primarily using Car"
+            },
+            {
+              "name": "Train/Metro Ride",
+              "value_display": "0.13 min",
+              "value": 0.13,
+              "unit": "min",
+              "group": "Average when primarily using Car"
+            },
+            {
+              "name": "Overall",
+              "value_display": "36.96 min",
+              "value": 36.96,
+              "unit": "min",
+              "group": "Average when primarily using Car"
+            },
+            {
+              "name": "Distance",
+              "value_display": "11.17 km",
+              "value": 11.17,
+              "unit": "km",
+              "group": "Average when primarily using Bicycle"
+            },
+            {
+              "name": "Bicycle",
+              "value_display": "28.33 min",
+              "value": 28.33,
+              "unit": "min",
+              "group": "Average when primarily using Bicycle"
+            },
+            {
+              "name": "Overall",
+              "value_display": "28.33 min",
+              "value": 28.33,
+              "unit": "min",
+              "group": "Average when primarily using Bicycle"
+            },
+            {
+              "name": "Distance",
+              "value_display": "14.64 km",
+              "value": 14.64,
+              "unit": "km",
+              "group": "Average when primarily using Motorcycle"
+            },
+            {
+              "name": "Walking",
+              "value_display": "1.86 min",
+              "value": 1.86,
+              "unit": "min",
+              "group": "Average when primarily using Motorcycle"
+            },
+            {
+              "name": "Motorcycle",
+              "value_display": "18.64 min",
+              "value": 18.64,
+              "unit": "min",
+              "group": "Average when primarily using Motorcycle"
+            },
+            {
+              "name": "Overall",
+              "value_display": "20.50 min",
+              "value": 20.5,
+              "unit": "min",
+              "group": "Average when primarily using Motorcycle"
+            },
+            {
+              "name": "Distance",
+              "value_display": "20.98 km",
+              "value": 20.98,
+              "unit": "km",
+              "group": "Average when primarily using Bus/Trolleybus"
+            },
+            {
+              "name": "Walking",
+              "value_display": "7.42 min",
+              "value": 7.42,
+              "unit": "min",
+              "group": "Average when primarily using Bus/Trolleybus"
+            },
+            {
+              "name": "Waiting",
+              "value_display": "10.83 min",
+              "value": 10.83,
+              "unit": "min",
+              "group": "Average when primarily using Bus/Trolleybus"
+            },
+            {
+              "name": "Bus/Trolleybus Ride",
+              "value_display": "30.83 min",
+              "value": 30.83,
+              "unit": "min",
+              "group": "Average when primarily using Bus/Trolleybus"
+            },
+            {
+              "name": "Train/Metro Ride",
+              "value_display": "2.33 min",
+              "value": 2.33,
+              "unit": "min",
+              "group": "Average when primarily using Bus/Trolleybus"
+            },
+            {
+              "name": "Overall",
+              "value_display": "52.25 min",
+              "value": 52.25,
+              "unit": "min",
+              "group": "Average when primarily using Bus/Trolleybus"
+            },
+            {
+              "name": "Distance",
+              "value_display": "20.00 km",
+              "value": 20.0,
+              "unit": "km",
+              "group": "Average when primarily using Tram/Streetcar"
+            },
+            {
+              "name": "Walking",
+              "value_display": "10.00 min",
+              "value": 10.0,
+              "unit": "min",
+              "group": "Average when primarily using Tram/Streetcar"
+            },
+            {
+              "name": "Waiting",
+              "value_display": "10.00 min",
+              "value": 10.0,
+              "unit": "min",
+              "group": "Average when primarily using Tram/Streetcar"
+            },
+            {
+              "name": "Bus/Trolleybus Ride",
+              "value_display": "5.00 min",
+              "value": 5.0,
+              "unit": "min",
+              "group": "Average when primarily using Tram/Streetcar"
+            },
+            {
+              "name": "Tram/Streetcat Ride",
+              "value_display": "40.00 min",
+              "value": 40.0,
+              "unit": "min",
+              "group": "Average when primarily using Tram/Streetcar"
+            },
+            {
+              "name": "Overall",
+              "value_display": "65.00 min",
+              "value": 65.0,
+              "unit": "min",
+              "group": "Average when primarily using Tram/Streetcar"
+            },
+            {
+              "name": "Distance",
+              "value_display": "23.21 km",
+              "value": 23.21,
+              "unit": "km",
+              "group": "Average when primarily using Train/Metro"
+            },
+            {
+              "name": "Walking",
+              "value_display": "9.92 min",
+              "value": 9.92,
+              "unit": "min",
+              "group": "Average when primarily using Train/Metro"
+            },
+            {
+              "name": "Waiting",
+              "value_display": "5.31 min",
+              "value": 5.31,
+              "unit": "min",
+              "group": "Average when primarily using Train/Metro"
+            },
+            {
+              "name": "Bus/Trolleybus Ride",
+              "value_display": "3.85 min",
+              "value": 3.85,
+              "unit": "min",
+              "group": "Average when primarily using Train/Metro"
+            },
+            {
+              "name": "Tram/Streetcat Ride",
+              "value_display": "1.15 min",
+              "value": 1.15,
+              "unit": "min",
+              "group": "Average when primarily using Train/Metro"
+            },
+            {
+              "name": "Train/Metro Ride",
+              "value_display": "41.00 min",
+              "value": 41.0,
+              "unit": "min",
+              "group": "Average when primarily using Train/Metro"
+            },
+            {
+              "name": "Overall",
+              "value_display": "65.08 min",
+              "value": 65.08,
+              "unit": "min",
+              "group": "Average when primarily using Train/Metro"
+            }
+          ],
+          "metric_tables": [
+            {
+              "title": "Main Means of Transportation to Work or School",
+              "metrics": [
+                {
+                  "name": "Working from Home",
+                  "value_display": "6.69%",
+                  "unit": "%",
+                  "value": 6.69
+                },
+                {
+                  "name": "Walking",
+                  "value_display": "6.69%",
+                  "unit": "%",
+                  "value": 6.69
+                },
+                {
+                  "name": "Car",
+                  "value_display": "72.93%",
+                  "unit": "%",
+                  "value": 72.93
+                },
+                {
+                  "name": "Bicycle",
+                  "value_display": "1.91%",
+                  "unit": "%",
+                  "value": 1.91
+                },
+                {
+                  "name": "Motorcycle",
+                  "value_display": "3.50%",
+                  "unit": "%",
+                  "value": 3.5
+                },
+                {
+                  "name": "Bus/Trolleybus",
+                  "value_display": "3.82%",
+                  "unit": "%",
+                  "value": 3.82
+                },
+                {
+                  "name": "Tram/Streetcar",
+                  "value_display": "0.32%",
+                  "unit": "%",
+                  "value": 0.32
+                },
+                {
+                  "name": "Train/Metro",
+                  "value_display": "4.14%",
+                  "unit": "%",
+                  "value": 4.14
+                }
+              ]
+            },
+            {
+              "title": "Overall Average One-Way Commute Time and Distance to Work or School",
+              "metrics": [
+                {
+                  "name": "Average Distance",
+                  "value_display": "18.80 km",
+                  "value": 18.8,
+                  "unit": "km"
+                },
+                {
+                  "name": "Average Travel Time",
+                  "value_display": "37.05 min",
+                  "value": 37.05,
+                  "unit": "min"
+                }
+              ]
+            },
+            {
+              "title": "Average when primarily using Walking",
+              "metrics": [
+                {
+                  "name": "Distance",
+                  "value_display": "3.69 km",
+                  "value": 3.69,
+                  "unit": "km"
+                },
+                {
+                  "name": "Walking",
+                  "value_display": "17.48 min",
+                  "value": 17.48,
+                  "unit": "min"
+                },
+                {
+                  "name": "Waiting",
+                  "value_display": "0.38 min",
+                  "value": 0.38,
+                  "unit": "min"
+                },
+                {
+                  "name": "Driving Car",
+                  "value_display": "4.64 min",
+                  "value": 4.64,
+                  "unit": "min"
+                },
+                {
+                  "name": "Bus/Trolleybus Ride",
+                  "value_display": "0.05 min",
+                  "value": 0.05,
+                  "unit": "min"
+                },
+                {
+                  "name": "Train/Metro Ride",
+                  "value_display": "0.95 min",
+                  "value": 0.95,
+                  "unit": "min"
+                },
+                {
+                  "name": "Overall",
+                  "value_display": "23.50 min",
+                  "value": 23.5,
+                  "unit": "min"
+                }
+              ]
+            },
+            {
+              "title": "Average when primarily using Car",
+              "metrics": [
+                {
+                  "name": "Distance",
+                  "value_display": "20.29 km",
+                  "value": 20.29,
+                  "unit": "km"
+                },
+                {
+                  "name": "Walking",
+                  "value_display": "1.06 min",
+                  "value": 1.06,
+                  "unit": "min"
+                },
+                {
+                  "name": "Waiting",
+                  "value_display": "0.02 min",
+                  "value": 0.02,
+                  "unit": "min"
+                },
+                {
+                  "name": "Driving Car",
+                  "value_display": "35.72 min",
+                  "value": 35.72,
+                  "unit": "min"
+                },
+                {
+                  "name": "Motorcycle",
+                  "value_display": "0.03 min",
+                  "value": 0.03,
+                  "unit": "min"
+                },
+                {
+                  "name": "Train/Metro Ride",
+                  "value_display": "0.13 min",
+                  "value": 0.13,
+                  "unit": "min"
+                },
+                {
+                  "name": "Overall",
+                  "value_display": "36.96 min",
+                  "value": 36.96,
+                  "unit": "min"
+                }
+              ]
+            },
+            {
+              "title": "Average when primarily using Bicycle",
+              "metrics": [
+                {
+                  "name": "Distance",
+                  "value_display": "11.17 km",
+                  "value": 11.17,
+                  "unit": "km"
+                },
+                {
+                  "name": "Bicycle",
+                  "value_display": "28.33 min",
+                  "value": 28.33,
+                  "unit": "min"
+                },
+                {
+                  "name": "Overall",
+                  "value_display": "28.33 min",
+                  "value": 28.33,
+                  "unit": "min"
+                }
+              ]
+            },
+            {
+              "title": "Average when primarily using Motorcycle",
+              "metrics": [
+                {
+                  "name": "Distance",
+                  "value_display": "14.64 km",
+                  "value": 14.64,
+                  "unit": "km"
+                },
+                {
+                  "name": "Walking",
+                  "value_display": "1.86 min",
+                  "value": 1.86,
+                  "unit": "min"
+                },
+                {
+                  "name": "Motorcycle",
+                  "value_display": "18.64 min",
+                  "value": 18.64,
+                  "unit": "min"
+                },
+                {
+                  "name": "Overall",
+                  "value_display": "20.50 min",
+                  "value": 20.5,
+                  "unit": "min"
+                }
+              ]
+            },
+            {
+              "title": "Average when primarily using Bus/Trolleybus",
+              "metrics": [
+                {
+                  "name": "Distance",
+                  "value_display": "20.98 km",
+                  "value": 20.98,
+                  "unit": "km"
+                },
+                {
+                  "name": "Walking",
+                  "value_display": "7.42 min",
+                  "value": 7.42,
+                  "unit": "min"
+                },
+                {
+                  "name": "Waiting",
+                  "value_display": "10.83 min",
+                  "value": 10.83,
+                  "unit": "min"
+                },
+                {
+                  "name": "Bus/Trolleybus Ride",
+                  "value_display": "30.83 min",
+                  "value": 30.83,
+                  "unit": "min"
+                },
+                {
+                  "name": "Train/Metro Ride",
+                  "value_display": "2.33 min",
+                  "value": 2.33,
+                  "unit": "min"
+                },
+                {
+                  "name": "Overall",
+                  "value_display": "52.25 min",
+                  "value": 52.25,
+                  "unit": "min"
+                }
+              ]
+            },
+            {
+              "title": "Average when primarily using Tram/Streetcar",
+              "metrics": [
+                {
+                  "name": "Distance",
+                  "value_display": "20.00 km",
+                  "value": 20.0,
+                  "unit": "km"
+                },
+                {
+                  "name": "Walking",
+                  "value_display": "10.00 min",
+                  "value": 10.0,
+                  "unit": "min"
+                },
+                {
+                  "name": "Waiting",
+                  "value_display": "10.00 min",
+                  "value": 10.0,
+                  "unit": "min"
+                },
+                {
+                  "name": "Bus/Trolleybus Ride",
+                  "value_display": "5.00 min",
+                  "value": 5.0,
+                  "unit": "min"
+                },
+                {
+                  "name": "Tram/Streetcat Ride",
+                  "value_display": "40.00 min",
+                  "value": 40.0,
+                  "unit": "min"
+                },
+                {
+                  "name": "Overall",
+                  "value_display": "65.00 min",
+                  "value": 65.0,
+                  "unit": "min"
+                }
+              ]
+            },
+            {
+              "title": "Average when primarily using Train/Metro",
+              "metrics": [
+                {
+                  "name": "Distance",
+                  "value_display": "23.21 km",
+                  "value": 23.21,
+                  "unit": "km"
+                },
+                {
+                  "name": "Walking",
+                  "value_display": "9.92 min",
+                  "value": 9.92,
+                  "unit": "min"
+                },
+                {
+                  "name": "Waiting",
+                  "value_display": "5.31 min",
+                  "value": 5.31,
+                  "unit": "min"
+                },
+                {
+                  "name": "Bus/Trolleybus Ride",
+                  "value_display": "3.85 min",
+                  "value": 3.85,
+                  "unit": "min"
+                },
+                {
+                  "name": "Tram/Streetcat Ride",
+                  "value_display": "1.15 min",
+                  "value": 1.15,
+                  "unit": "min"
+                },
+                {
+                  "name": "Train/Metro Ride",
+                  "value_display": "41.00 min",
+                  "value": 41.0,
+                  "unit": "min"
+                },
+                {
+                  "name": "Overall",
+                  "value_display": "65.08 min",
+                  "value": 65.08,
+                  "unit": "min"
+                }
+              ]
+            }
+          ],
+          "data": {},
+          "tables": [],
+          "city_rankings": [],
+          "cities": {}
+        }
+      }
+    }
+  }
+}

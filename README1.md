@@ -1,18 +1,123 @@
-# Numbeo Web-Scraper
+# Numbeo Web Scraper
 
-This folder contains a web-scraper to scrape [Numbeo](https://www.numbeo.com/cost-of-living/) for cost of living data. It will scrape all the data that Numbeo will allow you to for a given country and location (Numbeo fairly prevents scrapers, and so you won't get much if you try). It will give back all of the information that you could get for every location within a search query. 
+This project scrapes Numbeo country and city tables and writes the result to JSON.
 
-## Usage
+## Setup
 
-This scraper is built to scape Numbeo for an inputted country and location. To use it, you can simply call it from the command line as follows: 
-
-```python 
-python scrape.py   for scrapping all cost of living information
-python scrape_healthcare.py     for scrapping only health care components
+```bash
+python -m pip install -r requirements.txt
 ```
 
-## API Accessible
+## Cost of Living
 
-api = API(URL, "country")
+```bash
+python scrape.py --category cost-of-living --countries Malaysia Singapore Australia --output results.json
+```
 
-api.get_single_city("location")
+## Health Care
+
+```bash
+python scrape.py --category health-care --countries Malaysia Singapore Australia --output healthcare.json
+```
+
+## All Supported Numbeo Sections
+
+Use `--category all` to scrape every supported section into one file.
+
+```bash
+python scrape.py --category all --countries Malaysia France Japan --output numbeo_all.json
+```
+
+Supported sections:
+
+- `cost-of-living`
+- `property-prices`
+- `crime`
+- `health-care`
+- `pollution`
+- `traffic`
+- `quality-of-life`
+
+## Include Cities
+
+Use `--city-limit` to scrape city pages for each country.
+
+```bash
+python scrape.py --category health-care --countries Malaysia --city-limit 5 --output malaysia_healthcare.json
+```
+
+`--city-limit 0` only scrapes country-level data. This is the default and is friendlier to Numbeo.
+
+## JSON Shape
+
+```json
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "health-care",
+    "scraped_at": "2026-04-30T00:00:00+00:00",
+    "city_limit": 0
+  },
+  "countries": {
+    "Malaysia": {
+      "source_url": "https://www.numbeo.com/health-care/country_result.jsp?country=Malaysia",
+      "indices": [
+        {
+          "name": "Health Care System Index",
+          "value_display": "70.71",
+          "value": 70.71,
+          "group": "Index"
+        }
+      ],
+      "metrics": [],
+      "data": {
+        "Component of health care surveyed": [
+          {
+            "item": "Skill and competency of medical staff",
+            "value_display": "66.29 High",
+            "value": 66.29,
+            "rating": "High",
+            "raw": {
+              "cells": ["Skill and competency of medical staff", "66.29 High", "High"],
+              "range_display": "High"
+            }
+          }
+        ]
+      },
+      "tables": [],
+      "city_rankings": [],
+      "cities": {}
+    }
+  }
+}
+```
+
+Cost-of-living rows use the same `item`, `value_display`, and numeric `value` fields, plus `unit` and a structured `range` when Numbeo provides one.
+
+```json
+{
+  "item": "Meal at an Inexpensive Restaurant",
+  "value_display": "15.00 RM",
+  "value": 15.0,
+  "unit": "RM",
+  "range": {
+    "display": "10.00 - 23.00",
+    "min": 10.0,
+    "max": 23.0,
+    "unit": "RM"
+  }
+}
+```
+
+When `--category all` is used, the output nests each section under `countries.<country>.categories.<category>`.
+
+## Python Usage
+
+```python
+from scrape import NumbeoScraper
+
+scraper = NumbeoScraper("health-care", city_limit=2)
+malaysia = scraper.scrape_country("Malaysia")
+```
+
+The old `API(base_url, country).get_result()` import style is still supported for existing code.

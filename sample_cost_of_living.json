@@ -1,0 +1,1126 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "category": "cost-of-living",
+    "scraped_at": "2026-04-30T01:09:59.744011+00:00",
+    "city_limit": 0
+  },
+  "countries": {
+    "Malaysia": {
+      "source_url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Malaysia",
+      "data": {
+        "Restaurants": [
+          {
+            "raw": {
+              "cells": [
+                "Meal at an Inexpensive Restaurant",
+                "15.00 RM",
+                "10.00 - 23.00"
+              ],
+              "range_display": "10.00 - 23.00"
+            },
+            "item": "Meal at an Inexpensive Restaurant",
+            "value_display": "15.00 RM",
+            "value": 15.0,
+            "unit": "RM",
+            "range": {
+              "display": "10.00 - 23.00",
+              "min": 10.0,
+              "max": 23.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)",
+                "80.00 RM",
+                "60.00 - 200.00"
+              ],
+              "range_display": "60.00 - 200.00"
+            },
+            "item": "Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)",
+            "value_display": "80.00 RM",
+            "value": 80.0,
+            "unit": "RM",
+            "range": {
+              "display": "60.00 - 200.00",
+              "min": 60.0,
+              "max": 200.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Combo Meal at McDonald's (or Equivalent Fast-Food Meal)",
+                "20.00 RM",
+                "16.00 - 20.00"
+              ],
+              "range_display": "16.00 - 20.00"
+            },
+            "item": "Combo Meal at McDonald's (or Equivalent Fast-Food Meal)",
+            "value_display": "20.00 RM",
+            "value": 20.0,
+            "unit": "RM",
+            "range": {
+              "display": "16.00 - 20.00",
+              "min": 16.0,
+              "max": 20.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Domestic Draft Beer (1 Pint)",
+                "15.00 RM",
+                "8.00 - 28.00"
+              ],
+              "range_display": "8.00 - 28.00"
+            },
+            "item": "Domestic Draft Beer (1 Pint)",
+            "value_display": "15.00 RM",
+            "value": 15.0,
+            "unit": "RM",
+            "range": {
+              "display": "8.00 - 28.00",
+              "min": 8.0,
+              "max": 28.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Imported Beer (12 oz Small Bottle)",
+                "20.00 RM",
+                "14.00 - 32.00"
+              ],
+              "range_display": "14.00 - 32.00"
+            },
+            "item": "Imported Beer (12 oz Small Bottle)",
+            "value_display": "20.00 RM",
+            "value": 20.0,
+            "unit": "RM",
+            "range": {
+              "display": "14.00 - 32.00",
+              "min": 14.0,
+              "max": 32.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Cappuccino (Regular Size)",
+                "11.64 RM",
+                "5.00 - 16.00"
+              ],
+              "range_display": "5.00 - 16.00"
+            },
+            "item": "Cappuccino (Regular Size)",
+            "value_display": "11.64 RM",
+            "value": 11.64,
+            "unit": "RM",
+            "range": {
+              "display": "5.00 - 16.00",
+              "min": 5.0,
+              "max": 16.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Soft Drink (Coca-Cola or Pepsi, 12 oz Small Bottle)",
+                "3.17 RM",
+                "2.40 - 5.00"
+              ],
+              "range_display": "2.40 - 5.00"
+            },
+            "item": "Soft Drink (Coca-Cola or Pepsi, 12 oz Small Bottle)",
+            "value_display": "3.17 RM",
+            "value": 3.17,
+            "unit": "RM",
+            "range": {
+              "display": "2.40 - 5.00",
+              "min": 2.4,
+              "max": 5.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Bottled Water (12 oz)",
+                "1.64 RM",
+                "1.00 - 3.00"
+              ],
+              "range_display": "1.00 - 3.00"
+            },
+            "item": "Bottled Water (12 oz)",
+            "value_display": "1.64 RM",
+            "value": 1.64,
+            "unit": "RM",
+            "range": {
+              "display": "1.00 - 3.00",
+              "min": 1.0,
+              "max": 3.0,
+              "unit": "RM"
+            }
+          }
+        ],
+        "Markets": [
+          {
+            "raw": {
+              "cells": [
+                "Milk (Regular, 1 Liter)",
+                "7.64 RM",
+                "6.00 - 10.00"
+              ],
+              "range_display": "6.00 - 10.00"
+            },
+            "item": "Milk (Regular, 1 Liter)",
+            "value_display": "7.64 RM",
+            "value": 7.64,
+            "unit": "RM",
+            "range": {
+              "display": "6.00 - 10.00",
+              "min": 6.0,
+              "max": 10.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Fresh White Bread (1 lb Loaf)",
+                "3.85 RM",
+                "2.72 - 6.35"
+              ],
+              "range_display": "2.72 - 6.35"
+            },
+            "item": "Fresh White Bread (1 lb Loaf)",
+            "value_display": "3.85 RM",
+            "value": 3.85,
+            "unit": "RM",
+            "range": {
+              "display": "2.72 - 6.35",
+              "min": 2.72,
+              "max": 6.35,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "White Rice (1 lb)",
+                "2.69 RM",
+                "1.27 - 4.54"
+              ],
+              "range_display": "1.27 - 4.54"
+            },
+            "item": "White Rice (1 lb)",
+            "value_display": "2.69 RM",
+            "value": 2.69,
+            "unit": "RM",
+            "range": {
+              "display": "1.27 - 4.54",
+              "min": 1.27,
+              "max": 4.54,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Eggs (12, Large Size)",
+                "8.49 RM",
+                "4.80 - 12.00"
+              ],
+              "range_display": "4.80 - 12.00"
+            },
+            "item": "Eggs (12, Large Size)",
+            "value_display": "8.49 RM",
+            "value": 8.49,
+            "unit": "RM",
+            "range": {
+              "display": "4.80 - 12.00",
+              "min": 4.8,
+              "max": 12.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Local Cheese (1 lb)",
+                "24.71 RM",
+                "11.34 - 54.43"
+              ],
+              "range_display": "11.34 - 54.43"
+            },
+            "item": "Local Cheese (1 lb)",
+            "value_display": "24.71 RM",
+            "value": 24.71,
+            "unit": "RM",
+            "range": {
+              "display": "11.34 - 54.43",
+              "min": 11.34,
+              "max": 54.43,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Chicken Fillets (1 lb)",
+                "7.86 RM",
+                "4.04 - 12.70"
+              ],
+              "range_display": "4.04 - 12.70"
+            },
+            "item": "Chicken Fillets (1 lb)",
+            "value_display": "7.86 RM",
+            "value": 7.86,
+            "unit": "RM",
+            "range": {
+              "display": "4.04 - 12.70",
+              "min": 4.04,
+              "max": 12.7,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Beef Round or Equivalent Back Leg Red Meat (1 lb)",
+                "16.21 RM",
+                "8.16 - 27.22"
+              ],
+              "range_display": "8.16 - 27.22"
+            },
+            "item": "Beef Round or Equivalent Back Leg Red Meat (1 lb)",
+            "value_display": "16.21 RM",
+            "value": 16.21,
+            "unit": "RM",
+            "range": {
+              "display": "8.16 - 27.22",
+              "min": 8.16,
+              "max": 27.22,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Apples (1 lb)",
+                "5.63 RM",
+                "2.27 - 8.62"
+              ],
+              "range_display": "2.27 - 8.62"
+            },
+            "item": "Apples (1 lb)",
+            "value_display": "5.63 RM",
+            "value": 5.63,
+            "unit": "RM",
+            "range": {
+              "display": "2.27 - 8.62",
+              "min": 2.27,
+              "max": 8.62,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Bananas (1 lb)",
+                "2.99 RM",
+                "1.81 - 4.99"
+              ],
+              "range_display": "1.81 - 4.99"
+            },
+            "item": "Bananas (1 lb)",
+            "value_display": "2.99 RM",
+            "value": 2.99,
+            "unit": "RM",
+            "range": {
+              "display": "1.81 - 4.99",
+              "min": 1.81,
+              "max": 4.99,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Oranges (1 lb)",
+                "5.06 RM",
+                "2.27 - 9.07"
+              ],
+              "range_display": "2.27 - 9.07"
+            },
+            "item": "Oranges (1 lb)",
+            "value_display": "5.06 RM",
+            "value": 5.06,
+            "unit": "RM",
+            "range": {
+              "display": "2.27 - 9.07",
+              "min": 2.27,
+              "max": 9.07,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Tomatoes (1 lb)",
+                "2.97 RM",
+                "1.36 - 4.54"
+              ],
+              "range_display": "1.36 - 4.54"
+            },
+            "item": "Tomatoes (1 lb)",
+            "value_display": "2.97 RM",
+            "value": 2.97,
+            "unit": "RM",
+            "range": {
+              "display": "1.36 - 4.54",
+              "min": 1.36,
+              "max": 4.54,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Potatoes (1 lb)",
+                "2.28 RM",
+                "0.91 - 4.54"
+              ],
+              "range_display": "0.91 - 4.54"
+            },
+            "item": "Potatoes (1 lb)",
+            "value_display": "2.28 RM",
+            "value": 2.28,
+            "unit": "RM",
+            "range": {
+              "display": "0.91 - 4.54",
+              "min": 0.91,
+              "max": 4.54,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Onions (1 lb)",
+                "2.50 RM",
+                "1.22 - 4.08"
+              ],
+              "range_display": "1.22 - 4.08"
+            },
+            "item": "Onions (1 lb)",
+            "value_display": "2.50 RM",
+            "value": 2.5,
+            "unit": "RM",
+            "range": {
+              "display": "1.22 - 4.08",
+              "min": 1.22,
+              "max": 4.08,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Lettuce (1 Head)",
+                "4.73 RM",
+                "2.99 - 8.00"
+              ],
+              "range_display": "2.99 - 8.00"
+            },
+            "item": "Lettuce (1 Head)",
+            "value_display": "4.73 RM",
+            "value": 4.73,
+            "unit": "RM",
+            "range": {
+              "display": "2.99 - 8.00",
+              "min": 2.99,
+              "max": 8.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Bottled Water (50 oz)",
+                "2.38 RM",
+                "1.50 - 3.50"
+              ],
+              "range_display": "1.50 - 3.50"
+            },
+            "item": "Bottled Water (50 oz)",
+            "value_display": "2.38 RM",
+            "value": 2.38,
+            "unit": "RM",
+            "range": {
+              "display": "1.50 - 3.50",
+              "min": 1.5,
+              "max": 3.5,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Bottle of Wine (Mid-Range)",
+                "78.00 RM",
+                "35.00 - 120.00"
+              ],
+              "range_display": "35.00 - 120.00"
+            },
+            "item": "Bottle of Wine (Mid-Range)",
+            "value_display": "78.00 RM",
+            "value": 78.0,
+            "unit": "RM",
+            "range": {
+              "display": "35.00 - 120.00",
+              "min": 35.0,
+              "max": 120.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Domestic Beer (16.9 oz Bottle)",
+                "11.99 RM",
+                "6.00 - 17.14"
+              ],
+              "range_display": "6.00 - 17.14"
+            },
+            "item": "Domestic Beer (16.9 oz Bottle)",
+            "value_display": "11.99 RM",
+            "value": 11.99,
+            "unit": "RM",
+            "range": {
+              "display": "6.00 - 17.14",
+              "min": 6.0,
+              "max": 17.14,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Imported Beer (12 oz Small Bottle)",
+                "16.77 RM",
+                "8.00 - 30.00"
+              ],
+              "range_display": "8.00 - 30.00"
+            },
+            "item": "Imported Beer (12 oz Small Bottle)",
+            "value_display": "16.77 RM",
+            "value": 16.77,
+            "unit": "RM",
+            "range": {
+              "display": "8.00 - 30.00",
+              "min": 8.0,
+              "max": 30.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Cigarettes (Pack of 20, Marlboro)",
+                "18.00 RM",
+                "17.40 - 21.50"
+              ],
+              "range_display": "17.40 - 21.50"
+            },
+            "item": "Cigarettes (Pack of 20, Marlboro)",
+            "value_display": "18.00 RM",
+            "value": 18.0,
+            "unit": "RM",
+            "range": {
+              "display": "17.40 - 21.50",
+              "min": 17.4,
+              "max": 21.5,
+              "unit": "RM"
+            }
+          }
+        ],
+        "Transportation": [
+          {
+            "raw": {
+              "cells": [
+                "One-Way Ticket (Local Transport)",
+                "3.00 RM",
+                "2.00 - 5.00"
+              ],
+              "range_display": "2.00 - 5.00"
+            },
+            "item": "One-Way Ticket (Local Transport)",
+            "value_display": "3.00 RM",
+            "value": 3.0,
+            "unit": "RM",
+            "range": {
+              "display": "2.00 - 5.00",
+              "min": 2.0,
+              "max": 5.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Monthly Public Transport Pass (Regular Price)",
+                "50.00 RM",
+                "50.00 - 100.00"
+              ],
+              "range_display": "50.00 - 100.00"
+            },
+            "item": "Monthly Public Transport Pass (Regular Price)",
+            "value_display": "50.00 RM",
+            "value": 50.0,
+            "unit": "RM",
+            "range": {
+              "display": "50.00 - 100.00",
+              "min": 50.0,
+              "max": 100.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Taxi Start (Standard Tariff)",
+                "5.00 RM",
+                "3.00 - 7.00"
+              ],
+              "range_display": "3.00 - 7.00"
+            },
+            "item": "Taxi Start (Standard Tariff)",
+            "value_display": "5.00 RM",
+            "value": 5.0,
+            "unit": "RM",
+            "range": {
+              "display": "3.00 - 7.00",
+              "min": 3.0,
+              "max": 7.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Taxi 1 mile (Standard Tariff)",
+                "6.44 RM",
+                "3.22 - 9.66"
+              ],
+              "range_display": "3.22 - 9.66"
+            },
+            "item": "Taxi 1 mile (Standard Tariff)",
+            "value_display": "6.44 RM",
+            "value": 6.44,
+            "unit": "RM",
+            "range": {
+              "display": "3.22 - 9.66",
+              "min": 3.22,
+              "max": 9.66,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Taxi 1 Hour Waiting (Standard Tariff)",
+                "25.00 RM",
+                "15.00 - 36.92"
+              ],
+              "range_display": "15.00 - 36.92"
+            },
+            "item": "Taxi 1 Hour Waiting (Standard Tariff)",
+            "value_display": "25.00 RM",
+            "value": 25.0,
+            "unit": "RM",
+            "range": {
+              "display": "15.00 - 36.92",
+              "min": 15.0,
+              "max": 36.92,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Gasoline (1 Liter)",
+                "2.17 RM",
+                "2.05 - 2.65"
+              ],
+              "range_display": "2.05 - 2.65"
+            },
+            "item": "Gasoline (1 Liter)",
+            "value_display": "2.17 RM",
+            "value": 2.17,
+            "unit": "RM",
+            "range": {
+              "display": "2.05 - 2.65",
+              "min": 2.05,
+              "max": 2.65,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Volkswagen Golf 1.5 (or Equivalent New Compact Car)",
+                "170,560.00 RM",
+                "160,000.00 - 180,000.00"
+              ],
+              "range_display": "160,000.00 - 180,000.00"
+            },
+            "item": "Volkswagen Golf 1.5 (or Equivalent New Compact Car)",
+            "value_display": "170,560.00 RM",
+            "value": 170560.0,
+            "unit": "RM",
+            "range": {
+              "display": "160,000.00 - 180,000.00",
+              "min": 160000.0,
+              "max": 180000.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car)",
+                "139,514.56 RM",
+                "130,000.00 - 145,192.00"
+              ],
+              "range_display": "130,000.00 - 145,192.00"
+            },
+            "item": "Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car)",
+            "value_display": "139,514.56 RM",
+            "value": 139514.56,
+            "unit": "RM",
+            "range": {
+              "display": "130,000.00 - 145,192.00",
+              "min": 130000.0,
+              "max": 145192.0,
+              "unit": "RM"
+            }
+          }
+        ],
+        "Utilities (Monthly)": [
+          {
+            "raw": {
+              "cells": [
+                "Basic Utilities for 915 Square Feet Apartment (Electricity, Heating, Cooling, Water, Garbage)",
+                "218.33 RM",
+                "120.00 - 350.00"
+              ],
+              "range_display": "120.00 - 350.00"
+            },
+            "item": "Basic Utilities for 915 Square Feet Apartment (Electricity, Heating, Cooling, Water, Garbage)",
+            "value_display": "218.33 RM",
+            "value": 218.33,
+            "unit": "RM",
+            "range": {
+              "display": "120.00 - 350.00",
+              "min": 120.0,
+              "max": 350.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)",
+                "40.73 RM",
+                "22.00 - 60.00"
+              ],
+              "range_display": "22.00 - 60.00"
+            },
+            "item": "Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)",
+            "value_display": "40.73 RM",
+            "value": 40.73,
+            "unit": "RM",
+            "range": {
+              "display": "22.00 - 60.00",
+              "min": 22.0,
+              "max": 60.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Broadband Internet (Unlimited Data, 60 Mbps or Higher)",
+                "112.68 RM",
+                "90.00 - 150.00"
+              ],
+              "range_display": "90.00 - 150.00"
+            },
+            "item": "Broadband Internet (Unlimited Data, 60 Mbps or Higher)",
+            "value_display": "112.68 RM",
+            "value": 112.68,
+            "unit": "RM",
+            "range": {
+              "display": "90.00 - 150.00",
+              "min": 90.0,
+              "max": 150.0,
+              "unit": "RM"
+            }
+          }
+        ],
+        "Sports And Leisure": [
+          {
+            "raw": {
+              "cells": [
+                "Monthly Fitness Club Membership",
+                "158.58 RM",
+                "64.00 - 240.00"
+              ],
+              "range_display": "64.00 - 240.00"
+            },
+            "item": "Monthly Fitness Club Membership",
+            "value_display": "158.58 RM",
+            "value": 158.58,
+            "unit": "RM",
+            "range": {
+              "display": "64.00 - 240.00",
+              "min": 64.0,
+              "max": 240.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Tennis Court Rental (1 Hour, Weekend)",
+                "27.09 RM",
+                "10.00 - 45.00"
+              ],
+              "range_display": "10.00 - 45.00"
+            },
+            "item": "Tennis Court Rental (1 Hour, Weekend)",
+            "value_display": "27.09 RM",
+            "value": 27.09,
+            "unit": "RM",
+            "range": {
+              "display": "10.00 - 45.00",
+              "min": 10.0,
+              "max": 45.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Cinema Ticket (International Release)",
+                "20.00 RM",
+                "16.00 - 30.00"
+              ],
+              "range_display": "16.00 - 30.00"
+            },
+            "item": "Cinema Ticket (International Release)",
+            "value_display": "20.00 RM",
+            "value": 20.0,
+            "unit": "RM",
+            "range": {
+              "display": "16.00 - 30.00",
+              "min": 16.0,
+              "max": 30.0,
+              "unit": "RM"
+            }
+          }
+        ],
+        "Childcare": [
+          {
+            "raw": {
+              "cells": [
+                "Private Full-Day Preschool or Kindergarten, Monthly Fee per Child",
+                "832.50 RM",
+                "500.00 - 1,536.25"
+              ],
+              "range_display": "500.00 - 1,536.25"
+            },
+            "item": "Private Full-Day Preschool or Kindergarten, Monthly Fee per Child",
+            "value_display": "832.50 RM",
+            "value": 832.5,
+            "unit": "RM",
+            "range": {
+              "display": "500.00 - 1,536.25",
+              "min": 500.0,
+              "max": 1536.25,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "International Primary School, Annual Tuition per Child",
+                "33,957.95 RM",
+                "20,000.00 - 70,000.00"
+              ],
+              "range_display": "20,000.00 - 70,000.00"
+            },
+            "item": "International Primary School, Annual Tuition per Child",
+            "value_display": "33,957.95 RM",
+            "value": 33957.95,
+            "unit": "RM",
+            "range": {
+              "display": "20,000.00 - 70,000.00",
+              "min": 20000.0,
+              "max": 70000.0,
+              "unit": "RM"
+            }
+          }
+        ],
+        "Clothing And Shoes": [
+          {
+            "raw": {
+              "cells": [
+                "Jeans (Levi's 501 or Similar)",
+                "259.78 RM",
+                "105.00 - 400.00"
+              ],
+              "range_display": "105.00 - 400.00"
+            },
+            "item": "Jeans (Levi's 501 or Similar)",
+            "value_display": "259.78 RM",
+            "value": 259.78,
+            "unit": "RM",
+            "range": {
+              "display": "105.00 - 400.00",
+              "min": 105.0,
+              "max": 400.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Summer Dress in a Chain Store (e.g. Zara or H&M)",
+                "143.84 RM",
+                "60.00 - 259.00"
+              ],
+              "range_display": "60.00 - 259.00"
+            },
+            "item": "Summer Dress in a Chain Store (e.g. Zara or H&M)",
+            "value_display": "143.84 RM",
+            "value": 143.84,
+            "unit": "RM",
+            "range": {
+              "display": "60.00 - 259.00",
+              "min": 60.0,
+              "max": 259.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Nike Running Shoes (Mid-Range)",
+                "329.07 RM",
+                "200.00 - 450.00"
+              ],
+              "range_display": "200.00 - 450.00"
+            },
+            "item": "Nike Running Shoes (Mid-Range)",
+            "value_display": "329.07 RM",
+            "value": 329.07,
+            "unit": "RM",
+            "range": {
+              "display": "200.00 - 450.00",
+              "min": 200.0,
+              "max": 450.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Men's Leather Business Shoes",
+                "295.69 RM",
+                "129.00 - 500.00"
+              ],
+              "range_display": "129.00 - 500.00"
+            },
+            "item": "Men's Leather Business Shoes",
+            "value_display": "295.69 RM",
+            "value": 295.69,
+            "unit": "RM",
+            "range": {
+              "display": "129.00 - 500.00",
+              "min": 129.0,
+              "max": 500.0,
+              "unit": "RM"
+            }
+          }
+        ],
+        "Rent Per Month": [
+          {
+            "raw": {
+              "cells": [
+                "1 Bedroom Apartment in City Centre",
+                "1,616.27 RM",
+                "900.00 - 3,000.00"
+              ],
+              "range_display": "900.00 - 3,000.00"
+            },
+            "item": "1 Bedroom Apartment in City Centre",
+            "value_display": "1,616.27 RM",
+            "value": 1616.27,
+            "unit": "RM",
+            "range": {
+              "display": "900.00 - 3,000.00",
+              "min": 900.0,
+              "max": 3000.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "1 Bedroom Apartment Outside of City Centre",
+                "1,108.19 RM",
+                "600.00 - 1,800.00"
+              ],
+              "range_display": "600.00 - 1,800.00"
+            },
+            "item": "1 Bedroom Apartment Outside of City Centre",
+            "value_display": "1,108.19 RM",
+            "value": 1108.19,
+            "unit": "RM",
+            "range": {
+              "display": "600.00 - 1,800.00",
+              "min": 600.0,
+              "max": 1800.0,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "3 Bedroom Apartment in City Centre",
+                "2,873.11 RM",
+                "1,500.00 - 5,234.35"
+              ],
+              "range_display": "1,500.00 - 5,234.35"
+            },
+            "item": "3 Bedroom Apartment in City Centre",
+            "value_display": "2,873.11 RM",
+            "value": 2873.11,
+            "unit": "RM",
+            "range": {
+              "display": "1,500.00 - 5,234.35",
+              "min": 1500.0,
+              "max": 5234.35,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "3 Bedroom Apartment Outside of City Centre",
+                "1,879.26 RM",
+                "1,200.00 - 3,500.00"
+              ],
+              "range_display": "1,200.00 - 3,500.00"
+            },
+            "item": "3 Bedroom Apartment Outside of City Centre",
+            "value_display": "1,879.26 RM",
+            "value": 1879.26,
+            "unit": "RM",
+            "range": {
+              "display": "1,200.00 - 3,500.00",
+              "min": 1200.0,
+              "max": 3500.0,
+              "unit": "RM"
+            }
+          }
+        ],
+        "Buy Apartment Price": [
+          {
+            "raw": {
+              "cells": [
+                "Price per Square Feet to Buy Apartment in City Centre",
+                "792.22 RM",
+                "478.00 - 1,499.99"
+              ],
+              "range_display": "478.00 - 1,499.99"
+            },
+            "item": "Price per Square Feet to Buy Apartment in City Centre",
+            "value_display": "792.22 RM",
+            "value": 792.22,
+            "unit": "RM",
+            "range": {
+              "display": "478.00 - 1,499.99",
+              "min": 478.0,
+              "max": 1499.99,
+              "unit": "RM"
+            }
+          },
+          {
+            "raw": {
+              "cells": [
+                "Price per Square Feet to Buy Apartment Outside of Centre",
+                "441.06 RM",
+                "278.71 - 603.86"
+              ],
+              "range_display": "278.71 - 603.86"
+            },
+            "item": "Price per Square Feet to Buy Apartment Outside of Centre",
+            "value_display": "441.06 RM",
+            "value": 441.06,
+            "unit": "RM",
+            "range": {
+              "display": "278.71 - 603.86",
+              "min": 278.71,
+              "max": 603.86,
+              "unit": "RM"
+            }
+          }
+        ],
+        "Salaries And Financing": [
+          {
+            "raw": {
+              "cells": [
+                "Average Monthly Net Salary (After Tax)",
+                "3,690.62 RM"
+              ]
+            },
+            "item": "Average Monthly Net Salary (After Tax)",
+            "value_display": "3,690.62 RM",
+            "value": 3690.62,
+            "unit": "RM"
+          },
+          {
+            "raw": {
+              "cells": [
+                "Annual Mortgage Interest Rate (20-Year Fixed, in %)",
+                "4.28",
+                "3.30 - 5.00"
+              ],
+              "range_display": "3.30 - 5.00"
+            },
+            "item": "Annual Mortgage Interest Rate (20-Year Fixed, in %)",
+            "value_display": "4.28",
+            "value": 4.28,
+            "range": {
+              "display": "3.30 - 5.00",
+              "min": 3.3,
+              "max": 5.0
+            }
+          }
+        ]
+      },
+      "cities": {}
+    }
+  }
+}

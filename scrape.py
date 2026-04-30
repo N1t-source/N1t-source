@@ -1,112 +1,629 @@
 # -*- coding: utf-8 -*-
+"""Scrape Numbeo country and city tables into JSON.
+
+Examples:
+    python scrape.py --category health-care --countries Malaysia Singapore --city-limit 2
+    python scrape.py --category cost-of-living --countries France Japan --output results.json
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import random
+import re
+import time
+from datetime import datetime, timezone
+from typing import Any
+from urllib.parse import quote_plus
+
 import requests
 from bs4 import BeautifulSoup
-import json
-import time
-import random
 
-URL = "https://numbeo.com"
 
-class Extract_table:
-    def __init__(self, page):
-        self.Data = {}
-        self.Table = page.find("table", {'class': 'data_wide_table'})
+CATEGORIES = {
+    "cost-of-living": "https://www.numbeo.com/cost-of-living/",
+    "crime": "https://www.numbeo.com/crime/",
+    "health-care": "https://www.numbeo.com/health-care/",
+    "pollution": "https://www.numbeo.com/pollution/",
+    "property-prices": "https://www.numbeo.com/property-investment/",
+    "quality-of-life": "https://www.numbeo.com/quality-of-life/",
+    "traffic": "https://www.numbeo.com/traffic/",
+}
+ALL_CATEGORY_CHOICE = "all"
+RATING_LABELS = {"Very Low", "Low", "Moderate", "High", "Very High"}
+CURRENCY_FIXES = {
+    "â‚¬": "€",
+    "Â¥": "¥",
+    "Ą": "¥",
+}
 
-    def extract(self):
-        if not self.Table: return None
-        key = "Summary"
-        for row in self.Table("tr"):
-            if row("th"):
-                key = row("th").text.strip()
-                self.Data[key] = []
-            elif row("td"):
-                cells = [cell.text.strip() for cell in row("td")]
-                if key not in self.Data: self.Data[key] = []
-                self.Data[key].append(cells)
-        return self.Data
 
-class API(object):
-    def __init__(self, BASE_URL, Country, city_limit=0):
-        self.base = BASE_URL
-        self.country = Country
-        self.url = f"{BASE_URL}country_result.jsp?country={Country.replace(' ', '+')}"
-        self.result = {Country: {}}
-        self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Referer': 'https://google.com'
-        }
-        
-        response = self.get_page(self.url)
-        if response:
-            self.page = BeautifulSoup(response.text, "html.parser")
-            self.get_city()
-            EX = Extract_table(self.page)
-            extracted_data = EX.extract()
-            if extracted_data:
-                self.result[Country] = extracted_data
-                if city_limit > 0 and self.city:
-                    self.get_all_city(city_limit)
-        else:
-            print(f"Skipping {Country} due to persistent errors.")
+class NumbeoScrapeError(RuntimeError):
+    """Raised when a page cannot be fetched after all retries."""
 
-    def get_page(self, url):
-        retries = 5
-        backoff = 5 
-        for i in range(retries):
-            try:
-                time.sleep(backoff + random.uniform(1, 3)) 
-                request = requests.get(url, headers=self.headers, timeout=15)
-                if request.status_code == 200:
-                    return request
-                elif request.status_code == 429:
-                    print(f"Rate limited (429). Waiting {backoff}s before retry...")
-                    backoff *= 2 
-                else:
-                    print(f"Error {request.status_code} for {url}")
-                    return None
-            except Exception as e:
-                print(f"Connection error: {e}")
-                time.sleep(backoff)
+
+def clean_text(value: str) -> str:
+    """Normalize whitespace from table cells."""
+    cleaned = " ".join(value.split())
+    for bad, good in CURRENCY_FIXES.items():
+        cleaned = cleaned.replace(bad, good)
+    return cleaned
+
+
+def parse_number(value: str) -> float | None:
+    cleaned = value.replace(",", "").strip()
+    try:
+        return float(cleaned)
+    except ValueError:
         return None
 
-    def get_city(self):
-        form = self.page.find("form", {"class": "standard_margin"})
-        self.city = [v["value"] for v in form("option") if v.has_attr("value") and v["value"]] if form else []
 
-    def get_all_city(self, limit):
-        if not self.result[self.country]: self.result[self.country] = {}
-        self.result[self.country]["child"] = {}
-        for city in self.city[:limit]:
-            print(f"  > Scraping City: {city}")
-            city_url = f"{self.base}city_result.jsp?country={self.country.replace(' ', '+')}&city={city.replace(' ', '+')}"
-            resp = self.get_page(city_url)
-            if resp:
-                table = Extract_table(BeautifulSoup(resp.text, "html.parser"))
-                self.result[self.country]["child"][city] = table.extract()
+def split_number_and_suffix(value: str) -> tuple[float | None, str | None]:
+    match = re.match(r"^\s*([+-]?\d+(?:,\d{3})*(?:\.\d+)?)\s*(.*?)\s*$", value)
+    if not match:
+        return None, None
 
-    def get_result(self):
+    number = parse_number(match.group(1))
+    suffix = match.group(2).strip()
+
+    if number is None:
+        return None, suffix or None
+
+    return number, suffix or None
+
+
+def parse_range(value: str, unit: str | None = None) -> dict[str, Any]:
+    parts = re.split(r"\s+-\s+", value, maxsplit=1)
+    range_data: dict[str, Any] = {"display": value}
+
+    if len(parts) != 2:
+        return range_data
+
+    low, low_unit = split_number_and_suffix(parts[0])
+    high, high_unit = split_number_and_suffix(parts[1])
+
+    if low is not None:
+        range_data["min"] = low
+    if high is not None:
+        range_data["max"] = high
+
+    range_unit = unit or low_unit or high_unit
+    if range_unit:
+        range_data["unit"] = range_unit
+
+    return range_data
+
+
+def normalize_metric(name: str, value_display: str) -> dict[str, Any]:
+    metric: dict[str, Any] = {
+        "name": clean_text(name).rstrip(":"),
+        "value_display": clean_text(value_display),
+    }
+    value_text = metric["value_display"]
+
+    if value_text.endswith("%"):
+        metric["unit"] = "%"
+        value_text = value_text[:-1]
+
+    value, suffix = split_number_and_suffix(value_text)
+    if value is not None:
+        metric["value"] = value
+    if suffix:
+        metric["unit"] = metric.get("unit") or suffix
+
+    return metric
+
+
+def normalized_cell(value: str) -> Any:
+    cleaned = clean_text(value)
+    number = parse_number(cleaned.rstrip("%"))
+    if number is None:
+        return cleaned
+    if cleaned.endswith("%"):
+        return {"value": number, "unit": "%", "display": cleaned}
+    return number
+
+
+class TableExtractor:
+    """Extract a Numbeo data table into JSON-friendly sections."""
+
+    def __init__(self, page: BeautifulSoup, table: Any | None = None, title: str = "") -> None:
+        self.table = table or page.find("table", {"class": "data_wide_table"})
+        self.title = title
+
+    def extract(self) -> dict[str, list[dict[str, Any]]] | None:
+        if not self.table:
+            return None
+
+        data: dict[str, list[dict[str, Any]]] = {}
+        section = self.title or "Summary"
+
+        for row in self.table.find_all("tr"):
+            header = row.find("th")
+            if header:
+                section = clean_text(header.get_text(" "))
+                data.setdefault(section, [])
+                continue
+
+            cells = [clean_text(cell.get_text(" ")) for cell in row.find_all("td")]
+            cells = [cell for cell in cells if cell]
+            if not cells:
+                continue
+
+            data.setdefault(section, []).append(self._normalize_row(cells))
+
+        return data or None
+
+    @staticmethod
+    def _normalize_row(cells: list[str]) -> dict[str, Any]:
+        row: dict[str, Any] = {"raw": {"cells": cells}}
+
+        if cells:
+            row["item"] = cells[0]
+
+        if len(cells) >= 2:
+            row["value_display"] = cells[1]
+            value, suffix = split_number_and_suffix(cells[1])
+
+            if value is not None:
+                row["value"] = value
+            else:
+                row["value"] = cells[1]
+
+            if suffix and suffix not in RATING_LABELS:
+                row["unit"] = suffix
+
+            if len(cells) >= 3 and cells[2] in RATING_LABELS:
+                row["rating"] = cells[2]
+            elif len(cells) >= 3:
+                row["range"] = parse_range(cells[2], row.get("unit"))
+            else:
+                row.pop("range", None)
+
+        if len(cells) >= 3:
+            row["raw"]["range_display"] = cells[2]
+
+        if len(cells) > 3:
+            row["extra"] = cells[3:]
+
+        return row
+
+
+def nearest_heading(table: Any) -> str:
+    node = table.previous_sibling
+    while node:
+        if getattr(node, "name", None) in {"h1", "h2", "h3"}:
+            return clean_text(node.get_text(" "))
+        node = node.previous_sibling
+    return ""
+
+
+def extract_data_tables(page: BeautifulSoup) -> list[dict[str, Any]]:
+    tables: list[dict[str, Any]] = []
+
+    for index, table in enumerate(page.find_all("table", {"class": "data_wide_table"}), start=1):
+        title = nearest_heading(table) or f"Data Table {index}"
+        sections = TableExtractor(page, table=table, title=title).extract() or {}
+        tables.append(
+            {
+                "title": title,
+                "sections": sections,
+            }
+        )
+
+    return tables
+
+
+def merge_table_sections(tables: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
+    merged: dict[str, list[dict[str, Any]]] = {}
+
+    for table in tables:
+        for section, rows in table["sections"].items():
+            merged.setdefault(section, []).extend(rows)
+
+    return merged
+
+
+def extract_indices(page: BeautifulSoup) -> list[dict[str, Any]]:
+    indices: list[dict[str, Any]] = []
+
+    for table in page.find_all("table", {"class": "table_indices"}):
+        group_title = ""
+        pending_name = ""
+
+        for token in table.stripped_strings:
+            text = clean_text(token)
+            if not text:
+                continue
+
+            if text == "Index" or text.startswith("country data"):
+                group_title = text
+                continue
+
+            if text.endswith(":"):
+                pending_name = text
+                continue
+
+            if pending_name:
+                metric = normalize_metric(pending_name, text)
+                if group_title:
+                    metric["group"] = group_title
+                indices.append(metric)
+                pending_name = ""
+
+    return indices
+
+
+def extract_city_rankings(page: BeautifulSoup) -> list[dict[str, Any]]:
+    rankings: list[dict[str, Any]] = []
+
+    for table in page.find_all("table", id="t2"):
+        headers = [clean_text(cell.get_text(" ")) for cell in table.find_all("th")]
+        rows: list[dict[str, Any]] = []
+
+        for tr in table.find_all("tr"):
+            cells = [clean_text(cell.get_text(" ")) for cell in tr.find_all("td")]
+            if not cells:
+                continue
+
+            row: dict[str, Any] = {}
+            for index, value in enumerate(cells):
+                header = headers[index] if index < len(headers) else f"column_{index + 1}"
+                row[header or f"column_{index + 1}"] = normalized_cell(value)
+            rows.append(row)
+
+        if rows:
+            rankings.append(
+                {
+                    "title": nearest_heading(table) or "By City",
+                    "columns": headers,
+                    "rows": rows,
+                }
+            )
+
+    return rankings
+
+
+def extract_metric_tables(page: BeautifulSoup) -> list[dict[str, Any]]:
+    metric_tables: list[dict[str, Any]] = []
+    excluded_classes = {
+        "data_wide_table",
+        "languages_ref_table",
+        "standard_margin",
+        "stripe",
+        "table_indices",
+    }
+
+    for index, table in enumerate(page.find_all("table"), start=1):
+        classes = set(table.get("class") or [])
+        if classes & excluded_classes or table.get("id") == "t2":
+            continue
+
+        metrics: list[dict[str, Any]] = []
+        for tr in table.find_all("tr"):
+            cells = [clean_text(cell.get_text(" ")) for cell in tr.find_all(["th", "td"])]
+            cells = [cell for cell in cells if cell]
+
+            if len(cells) < 2:
+                continue
+
+            metric = normalize_metric(cells[0], cells[1])
+            if len(cells) >= 3 and cells[2] in RATING_LABELS:
+                metric["rating"] = cells[2]
+            elif len(cells) >= 3:
+                metric["extra"] = cells[2:]
+            metrics.append(metric)
+
+        if metrics:
+            metric_tables.append(
+                {
+                    "title": nearest_heading(table) or f"Metric Table {index}",
+                    "metrics": metrics,
+                }
+            )
+
+    return metric_tables
+
+
+def merge_metrics(metric_tables: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    metrics: list[dict[str, Any]] = []
+
+    for table in metric_tables:
+        for metric in table["metrics"]:
+            metric_with_group = dict(metric)
+            metric_with_group.setdefault("group", table["title"])
+            metrics.append(metric_with_group)
+
+    return metrics
+
+
+class NumbeoScraper:
+    def __init__(
+        self,
+        category: str,
+        *,
+        city_limit: int = 0,
+        retries: int = 4,
+        delay: float = 2.0,
+        timeout: int = 20,
+    ) -> None:
+        if category not in CATEGORIES:
+            raise ValueError(f"Unsupported category: {category}")
+
+        self.category = category
+        self.base_url = CATEGORIES[category]
+        self.city_limit = city_limit
+        self.retries = retries
+        self.delay = delay
+        self.timeout = timeout
+        self.session = requests.Session()
+        self.session.headers.update(
+            {
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/120.0.0.0 Safari/537.36"
+                ),
+                "Accept-Language": "en-US,en;q=0.9",
+            }
+        )
+
+    def scrape_country(self, country: str) -> dict[str, Any]:
+        country_url = self._country_url(country)
+        page = self._get_soup(country_url)
+        tables = extract_data_tables(page)
+        metric_tables = extract_metric_tables(page)
+        result: dict[str, Any] = {
+            "source_url": country_url,
+            "indices": extract_indices(page),
+            "metrics": merge_metrics(metric_tables),
+            "metric_tables": metric_tables,
+            "data": merge_table_sections(tables),
+            "tables": tables,
+            "city_rankings": extract_city_rankings(page),
+            "cities": {},
+        }
+
+        cities = self._extract_cities(page)
+        if self.city_limit > 0:
+            for city in cities[: self.city_limit]:
+                print(f"  > Scraping {country} / {city}")
+                result["cities"][city] = self.scrape_city(country, city)
+
+        return result
+
+    def scrape_city(self, country: str, city: str) -> dict[str, Any]:
+        city_url = self._city_url(country, city)
+        page = self._get_soup(city_url)
+        tables = extract_data_tables(page)
+        metric_tables = extract_metric_tables(page)
+        return {
+            "source_url": city_url,
+            "indices": extract_indices(page),
+            "metrics": merge_metrics(metric_tables),
+            "metric_tables": metric_tables,
+            "data": merge_table_sections(tables),
+            "tables": tables,
+            "city_rankings": extract_city_rankings(page),
+        }
+
+    def _get_soup(self, url: str) -> BeautifulSoup:
+        response = self._get_page(url)
+        return BeautifulSoup(response.content, "html.parser")
+
+    def _get_page(self, url: str) -> requests.Response:
+        backoff = self.delay
+        last_error: Exception | None = None
+
+        for attempt in range(1, self.retries + 1):
+            try:
+                time.sleep(backoff + random.uniform(0.25, 1.0))
+                response = self.session.get(url, timeout=self.timeout)
+
+                if response.status_code == 200:
+                    return response
+
+                if response.status_code == 429:
+                    print(f"Rate limited by Numbeo; retrying attempt {attempt}/{self.retries}")
+                    backoff *= 2
+                    continue
+
+                response.raise_for_status()
+            except requests.RequestException as exc:
+                last_error = exc
+                print(f"Request failed for {url}: {exc}")
+                backoff *= 2
+
+        raise NumbeoScrapeError(f"Could not fetch {url}") from last_error
+
+    def _extract_cities(self, page: BeautifulSoup) -> list[str]:
+        form = page.find("form", {"class": "standard_margin"})
+        if not form:
+            return []
+
+        cities: list[str] = []
+        for option in form.find_all("option"):
+            value = option.get("value")
+            if value and value.strip():
+                cities.append(value.strip())
+        return cities
+
+    def _country_url(self, country: str) -> str:
+        return f"{self.base_url}country_result.jsp?country={quote_plus(country)}"
+
+    def _city_url(self, country: str, city: str) -> str:
+        return (
+            f"{self.base_url}city_result.jsp?"
+            f"country={quote_plus(country)}&city={quote_plus(city)}"
+        )
+
+
+class Extract_table(TableExtractor):
+    """Backward-compatible name used by the original project."""
+
+
+class API:
+    """Backward-compatible wrapper around NumbeoScraper."""
+
+    def __init__(self, base_url: str, country: str, city_limit: int = 0) -> None:
+        category = self._category_from_url(base_url)
+        self.country = country
+        self.scraper = NumbeoScraper(category, city_limit=city_limit)
+        payload = self.scraper.scrape_country(country)
+        self.result = {country: self._legacy_payload(payload)}
+
+    def get_result(self) -> dict[str, Any]:
         return self.result.get(self.country, {})
 
-def write_json(FILE, OBJECT):
-    with open(FILE, 'w', encoding='utf-8') as w:
-        json.dump(OBJECT, w, indent=4)
-    print(f"\n[Done] Data saved to {FILE}")
+    @staticmethod
+    def _legacy_payload(payload: dict[str, Any]) -> dict[str, Any]:
+        data = dict(payload.get("data", {}))
+        cities = payload.get("cities", {})
+        if cities:
+            data["child"] = {
+                city: city_payload.get("data", {}) for city, city_payload in cities.items()
+            }
+        return data
+
+    @staticmethod
+    def _category_from_url(base_url: str) -> str:
+        for category, url in CATEGORIES.items():
+            if category in base_url or url.rstrip("/") in base_url.rstrip("/"):
+                return category
+        return "cost-of-living"
+
+
+def write_json(path: str, payload: dict[str, Any]) -> None:
+    with open(path, "w", encoding="utf-8") as output:
+        json.dump(payload, output, indent=2, ensure_ascii=False)
+        output.write("\n")
+    print(f"\n[Done] Data saved to {path}")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Scrape Numbeo tables into JSON.")
+    parser.add_argument(
+        "--category",
+        choices=[ALL_CATEGORY_CHOICE, *sorted(CATEGORIES)],
+        default="cost-of-living",
+        help="Numbeo section to scrape.",
+    )
+    parser.add_argument(
+        "--countries",
+        nargs="+",
+        help="Country names to scrape, for example: Malaysia Singapore Australia",
+    )
+    parser.add_argument(
+        "--city-limit",
+        type=int,
+        default=0,
+        help="Maximum cities to scrape per country. Use 0 for country-level data only.",
+    )
+    parser.add_argument(
+        "--output",
+        default="results.json",
+        help="JSON file to write.",
+    )
+    parser.add_argument(
+        "--delay",
+        type=float,
+        default=2.0,
+        help="Base delay between requests in seconds.",
+    )
+    return parser.parse_args()
+
+
+def scrape_single_category(args: argparse.Namespace, countries: list[str]) -> dict[str, Any]:
+    scraper = NumbeoScraper(
+        args.category,
+        city_limit=max(args.city_limit, 0),
+        delay=max(args.delay, 0),
+    )
+
+    results: dict[str, Any] = {
+        "metadata": {
+            "schema_version": "2.0",
+            "category": args.category,
+            "scraped_at": datetime.now(timezone.utc).isoformat(),
+            "city_limit": max(args.city_limit, 0),
+        },
+        "countries": {},
+    }
+
+    for country in countries:
+        print(f"Processing {country}...")
+        try:
+            results["countries"][country] = scraper.scrape_country(country)
+        except NumbeoScrapeError as exc:
+            results["countries"][country] = {
+                "error": str(exc),
+                "indices": [],
+                "metrics": [],
+                "data": {},
+                "tables": [],
+                "city_rankings": [],
+                "cities": {},
+            }
+
+    return results
+
+
+def scrape_all_categories(args: argparse.Namespace, countries: list[str]) -> dict[str, Any]:
+    category_names = sorted(CATEGORIES)
+    results: dict[str, Any] = {
+        "metadata": {
+            "schema_version": "2.0",
+            "category": ALL_CATEGORY_CHOICE,
+            "categories": category_names,
+            "scraped_at": datetime.now(timezone.utc).isoformat(),
+            "city_limit": max(args.city_limit, 0),
+        },
+        "countries": {},
+    }
+
+    for country in countries:
+        print(f"Processing {country}...")
+        results["countries"][country] = {"categories": {}}
+
+        for category in category_names:
+            print(f"  > {category}")
+            scraper = NumbeoScraper(
+                category,
+                city_limit=max(args.city_limit, 0),
+                delay=max(args.delay, 0),
+            )
+            try:
+                results["countries"][country]["categories"][category] = scraper.scrape_country(country)
+            except NumbeoScrapeError as exc:
+                results["countries"][country]["categories"][category] = {
+                    "error": str(exc),
+                    "indices": [],
+                    "metrics": [],
+                    "data": {},
+                    "tables": [],
+                    "city_rankings": [],
+                    "cities": {},
+                }
+
+    return results
+
+
+def main() -> None:
+    args = parse_args()
+    countries = args.countries
+
+    if not countries:
+        raw_countries = input("Enter countries separated by commas: ")
+        countries = [country.strip() for country in raw_countries.split(",") if country.strip()]
+
+    if args.category == ALL_CATEGORY_CHOICE:
+        results = scrape_all_categories(args, countries)
+    else:
+        results = scrape_single_category(args, countries)
+
+    write_json(args.output, results)
+
 
 if __name__ == "__main__":
-    raw_countries = input("Enter countries separated by commas: ")
-    COUNTRY_LIST = [c.strip() for c in raw_countries.split(",") if c.strip()]
-    
-    try:
-        val = input("Max cities per country (Enter for 0): ")
-        user_limit = int(val) if val.strip() else 0
-    except ValueError:
-        user_limit = 0
-    
-    final_results = {}
-    for country in COUNTRY_LIST:
-        print(f"Processing {country}...")
-        obj = API(URL, country, user_limit)
-        final_results[country] = obj.get_result()
-    
-    write_json("results.json", final_results)
+    main()
