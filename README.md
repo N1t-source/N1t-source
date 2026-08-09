@@ -5,6 +5,13 @@
 ## 🌐 Socials:
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@codersjounery) 
 
+## 🚀 Featured Projects
+- 🌍 [country](https://github.com/N1t-source/country) & [country_data](https://github.com/N1t-source/country_data) — geographic/country data project and pipeline
+- 💳 [bicountry-payment](https://github.com/N1t-source/bicountry-payment) — a plan to fix the international payment system
+- ⛵ [voyage](https://github.com/N1t-source/voyage) — building an idea out instead of joining tutorial hell
+- 🧩 [schema](https://github.com/N1t-source/schema) — TypeScript schema project
+- 📚 [OSSU-learning](https://github.com/N1t-source/OSSU-learning) — structured CS coursework in progress
+
 # 💻 Tech Stack:
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 # 📊 GitHub Stats:
