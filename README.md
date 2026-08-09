@@ -7,7 +7,6 @@
 
 ## 🚀 Featured Projects
 - 🌍 [country](https://github.com/N1t-source/country) & [country_data](https://github.com/N1t-source/country_data) — geographic/country data project and pipeline
-- 💳 [bicountry-payment](https://github.com/N1t-source/bicountry-payment) — a plan to fix the international payment system
 - ⛵ [voyage](https://github.com/N1t-source/voyage) — building an idea out instead of joining tutorial hell
 - 🧩 [schema](https://github.com/N1t-source/schema) — TypeScript schema project
 - 📚 [OSSU-learning](https://github.com/N1t-source/OSSU-learning) — structured CS coursework in progress
