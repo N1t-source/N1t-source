@@ -7,7 +7,7 @@
 
 ## 🚀 Featured Projects
 - 🌍 [country](https://github.com/N1t-source/country) & [country_data](https://github.com/N1t-source/country_data) — geographic/country data project and pipeline
-- ⛵ [voyage](https://github.com/N1t-source/voyage) — building an idea out instead of joining tutorial hell
+- ⛵ **voyage** — my biggest project so far, an actual product build instead of another tutorial (private repo, ask me for a look)
 - 🧩 [schema](https://github.com/N1t-source/schema) — TypeScript schema project
 - 📚 [OSSU-learning](https://github.com/N1t-source/OSSU-learning) — structured CS coursework in progress
 
